@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/sections/Header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -16,18 +17,11 @@ export const viewport: Viewport = {
   maximumScale: 1
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <section className="flex flex-col min-h-screen">
+      <Header />
+      {children}
+    </section>
   );
 }
