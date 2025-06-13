@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/sections/Header";
+import React from "react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,7 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <Header />
         <main>{children}</main>
       </body>
     </html>
