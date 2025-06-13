@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SocialProofSection from "@/components/SocialProofSection";
 
 export default function Home() {
   return (
@@ -18,10 +19,14 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <SocialProofSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
         <FeatureSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
+        <FAQSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
         <PricingSection />
         <TestimonialsSection />
-        <FAQSection />
         <CTASection />
       </main>
       <Footer />
