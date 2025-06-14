@@ -13,8 +13,8 @@ export default function HeroSection() {
                     <h1 className="text-4xl font-bold text-gray-900">The Complete Sports Management Solution</h1>
                     <p className="mt-4 text-lg text-gray-600">Streamline team management, player development, and operations in one uniformed platform.</p>
                     <div className="flex items-start gap-3">
-                        <button className="rounded-xl bg-orange-500 px-6 py-3 font-medium text-white hover:bg-orange-600">Book Demo</button>
-                        <button className="rounded-xl border border-gray-300 px-6 py-3 font-medium text-gray-700 hover:bg-gray-100">Sign up</button>
+                        <Button className="rounded-xl bg-orange-500 px-6 py-3 font-medium text-white hover:bg-orange-600">Book Demo</Button>
+                        <Button className="rounded-xl border border-gray-300 px-6 py-3 font-medium text-gray-700 hover:bg-gray-100">Sign up</Button>
                     </div>
 
                 </div>

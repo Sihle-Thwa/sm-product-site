@@ -23,10 +23,12 @@ export default function Home() {
         <hr className="my-auto border-b h-1 border-gray-200" />
         <FeatureSection />
         <hr className="my-auto border-b h-1 border-gray-200" />
+        <TestimonialsSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
         <FAQSection />
         <hr className="my-auto border-b h-1 border-gray-200" />
         <PricingSection />
-        <TestimonialsSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
         <CTASection />
       </main>
       <Footer />
