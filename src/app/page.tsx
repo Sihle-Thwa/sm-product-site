@@ -8,6 +8,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SocialProofSection from "@/components/SocialProofSection";
+import MetricSection from "@/components/MetricSection";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         <FAQSection />
         <hr className="my-auto border-b h-1 border-gray-200" />
         <PricingSection />
+        <hr className="my-auto border-b h-1 border-gray-200" />
+        <MetricSection />
         <hr className="my-auto border-b h-1 border-gray-200" />
         <CTASection />
       </main>

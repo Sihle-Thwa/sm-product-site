@@ -32,7 +32,7 @@ export default function PricingCard({ tier, highlight }: PricingProps) {
                 <ul className="space-y-4 mb-8">
                     {features.map((feature, index) => (
                         <li key={index} className="flex items-center">
-                            <CheckCircle className="h-5 w-5 text-secondary mr-2" />
+                            <CheckCircle className="h-5 w-5 text-white mr-2 bg-amber-300 rounded-full " />
                             <span className="text-foreground-accent">{feature}</span>
                         </li>
                     ))}

@@ -3,3 +3,9 @@ export interface ProductPricing {
     price: number | string;
     features: string[];
 }
+
+export interface Metric { 
+    title: string;
+    value: string | number;
+    description: string;
+}

@@ -10,7 +10,7 @@ export default function PricingSection() {
             <p className="text-lg text-center mb-12">
                 Choose the plan that fits your needs. All plans come with a 30-day money-back guarantee.
             </p>
-            <div className="container mx-auto px-4">
+            <div className="flex flex-row px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {tiers.map((tier, index) => (
                         <PricingCard key={tier.name} tier={tier} highlight={index === 1} />
