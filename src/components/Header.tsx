@@ -5,6 +5,9 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import React from "react";
+import Image from "next/image";
+import Navigation from "./Navigation";
 
 export default function Header() {
     return (
@@ -12,21 +15,11 @@ export default function Header() {
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-semibold">
-                    SBMConcepts
+                    <Image src="/logo_title.png" alt="Logo" width={100} height={40} />
                 </Link>
 
                 {/* Desktop nav */}
-                <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <Link href="/products" className="hover:text-primary">
-                        Products
-                    </Link>
-                    <Link href="/resources" className="hover:text-primary">
-                        Resources
-                    </Link>
-                    <Link href="/pricing" className="hover:text-primary">
-                        Pricing
-                    </Link>
-                </nav>
+                <Navigation />
 
                 {/* Mobile menu trigger */}
                 <Sheet>

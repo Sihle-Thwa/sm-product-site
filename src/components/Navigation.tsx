@@ -17,23 +17,16 @@ export default function Navigation() {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Features</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="p-4">
-                            <li>
-                                <NavigationMenuLink href="/features/feature1">Feature 1</NavigationMenuLink>
-                            </li>
-                            <li>
-                                <NavigationMenuLink href="/features/feature2">Feature 2</NavigationMenuLink>
-                            </li>
-                        </ul>
-                    </NavigationMenuContent>
+                    <NavigationMenuLink href="#products">Products</NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/pricing">Pricing</NavigationMenuLink>
+                    <NavigationMenuLink href="#features">Features</NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/about">About Us</NavigationMenuLink>
+                    <NavigationMenuLink href="#pricing">Pricing</NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuLink href="#faq">FAQ</NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>
             <NavigationMenuIndicator />

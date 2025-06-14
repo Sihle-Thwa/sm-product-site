@@ -9,3 +9,8 @@ export interface Metric {
     value: string | number;
     description: string;
 }
+
+export interface FooterItem { 
+    title: string;
+    items: { label: string; href: string }[];
+}
