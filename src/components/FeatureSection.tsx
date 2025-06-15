@@ -2,14 +2,11 @@
 "use client";
 import React from 'react';
 import Image from "next/image";
+import { Feature } from "@/data/types";
+import features from '@/data/features';
 
 export default function FeatureSection() {
-    const features = [
-        { title: 'Team Management', description: 'Sports management has evolved dramatically in the digital age. Organizations that embrace comprehensive platforms like this one gain a competitive advantage both on and off the field.' },
-        { title: 'Player Development', description: 'Comprehensive player profiles. Performance tracking across multiple teams. Participation history. Health and fitness monitoring' },
-        { title: 'Administrative Tools', description: 'Role-based dashboards. Custom reporting. Document management. Communication tools for coaches, players, and parents.' },
-        { title: 'Technical Highlights', description: 'Cloud-based secure database. Mobile-responsive design. Real-time updates. API integration capabilities.' },
-    ];
+
 
     return (
         <section className="bg-white flex flex-col pt-24 gap-16 items-center justify-center self-stretch">
@@ -31,7 +28,13 @@ export default function FeatureSection() {
                 </div>
 
                 <div className="flex flex-col items-center gap-8 px-0 py-8">
-                    <Image src="/FeatureSection.png" alt="Feature Illustration" layout="responsive" width={500} height={500} />
+                    <Image
+                        src="/FeatureSection.png"
+                        alt="Feature Illustration"
+                        width={500}
+                        height={500}
+                        className="w-full h-auto"
+                    />
                 </div>
 
             </div>

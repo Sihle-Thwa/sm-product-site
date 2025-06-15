@@ -1,4 +1,10 @@
+import { StaticImageData } from "next/image";
 
+
+export interface Feature { 
+    title: string;
+    description: string;
+}
 export interface ProductPricing {
     name: string;
     price: number | string;
@@ -20,5 +26,5 @@ export interface Testimonial {
     name: string;
     role: string;
     testimonial: string;
-    image?: string; // Optional image URL
+    image?: string | StaticImageData; // ✅ supports both direct URLs and imported images
 }

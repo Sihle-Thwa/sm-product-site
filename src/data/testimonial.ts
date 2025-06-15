@@ -1,4 +1,8 @@
 import { Testimonial } from "./types";
+import SC from "../../public/SportsCoordinator.jpg";
+import HC from "../../public/HeadCoach.jpg";
+import AD from "../../public/AthleticsDirector.jpg";
+
 
 const Testimonials: Testimonial[] = [
   {
