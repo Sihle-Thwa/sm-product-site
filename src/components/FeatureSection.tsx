@@ -1,44 +1,58 @@
 // File: /src/components/FeatureSection.tsx
 "use client";
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 import { Feature } from "@/data/types";
-import features from '@/data/features';
+import features from "@/data/features";
+import { Button } from "./ui/button";
 
 export default function FeatureSection() {
-
-
     return (
-        <section className="bg-white flex flex-col pt-24 gap-16 items-center justify-center self-stretch">
-            <div className="flex flex-col items-start gap-8 w-fit px-8 py-0">
-                <h4>Features</h4>
-                <h2 className=" font-semibold text-center text-gray-900 ">Overflowing with useful features</h2>
-                <p>Sports management has evolved dramatically in the digital age. Organizations that embrace comprehensive platforms like this one gain a competitive advantage both on and off the field.</p>
+        <section className="flex flex-col pt-16 items-center self-stretch gap-8 px-4 md:px-8">
+            {/* Intro Text */}
+            <div className="flex flex-col items-center gap-8 px-8 max-w-[1280px] ">
+                <div className="flex flex-col gap-4 max-w-[768px]">
+                    <h2 className="text-md-semibold">Features</h2>
+                    <h3 className="heading-md">Overflowing with useful features</h3>
+                    <p className="text-xl-regular">
+                        Sports management has evolved dramatically in the digital age.
+                        Organizations that embrace comprehensive platforms like this one
+                        gain a competitive advantage both on and off the field.
+                    </p>
+                </div>
             </div>
-            <div className="flex w-full items-center py-0 px-8 gap-16">
-                <div className="flex flex-col items-start flex-1 gap-16 w-full px-8 py-0">
-                    <div>
-                        {features.map((f) => (
-                            <div key={f.title} className="text-center">
-                                <h3 className="text-xl font-bold text-gray-800">{f.title}</h3>
-                                <p className="mt-2 text-gray-600">{f.description}</p>
+
+            {/* Feature Content */}
+            <div className="flex flex-col md:flex-row gap-12 max-w-[1280px]">
+                {/* Left: Feature List */}
+                <div className="basis-1/2 flex flex-col gap-8">
+                    {features.map((f) => (
+                        <div key={f.title} className="flex items-start gap-4">
+                            <div className="flex flex-col gap-5">
+                                <h4 className="text-xl-semibold">{f.title}</h4>
+                                <p className="text-md-regular">{f.description}</p>
+                                <div className="flex gap-2">
+                                    <Button aria-label={`Learn more about ${f.title}`}>
+                                        Learn More
+                                    </Button>
+                                </div>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
 
-                <div className="flex flex-col items-center gap-8 px-0 py-8">
+                {/* Right: Illustration */}
+                <div className="basis-1/2 flex items-center justify-end">
                     <Image
                         src="/FeatureSection.png"
-                        alt="Feature Illustration"
+                        alt="Illustration showcasing platform features"
                         width={500}
                         height={500}
-                        className="w-full h-auto"
+                        className="object-fill"
+                        loading="lazy"
                     />
                 </div>
-
             </div>
-
-        </section >
+        </section>
     );
 }
