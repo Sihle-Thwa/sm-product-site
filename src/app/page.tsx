@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import SocialProofSection from "@/components/SocialProofSection";
 import MetricSection from "@/components/MetricSection";
 import React from "react";
+import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
   return (
@@ -22,17 +23,17 @@ export default function Home() {
       <main>
         <HeroSection />
         <SocialProofSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <FeatureSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <TestimonialsSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <FAQSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <PricingSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <MetricSection />
-        <hr className="my-auto border-b h-1 border-gray-200" />
+        <SectionDivider />
         <CTASection />
       </main>
       <Footer />
