@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SocialProofSection from "@/components/SocialProofSection";
 import MetricSection from "@/components/MetricSection";
+import React from "react";
 
 export default function Home() {
   return (

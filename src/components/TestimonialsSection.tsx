@@ -6,10 +6,7 @@ import TestimonialCard from "./TestimonialCard";
 import Testimonials from "@/data/testimonial";
 import { motion } from "framer-motion";
 
-interface TestimonialsProps {
-    testimonials: Testimonial[];
-}
-export default function TestimonialsSection({ testimonials }: TestimonialsProps) {
+export default function TestimonialsSection() {
     return (
         <section className="bg-background flex flex-col items-center py-20 px-4 md:px-0">
             <div className="w-full max-w-5xl flex flex-col gap-12">
