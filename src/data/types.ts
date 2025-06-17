@@ -27,4 +27,6 @@ export interface Testimonial {
     role: string;
     testimonial: string;
     image?: string | StaticImageData; // ✅ supports both direct URLs and imported images
+    rating: number; // New property for rating stars
+    organization: string; // New property for organization
 }

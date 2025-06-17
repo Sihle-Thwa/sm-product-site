@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 
 export default function FeatureSection() {
     return (
-        <section className="flex flex-col pt-16 items-center self-stretch gap-8 px-4 md:px-8">
+        <section className="flex flex-col w-full h-full pt-16 items-center self-stretch pb-8 gap-8 px-4 md:px-8">
             {/* Intro Text */}
             <div className="flex flex-col items-center gap-8 px-8 max-w-[1280px] ">
                 <div className="flex flex-col gap-4 max-w-[768px]">
@@ -32,7 +32,7 @@ export default function FeatureSection() {
                                 <h4 className="text-xl-semibold">{f.title}</h4>
                                 <p className="text-md-regular">{f.description}</p>
                                 <div className="flex gap-2">
-                                    <Button aria-label={`Learn more about ${f.title}`}>
+                                    <Button >
                                         Learn More
                                     </Button>
                                 </div>
