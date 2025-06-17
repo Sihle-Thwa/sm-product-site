@@ -30,3 +30,8 @@ export interface Testimonial {
     rating: number; // New property for rating stars
     organization: string; // New property for organization
 }
+
+export interface FAQ { 
+    question: string;
+    answer: string;
+}
