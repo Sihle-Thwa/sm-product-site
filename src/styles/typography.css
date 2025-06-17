@@ -164,3 +164,20 @@
     line-height: 20px;
     font-weight: 500;
 }
+
+/* Text XS */
+.text-xs-regular {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.text-xs-semibold {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.text-xs-medium {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
