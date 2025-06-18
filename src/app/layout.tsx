@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import React from "react";
-
+import { Inter } from "next/font/google";
 
 
 export const metadata: Metadata = {
@@ -12,11 +12,15 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   maximumScale: 1
 };
+const inter = Inter({
+  subsets: ["latin"],
+
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={inter.className}>
+      <body >
         <main>{children}</main>
       </body>
     </html>

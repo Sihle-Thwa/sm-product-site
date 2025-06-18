@@ -3,42 +3,66 @@ import React from "react";
 import { ProductPricing } from "../data/types";
 import { Button } from "./ui/button";
 import { CheckCircle } from "lucide-react";
-import { Card, CardContent, CardFooter } from "./ui/card";
+import "../styles/tokens/pricing-card.css";
+
 interface PricingProps {
     tier: ProductPricing;
     highlight?: boolean;
 }
 export default function PricingCard({ tier }: PricingProps) {
-    const { name, price, features } = tier;
-    return (
-        <Card className="card flex flex-col items-start p-6 shadow-lg rounded-lg transition-transform hover:scale-105">
-            <CardContent>
-                <div className="text-xl-semibold">{name}</div>
-                <div className="text-xl-medium md:text-5xl font-bold mb-6">
-                    <span className="text-md-regular">
-                        {typeof price === 'number' ? `R${price}` : price}
-                    </span>
-                    {typeof price === 'number' && <span className="text-sm-regular">/mo</span>}
-                </div>
-                <div className="p-6 mt-1">
-                    <div className="text-sm-semibold mb-2">FEATURES</div>
-                    { /* Work on this ul and items spacing */}
-                    <ul className="space-y-4 mb-8">
-                        {features.map((feature, index) => (
-                            <li key={index} className="flex items-center">
-                                <CheckCircle className="h-5 w-5 text-white mr-2 bg-amber-300 rounded-full" />
-                                <span className="text-xs-regular">{feature}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+    const { name, price, features, featured } = tier;
 
-                <CardFooter className="mt-4 text-xs-regular text-gray-500">
-                    <Button>
-                        Get Started
-                    </Button>
-                </CardFooter>
-            </CardContent>
-        </Card >
+    return (
+        /*Pricing Card  */
+        <div className={`pricing-card`}>
+            {/* Pricing Card Header */}
+            <div className="pricing-card-header">
+                {/* Pricing Card Price */}
+                <div className="pricing-card-price">
+                    <div className="pricing-card-price-value">
+                        R{price}/Month
+                    </div>
+                </div>
+                {/* Pricing Card Heading and Subtext */}
+                <div className="pricing-card-heading-container">
+                    {/* Pricing Card Heading */}
+                    <div className="pricing-card-heading">
+                        {name}
+                    </div>
+                    {/* Pricing Card Subtext */}
+                    <div className="pricing-card-subtext">
+                        {featured ? "Most Popular" : ""}
+                    </div>
+                </div>
+            </div>
+            {/* Pricing Card Body-Content */}
+            <div className="pricing-card-content">
+                {/* Pricing Card Content-Features List */}
+                <div className="pricing-card-content-list">
+                    {/* Pricing Card Content-Features List Items */}
+                    {features.map((feature, idx) => (
+                        <div className="pricing-card-content-items" key={idx}>
+                            {/* Pricing Card Content-Feature Item Icon */}
+                            <div className="pricing-card-content-item-icon">
+                                <CheckCircle />
+                            </div>
+                            {/* Pricing Card Content Item Text */}
+                            <div className="pricing-card-content-item-text">
+                                {feature}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* Pricing Card Footer */}
+            <div className="pricing-card-footer">
+                {/* Pricing Card Footer Actions */}
+                <div className="pricing-card-footer-actions">
+                    <div className="pricing-card-footer-action">
+                        <Button>Get Started</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }

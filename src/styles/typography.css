@@ -1,10 +1,19 @@
 @import "tailwindcss/preflight";
+@import "tw-animate-css";
 
-/* Display */
+/* Headings/Display Styles */
+
+/* Heading XL */
 .heading-xl-regular {
     font-size: 60px;
     line-height: 72px;
     letter-spacing: -0.02em;
+}
+.heading-xl-medium {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
 }
 
 .heading-xl-semibold {
@@ -14,24 +23,20 @@
     font-weight: 600;
 }
 
-.heading-xl-medium {
+.heading-xl-bold {
     font-size: 60px;
     line-height: 72px;
     letter-spacing: -0.02em;
-    font-weight: 500;
+    font-weight: 700;
 }
+
+
+/* Heading LG */
 
 .heading-lg-regular {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -0.02em;
-}
-
-.heading-lg-semibold {
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: -0.02em;
-    font-weight: 600;
 }
 
 .heading-lg-medium {
@@ -41,6 +46,22 @@
     font-weight: 500;
 }
 
+.heading-lg-semibold {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+
+.heading-lg-semibold {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+
+/* Heading MD */
 .heading-md-regular {
     font-size: 36px;
     line-height: 44px;
@@ -62,27 +83,44 @@
     font-weight: 600;
 }
 
+.heading-md-bold {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+
 /* Heading SM */
 .heading-sm-regular {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -0.02em;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0em;
     font-weight: 400;
 }
 
+.heading-sm-medium {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0em;
+    font-weight: 500;
+}
+
 .heading-sm-semibold {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -0.02em;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0em;
     font-weight: 600;
 }
 
-.heading-sm-medium {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    font-weight: 500;
+.heading-sm-bold {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0em;
+    font-weight: 700;
 }
+
+
 
 /* Text XL */
 
@@ -90,7 +128,6 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0em;
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -108,12 +145,14 @@
     font-weight: 600;
 }
 
-/* Text LG */
-.text-lg-semibold {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
+.text-xl-bold {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    font-weight: 700;
 }
+
+/* Text LG */
 
 .text-lg-regular {
     font-size: 18px;
@@ -125,6 +164,18 @@
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
+}
+
+.text-lg-semibold {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.text-lg-bold {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
 }
 
 /* Text MD */
@@ -146,17 +197,19 @@
     font-weight: 600;
 }
 
+.text-md-bold {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+
 /* Text SM */
+
 .text-sm-regular {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-}
-
-.text-sm-semibold {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
 }
 
 .text-sm-medium {
@@ -165,19 +218,40 @@
     font-weight: 500;
 }
 
+.text-sm-semibold {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.text-sm-bold {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+
 /* Text XS */
 .text-xs-regular {
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
 }
+
+.text-xs-medium {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
 .text-xs-semibold {
     font-size: 12px;
     line-height: 16px;
     font-weight: 600;
 }
-.text-xs-medium {
+
+.text-xs-bold {
     font-size: 12px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }

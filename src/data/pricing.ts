@@ -10,6 +10,7 @@ export const tiers: ProductPricing[] = [
             '20GB storage',
             'Email support',
         ],
+        featured: false,
     },
     {
         name: 'Pro',
@@ -21,6 +22,7 @@ export const tiers: ProductPricing[] = [
             'Priority email & phone support',
             'Advanced analytics',
         ],
+        featured: true,
     },
     {
         name: 'Enterprise',
@@ -33,5 +35,6 @@ export const tiers: ProductPricing[] = [
             'Custom solutions',
             'On-site training',
         ],
+        featured: false,
     },
 ]

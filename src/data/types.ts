@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 
-export interface Feature { 
+export interface Feature {
     title: string;
     description: string;
 }
@@ -9,15 +9,16 @@ export interface ProductPricing {
     name: string;
     price: number | string;
     features: string[];
+    featured?: boolean; // Optional property to highlight a tier
 }
 
-export interface Metric { 
+export interface Metric {
     title: string;
     value: string | number;
     description: string;
 }
 
-export interface FooterItem { 
+export interface FooterItem {
     title: string;
     items: { label: string; href: string }[];
 }
@@ -31,7 +32,7 @@ export interface Testimonial {
     organization: string; // New property for organization
 }
 
-export interface FAQ { 
+export interface FAQ {
     question: string;
     answer: string;
 }
