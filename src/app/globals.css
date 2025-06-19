@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @import "../styles/typography.css";
 @import "../styles/tokens/pricing-card.css";
+@import "../styles/tokens/pricing-card.css";
 
 
 /* Base Reset */

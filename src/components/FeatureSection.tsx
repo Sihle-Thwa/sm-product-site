@@ -2,55 +2,59 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Feature } from "@/data/types";
 import features from "@/data/features";
-import { Button } from "./ui/button";
+import { FeatureCard } from "../components/FeatureCard";
+
 
 export default function FeatureSection() {
     return (
-        <section className="flex flex-col w-full h-full pt-16 items-center self-stretch pb-8 gap-8 px-4 md:px-8">
-            {/* Intro Text */}
-            <div className="flex flex-col items-center gap-8 px-8 max-w-[1280px] ">
-                <div className="flex flex-col gap-4 max-w-[768px]">
-                    <h2 className="text-md-semibold">Features</h2>
-                    <h3 className="heading-md">Overflowing with useful features</h3>
-                    <p className="text-xl-regular">
-                        Sports management has evolved dramatically in the digital age.
-                        Organizations that embrace comprehensive platforms like this one
-                        gain a competitive advantage both on and off the field.
-                    </p>
+        // Feature Section
+        <section className="flex flex-col items-center w-full py-12 px-4 sm:px-6 lg:px-8">
+            { /*Container Intro*/}
+            <div className="container mx-auto flex flex-col items-center gap-8">
+                {/* Intro Content */}
+                <div className="flex flex-col items-start w-full gap-12">
+                    {/* Heading and Subheading */}
+                    <div className="flex flex-col gap-6 items-start">
+                        <h2 className="text-md-semibold uppercase tracking-wide">
+                            Features
+                        </h2>
+                        <h3 className="heading-sm-semibold w-full">Overflowing with useful features</h3>
+                        <p className="text-sm-regular w-full">
+                            Sports management has evolved dramatically in the digital age.
+                            Organizations that embrace comprehensive platforms like this one
+                            gain a competitive advantage both on and off the field.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             {/* Feature Content */}
-            <div className="flex flex-col md:flex-row gap-12 max-w-[1280px]">
+            <div className="container mx-auto flex flex-row items-start gap-8 px-8 py-8">
                 {/* Left: Feature List */}
-                <div className="basis-1/2 flex flex-col gap-8">
+                <div className="flex flex-col items-start w-full gap-8">
                     {features.map((f) => (
-                        <div key={f.title} className="flex items-start gap-4">
-                            <div className="flex flex-col gap-5">
-                                <h4 className="text-xl-semibold">{f.title}</h4>
-                                <p className="text-md-regular">{f.description}</p>
-                                <div className="flex gap-2">
-                                    <Button >
-                                        Learn More
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
+                        <FeatureCard
+                            key={f.title}
+                            icon={f.icon}
+                            title={f.title}
+                            description={f.description} />
                     ))}
                 </div>
-
                 {/* Right: Illustration */}
-                <div className="basis-1/2 flex items-center justify-end">
-                    <Image
-                        src="/FeatureSection.png"
-                        alt="Illustration showcasing platform features"
-                        width={500}
-                        height={500}
-                        className="object-fill"
-                        loading="lazy"
-                    />
+                <div className="flex flex-col items-end w-full gap-8">
+                    {/* Feature Illustration */}
+                    <div className=" flex justify-end">
+                        <Image
+                            src="/FeatureSection.png"
+                            alt="Illustration showcasing platform features"
+                            width={500}
+                            height={500}
+                            className="w-full max-w-md object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+
                 </div>
             </div>
         </section>

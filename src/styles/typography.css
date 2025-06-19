@@ -255,3 +255,28 @@
     line-height: 16px;
     font-weight: 700;
 }
+
+/* Text XXS */
+.text-xxs-regular {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.text-xxs-medium {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.text-xxs-semibold {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.text-xxs-bold {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 700;
+}

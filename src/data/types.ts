@@ -4,6 +4,7 @@ import { StaticImageData } from "next/image";
 export interface Feature {
     title: string;
     description: string;
+    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 export interface ProductPricing {
     name: string;

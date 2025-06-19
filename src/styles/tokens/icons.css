@@ -1,0 +1,99 @@
+/* Icon Design Tokens */
+:root {
+    /* Base Colors */
+    --primary: oklch(0.3297 0.0579 250.8);
+    --secondary: oklch(0.39 0.0576 251.2);
+    --accent: oklch(0.7874 0.1715 69.12);
+    --iconColor: oklch(98.463% 0.00181 249.248);
+    
+    /* Fill Colors (Lighter shades) */
+    --primary-fill: oklch(32.972% 0.05797 250.822 / 0.8);
+    --secondary-fill: oklch(0.39 0.0576 251.2 / 0.8);
+    --accent-fill: oklch(0.7874 0.1715 69.12 / 0.8);
+
+    
+    /* Text/Label Color */
+    --icon-text-color: var(--iconColor);
+    
+    /* Size Tokens */
+    --icon-size-lg: 48px;
+    --icon-size-md: 32px;
+    --icon-size-sm: 24px;
+    --icon-size-xs: 20px;
+    
+    /* Stroke Width Tokens */
+    --icon-stroke-lg: 2.8px; /* 700 weight equivalent */
+    --icon-stroke-md: 2px;   /* 500 weight equivalent */
+    --icon-stroke-sm: 1.2px; /* 300 weight equivalent */
+    --icon-stroke-xs: 0;     /* No stroke */
+  }
+  
+  /* Base Icon Class */
+  .icon {
+    display: flex;
+    align-items: center;    
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+    fill: var(--primary-fill);
+    stroke-width: var(--icon-stroke-sm);
+  }
+  
+  /* Size Variants */
+  .icon-lg {
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
+    stroke-width: var(--icon-stroke-lg);
+  }
+  
+  .icon-md {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+    stroke-width: var(--icon-stroke-md);
+  }
+  
+  .icon-sm {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+    stroke-width: var(--icon-stroke-sm);
+  }
+
+  .icon-xs {
+    width: var(--icon-size-xs);
+    height: var(--icon-size-xs);
+    stroke-width: var(--icon-stroke-xs);
+  }
+  
+  /* Color Variants */
+  .icon-primary {
+
+    fill: var(--primary-fill);
+    stroke: var(--primary);
+  }
+
+  .icon-secondary {
+    fill: var(--secondary-fill);
+    stroke: var(--secondary);
+  }
+
+  .icon-accent {
+    fill: var(--accent-fill);
+    stroke: var(--accent);
+    
+  }
+  
+
+  /* Utility classes for common states */
+  .icon-disabled {
+    opacity: 0.5;
+  }
+  
+  .icon-interactive {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .icon-interactive:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+
