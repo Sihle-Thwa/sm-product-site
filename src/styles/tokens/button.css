@@ -1,0 +1,104 @@
+/* /src/styles/tokens/button.css */
+/* Button Styles */
+@import "../typography.css";
+
+:root {
+    /* Button Base Colors */
+    --primary: oklch(0.3297 0.0579 250.8);
+    --secondary: oklch(0.39 0.0576 251.2);
+    --accent: oklch(0.7874 0.1715 69.12);
+
+    /* Button Text Colors */
+    --primary-text: oklch(98.463% 0.00181 249.248);
+    --accent-text: oklch(0.7874 0.1715 69.12);
+
+
+    /* Button Sizes */
+    --button-size-lg: 48px;
+    --button-size-md: 32px;
+    --button-size-sm: 24px;
+
+}
+
+/* Base Button Class */
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+  /* Size Variants */
+
+.button-lg {
+    width: var(--button-size-lg);
+    height: var(--button-size-lg);
+    font-size: 1.25rem;
+    background-color: var(--primary);
+    color: var(--primary-text); 
+}
+
+.button-md {
+    width: var(--button-size-md);
+    height: var(--button-size-md);
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: var(--primary-text); 
+}
+
+.button-sm {
+    width: var(--button-size-sm);
+    height: var(--button-size-sm);
+    font-size: 0.875rem;
+    background-color: var(--primary);
+    color: var(--primary-text); 
+}
+
+  /* Color Variants */
+.button-primary {
+    background-color: var(--primary);
+    color: var(--primary-text);
+}
+.button-secondary {
+    background-color: var(--secondary);
+    color: var(--primary-text);
+}
+
+.button-accent {
+    background-color: var(--accent);
+    color: var(--primary-text);
+}
+
+.button-outline {
+    border: none;
+    border: none;
+    background-color: transparent;
+    color: var(--primary);
+}
+
+
+/* Interactive States */
+
+.button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05); /* Scale effect on hover */
+}
+.button:active {
+    background-color: darken(currentColor, 20%);
+    color: lighten(currentColor, 30%);
+}
+.button:disabled {
+    background-color: var(--secondary);
+    color: var(--primary-text);
+    cursor: not-allowed;
+}
+.button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}

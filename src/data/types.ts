@@ -10,6 +10,7 @@ export interface ProductPricing {
     name: string;
     price: number | string;
     features: string[];
+    highlight?: boolean; // Optional property to highlight a tier
     featured?: boolean; // Optional property to highlight a tier
 }
 

@@ -8,23 +8,36 @@ import { motion } from "framer-motion";
 export default function TestimonialsSection() {
     return (
         //Testimonials Section
-        <section className="flex flex-col pt-16 items-center gap-8 self-stretch">
-            <div className="flex flex-col items-center gap-8 px-8 max-w-[1280px]">
+        <section className="flex flex-col items-center w-full py-12 px-4 sm:px-6 lg:px-8">
+            {/* Testimonial Container */}
+            <div className="container mx-auto flex flex-col items-center gap-8">
+                {/* Testimonial Content*/}
                 <div className="flex flex-col items-center self-stretch gap-12">
-                    <div className="flex flex-col items-start gap-6">
-                        <div className="heading-lg-semibold mb-6">
-                            Don’t just take our word for it
+                    {/* Heading and Description */}
+                    <div className="flex flex-col items-start w-full gap-12">
+                        {/* Heading and Sub Heading */}
+                        <div className="flex flex-col gap-6 items-start">
+                            {/* Main Heading and Subheading */}
+                            <div className="heading-lg-semibold mb-6">
+                                Don’t just take our word for it
+                            </div>
+                            <div className="text-xl-regular mb-10">
+                                Hear from some of our amazing customers.
+                            </div>
+                            <div className="text-sm-regular mb-10">
+                                Our platform has transformed the way sports organizations operate, and our customers are thrilled with the results.
+                            </div>
                         </div>
-                        <div className="text-xl-regular mb-10">
-                            Hear from some of our amazing customers.
-                        </div>
+
                     </div>
                     <div className="flex flex-1 items-end gap-4">
-                        <Button >Our Customers</Button>
-                        <Button >Create account</Button>
+                        <Button className="button button-accent" >Our Customers</Button>
+                        <Button className="button button-secondary">Create account</Button>
                     </div>
                 </div>
-                <div className="flex flex-col items-center max-w-[1280px] gap-8 px-0 py-8">
+
+                {/* Testimonials Section */}
+                <div className="container mx-auto flex flex-row items-start gap-8 px-8 py-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Check row layout */}
                         {Testimonials.map((testimonial, index) => (

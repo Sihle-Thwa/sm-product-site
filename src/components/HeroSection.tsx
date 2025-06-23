@@ -27,8 +27,8 @@ export default function HeroSection() {
                         </div>
                         { /*CTA-Buttons */}
                         <div className="flex items-start gap-3">
-                            <Button className="">Book Demo</Button>
-                            <Button className="">Sign up</Button>
+                            <Button className="button button-primary">Book Demo</Button>
+                            <Button className="button button-secondary">Sign up</Button>
                         </div>
                     </div>
                 </div>

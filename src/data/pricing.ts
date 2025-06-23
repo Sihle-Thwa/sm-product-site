@@ -3,7 +3,7 @@ import { ProductPricing } from "../data/types";
 export const tiers: ProductPricing[] = [
     {
         name: 'Starter',
-        price: 29,
+        price: 450,
         features: [
             'Basic cloud integration',
             'Up to 5 team members',
@@ -14,7 +14,7 @@ export const tiers: ProductPricing[] = [
     },
     {
         name: 'Pro',
-        price: 99,
+        price: 1600,
         features: [
             'Advanced cloud integration',
             'Up to 20 team members',
@@ -23,10 +23,11 @@ export const tiers: ProductPricing[] = [
             'Advanced analytics',
         ],
         featured: true,
+        highlight: true,
     },
     {
         name: 'Enterprise',
-        price: 'Custom',
+        price: 3200,
         features: [
             'Full cloud integration',
             'Unlimited team members',
