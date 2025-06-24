@@ -1,0 +1,49 @@
+/* /src/styles/tokens/testimonial-card.css */
+/* Button Styles */
+@import "../typography.css";
+
+:root {
+    --testimonial-border: 1px solid var(--color-border);
+    --testimonial-border-radius: var(--radius);
+    --testimonial-background: var(--color-card);
+    --testimonial-foreground: var(--color-card-foreground);
+}
+/* Testimonial Card Styles */
+.testimonial-card {
+    position: relative;
+  max-width: 360px;
+  width: 360px;
+  max-height: 480px;
+  height: 480px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.testimonial-card-image {
+    border-radius: 9999px;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    /* Adjust aspect ratio as needed */
+}
+.testimonial-card-content {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-card);
+}

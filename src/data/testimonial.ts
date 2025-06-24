@@ -17,7 +17,7 @@ const Testimonials: Testimonial[] = [
       "This platform has revolutionized how we manage our school's 25 sports teams.",
     image: "/HeadCoach.jpg",
     organization: "Regional Basketball Association",
-    rating: 5   
+    rating: 5
   },
   {
     name: "Sarah Johnson",

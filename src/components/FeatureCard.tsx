@@ -22,7 +22,7 @@ export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps
                 {description}
             </p>
             <div>
-                <Button className="button button-outline">Learn More</Button>
+                <Button className="button button-md button-outline-accent">Learn More</Button>
             </div>
         </div>
     );

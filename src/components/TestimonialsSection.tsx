@@ -31,8 +31,8 @@ export default function TestimonialsSection() {
 
                     </div>
                     <div className="flex flex-1 items-end gap-4">
-                        <Button className="button button-accent" >Our Customers</Button>
-                        <Button className="button button-secondary">Create account</Button>
+                        <Button className="button button-lg button-accent" >Our Customers</Button>
+                        <Button className="button button-lg button-primary">Create account</Button>
                     </div>
                 </div>
 
@@ -47,13 +47,13 @@ export default function TestimonialsSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className=""
+                                className="flex flex-col items-center"
                             >
                                 <TestimonialCard
                                     name={testimonial.name}
                                     role={testimonial.role}
                                     testimonial={testimonial.testimonial}
-                                    image={testimonial.image}
+                                    image={testimonial.image as string}
                                     rating={testimonial.rating}
                                     organization={testimonial.organization}
                                 />

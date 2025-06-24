@@ -14,50 +14,55 @@
 
 
     /* Button Sizes */
-    --button-size-lg: 48px;
-    --button-size-md: 32px;
-    --button-size-sm: 24px;
+    --button-size-lg: 28px;
+    --button-size-md: 24px;
+    --button-size-sm: 20px;
 
+    /* Button Shadow */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba(0, 0, 0, 0.2);
+
+    
 }
 
 /* Base Button Class */
 .button {
+    align-items: center;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    font-weight: var(--font-weight-bold);
+    padding: 8px 16px;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     transition: 0.2s ease, color 0.2s ease;
     cursor: pointer;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    font-family: var(--font-inter);
 }
 
   /* Size Variants */
 
 .button-lg {
-    width: var(--button-size-lg);
+    width: fit-content;
     height: var(--button-size-lg);
-    font-size: 1.25rem;
-    background-color: var(--primary);
-    color: var(--primary-text); 
+    font: var(--text-lg-regular);
+    background-color: currentColor;
+    color: currentColor; 
 }
 
 .button-md {
-    width: var(--button-size-md);
+    width: fit-content;
     height: var(--button-size-md);
-    font-size: 1rem;
-    background-color: var(--primary);
-    color: var(--primary-text); 
+    font: var(--text-md-regular);
+    background-color: currentColor;
+    color: currentColor; 
 }
 
 .button-sm {
-    width: var(--button-size-sm);
+    width: fit-content;
     height: var(--button-size-sm);
-    font-size: 0.875rem;
-    background-color: var(--primary);
-    color: var(--primary-text); 
+    font: var(--text-sm-regular);
+    background-color: currentColor;
+    color: currentColor; 
 }
 
   /* Color Variants */
@@ -71,34 +76,37 @@
 }
 
 .button-accent {
+    border: none !important;
     background-color: var(--accent);
     color: var(--primary-text);
 }
 
 .button-outline {
     border: none;
-    border: none;
     background-color: transparent;
     color: var(--primary);
 }
-
-
+.button-outline-secondary {
+    border: var(--border) 1px solid;
+    background-color: transparent;
+    color: var(--primary-text);
+}
+.button-outline-accent {
+    background-color: transparent;
+    color: var(--accent-text);
+}
 /* Interactive States */
 
 .button:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hover);
   transform: scale(1.05); /* Scale effect on hover */
 }
 .button:active {
-    background-color: darken(currentColor, 20%);
-    color: lighten(currentColor, 30%);
+    transform: scale(0.95); /* Scale effect on click */
 }
 .button:disabled {
     background-color: var(--secondary);
     color: var(--primary-text);
     cursor: not-allowed;
 }
-.button:focus {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-}
+

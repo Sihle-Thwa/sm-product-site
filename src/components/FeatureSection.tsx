@@ -28,7 +28,6 @@ export default function FeatureSection() {
                     </div>
                 </div>
             </div>
-
             {/* Feature Content */}
             <div className="container mx-auto flex flex-row items-start gap-8 px-8 py-8">
                 {/* Left: Feature List */}
@@ -54,7 +53,6 @@ export default function FeatureSection() {
                             loading="lazy"
                         />
                     </div>
-
                 </div>
             </div>
         </section>
