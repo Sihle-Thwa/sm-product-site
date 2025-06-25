@@ -2,18 +2,26 @@
 import React from "react";
 import { Button } from "./ui/button";
 
+// This component renders a call-to-action section with a heading, description, and button.
+// It is styled to be responsive and visually appealing, encouraging users to start a free trial.
+
 export default function CTASection() {
     return (
-        <section className="flex flex-col items-center self-stretch gap-8 bg-gray-500 py-8">
-            <div className="flex flex-col items-start w-full px-8 gap-8">
-                <div className="flex flex-col items-center self-stretch">
-                    <h2 className="text-3xl font-bold">Start your free trial</h2>
-                    <p className="mt-4 text-lg">Join over 500+ organizations already growing with us.</p>
-
-
-                    <div className="flex items-start mt-8 gap-4">
-                        <Button className="rounded-xl bg-orange-500 px-6 py-3 font-medium text-white hover:bg-orange-600">Get Started</Button>
-                    </div>
+        <section
+            className="w-full bg-[--surface-primary] py-12 px-4 text-center"
+            aria-labelledby="cta-heading"
+        >
+            <div className="mx-auto max-w-3xl">
+                <h2 id="cta-heading" className="text-3xl font-bold text-[--text-primary]">
+                    Start your free trial
+                </h2>
+                <p className="mt-4 text-lg text-[--text-secondary]">
+                    Join over 500+ organizations already growing with us.
+                </p>
+                <div className="mt-8 flex justify-center">
+                    <Button className="rounded-xl px-6 py-3 font-medium">
+                        Get Started
+                    </Button>
                 </div>
             </div>
         </section>
