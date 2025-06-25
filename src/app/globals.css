@@ -173,7 +173,8 @@ nav a:focus {
   --foreground: oklch(0.3297 0.0579 250.8);
 
   --card: oklch(1 0 0);
-  --glass-card: oklch(1 0 0 / 80%);
+  --glass-card: oklch(1 0 0 / 50%);
+  --glass-card-border: oklch(1 0 0 / 50%);
   --card-foreground: oklch(0.3297 0.0579 250.8);
 
   --popover: oklch(1 0 0);

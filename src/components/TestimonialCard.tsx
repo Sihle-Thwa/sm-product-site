@@ -15,7 +15,7 @@ export default function TestimonialCard({ name, role, testimonial, image, rating
     // Render star rating
     const renderStars = () => {
         return Array.from({ length: 5 }, (_, index) => (
-            <span key={index} className={index < rating ? 'text-yellow-500' : 'text-gray-300'}>
+            <span key={index} className={index < rating ? 'text-lg-regular ' : 'text-gray-400'}>
                 ★
             </span>
         ));
@@ -37,8 +37,8 @@ export default function TestimonialCard({ name, role, testimonial, image, rating
                 <blockquote className="text-sm-regular italic">
                     {testimonial}
                 </blockquote>
-                <div className="flex justify-center mt-2">{renderStars()}</div>
-                <div className="text-lg-semibold mt-2">{name}</div>
+                <div className="flex">{renderStars()}</div>
+                <div className="text-lg-semibold">{name}</div>
                 <p className="text-sm-medium">{role}</p>
                 <p className="text-sm-regular">{organization}</p>
             </div>
