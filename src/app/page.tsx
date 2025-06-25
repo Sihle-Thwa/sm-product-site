@@ -1,5 +1,5 @@
+//app/page.tsx
 import React from "react";
-import Head from "next/head";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import FeatureSection from "@/components/FeatureSection";
@@ -12,29 +12,30 @@ import SocialProofSection from "@/components/SocialProofSection";
 import MetricSection from "@/components/MetricSection";
 import SectionDivider from "@/components/SectionDivider";
 
+export const metadata = {
+  title: "U-Organise - Product Site",
+  description: "U-Organise is a powerful tool for managing your players and teams efficiently.",
+};
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>U-Organise - Product Site</title>
-        <meta name="description" content="U-Organise is a powerful tool for managing your players and teams efficiently." />
-      </Head>
       <Header />
       <main>
-        <HeroSection />
-        <SocialProofSection />
-        <SectionDivider />
-        <FeatureSection />
-        <SectionDivider />
-        <TestimonialsSection />
-        <SectionDivider />
-        <FAQSection />
-        <SectionDivider />
-        <PricingSection />
-        <SectionDivider />
-        <MetricSection />
-        <SectionDivider />
-        <CTASection />
+        {[
+          <HeroSection key="hero" />,
+          <SocialProofSection key="social-proof" />,
+          <FeatureSection key="feature" />,
+          <TestimonialsSection key="testimonials" />,
+          <FAQSection key="faq" />,
+          <PricingSection key="pricing" />,
+          <MetricSection key="metric" />,
+          <CTASection key="cta" />,
+        ].flatMap((Component, i, arr) => (
+          i < arr.length - 1
+            ? [Component, <SectionDivider key={`divider-${i}`} />]
+            : [Component]
+        ))}
       </main>
       <Footer />
     </>
