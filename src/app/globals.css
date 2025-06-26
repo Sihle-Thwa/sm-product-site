@@ -5,6 +5,7 @@
 @import "../styles/tokens/button.css";
 @import "../styles/tokens/testimonial-card.css";
 @import "../styles/tokens/icons.css";
+@import "../styles/tokens/header.css";
 
 /* Base Reset */
 @layer base {
@@ -33,28 +34,7 @@
 
 }
 
-/* Header Styles */
-header {
-  background-color: var(--color-sidebar);
-  color: var(--color-sidebar-foreground);
-  padding-block: 16px;
-  padding-inline: 24px;
-  position: sticky !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  z-index: var(--z-header);
-  border-bottom: 1px solid var(--color-sidebar-border);
-}
 
-.header-container {
-  max-width: 1440px;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* Navigation */
 nav {

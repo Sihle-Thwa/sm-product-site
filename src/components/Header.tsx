@@ -16,7 +16,7 @@ import Navigation from "./Navigation";
 export default function Header() {
     return (
         <header className="w-full border-b border-gray-300">
-          <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+            <div className="header-container max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
               {/* Logo */}
               <Link href="/">
                   <Image

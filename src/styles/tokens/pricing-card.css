@@ -1,138 +1,89 @@
-/* /src/styles/tokens/pricing-card.css */
-/* Pricing Card Styles */
-@import "../typography.css";
-
 .pricing-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--glass-card);
-  border-radius: var(--radius);
-  box-shadow: var( );
+  background-color: var(--card);
+  border-radius: var(--radius-2xl);
+  padding: 32px;
+  max-width: 380px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(4px);
+}
+
+.pricing-card.highlight {
+  background-color: var(--card);
+  color: var(--primary);
+  border: none;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.pricing-card-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font: var(--text-sm-semibold);
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.pricing-card h3 {
+  font: var(--text-xl-semibold);
+  text-align: center;
+  color: inherit;
+}
+
+.pricing-card .price {
+  font: var(--heading-lg-semibold);
+  color: inherit;
+  text-align: center;
+}
+
+.pricing-card .description {
+  font: var(--text-md-regular);
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.pricing-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  color: inherit;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pricing-card li {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.pricing-card a.cta {
+  display: inline-block;
   width: 100%;
-  max-width: 400px;
-  padding: 32px; /* p-8 */
-  gap: 24px;
-}
-.pricing-card.featured {
-  border: 2px solid var(--accent);
-  box-shadow: var(--shadow-lg);
-}
-
-@media (min-width: 640px) {
-  .pricing-card {
-    padding: 40px; /* sm:p-10 */
-  }
-}
-
-.pricing-card-header {
-  display: flex;
-  padding: 40px 32px 0px 32px;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-}
-
-/* Price */
-.pricing-card-price {
-  max-height: 60px; /* h-15 */
-  align-self: stretch; /* w-full */
-}
-
-.pricing-card-price-value {
   text-align: center;
-  font: var(--heading-lg-semibold); /* text-3xl font-semibold */
-}
-
-.pricing-card-price-heading-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  align-self: stretch;
-}
-
-.pricing-card-heading {
-  align-self: stretch; /* w-full */
-  text-align: center;
-  font: var(--text-xl-semibold); /* text-2xl font-semibold */
-}
-
-.pricing-card-subtext {
-  text-align: center;
-  font: var(--text-md-regular); /* text-lg font-regular */
-  color: var(--color-muted-foreground);
-}
-
-/* Body/Content */
-.pricing-card-content {
-  display: flex;
-  padding: 32px 32px 40px 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.pricing-card-content-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-}
-
-.pricing-card-content-items {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-
-@media (min-width: 640px) {
-  .pricing-card-content-items {
-    margin-top: 40px; /* sm:mt-10 */
-  }
-}
-
-.pricing-card-content-item-icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--accent);
-}
-
-.pricing-card-content-item-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
-  font: var(--text-md-regular); /* text-md font-regular */
-  color: var(--color-muted-foreground);
-}
-
-/* Footer Content */
-.pricing-card-footer {
-  display: flex;
-  padding: 0px 32px 32px 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.pricing-card-footer-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-
-.pricing-card-footer-action {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
+  padding: 12px 24px;
+  font: var(--text-sm-semibold);
   border-radius: var(--radius);
+  background-color: var(--primary-foreground);
+  color: var(--primary);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card.highlight a.cta {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
 }

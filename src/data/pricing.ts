@@ -1,41 +1,44 @@
-import { ProductPricing } from "../data/types";
-
-export const tiers: ProductPricing[] = [
+export const tiers = [
     {
-        name: 'Starter',
-        price: 450,
+        name: "Starter",
+        price: "R350",
+        description: "Perfect for individuals and small teams starting out.",
         features: [
-            'Basic cloud integration',
-            'Up to 5 team members',
-            '20GB storage',
-            'Email support',
+            "Basic team management",
+            "Email support",
+            "Community access",
         ],
-        featured: false,
+        cta: {
+            label: "Get Started",
+            href: "#",
+        },
     },
     {
-        name: 'Pro',
-        price: 1600,
+        name: "Pro",
+        price: "R500",
+        description: "For growing teams that need advanced features.",
         features: [
-            'Advanced cloud integration',
-            'Up to 20 team members',
-            '100GB storage',
-            'Priority email & phone support',
-            'Advanced analytics',
+            "Advanced analytics",
+            "Priority email support",
+            "Unlimited teams",
         ],
-        featured: true,
-        highlight: true,
+        cta: {
+            label: "Start Free Trial",
+            href: "#",
+        },
     },
     {
-        name: 'Enterprise',
-        price: 3200,
+        name: "Enterprise",
+        price: "R1000",
+        description: "For organizations that need custom solutions.",
         features: [
-            'Full cloud integration',
-            'Unlimited team members',
-            'Unlimited storage',
-            '24/7 dedicated support',
-            'Custom solutions',
-            'On-site training',
+            "Dedicated support",
+            "Custom integrations",
+            "Unlimited everything",
         ],
-        featured: false,
+        cta: {
+            label: "Contact Sales",
+            href: "#",
+        },
     },
-]
+];
