@@ -36,17 +36,17 @@ export default function CTASection() {
     return (
         <section
             className="w-full bg-[--surface-primary] py-12 px-4 text-center"
-            aria-labelledby="cta-section"
+            aria-labelledby="cta-heading"
         >
-            <div className="flex flex-col items-center mx-auto max-w-3xl">
-                <h2 id="cta-heading" className="heading-lg-semibold text-center self-stretch">
+            <div className="mx-auto max-w-3xl">
+                <h2 id="cta-heading" className="heading-xl-medium">
                     Start your free trial
                 </h2>
                 <p className="mt-4 text-lg-medium">
                     Join over 500+ organizations already growing with us.
                 </p>
                 <div className="mt-8 flex justify-center">
-                    <Button className="button button-lg button-primary">
+                    <Button className="button button-md button-primary">
                         Get Started
                     </Button>
                 </div>
