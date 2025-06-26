@@ -38,13 +38,13 @@ export default function FeatureSection() {
                     </div>
 
                     {/* Feature Illustration */}
-                    <div className="w-full lg:w-[40%] flex justify-center lg:justify-end">
+                    <div className="w-full lg:w-[100%] flex justify-end lg:justify-end">
                         <Image
                             src="/FeatureSection.png"
                             alt="Platform feature illustration"
                             width={500}
                             height={500}
-                            className="w-full max-w-md object-cover"
+                            className="w-full max-w-lg object-cover"
                             loading="lazy"
                         />
                     </div>
