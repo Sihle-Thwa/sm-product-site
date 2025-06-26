@@ -4,28 +4,33 @@ import Image from "next/image";
 import FooterItem from "./FooterItem";
 import { footerItems } from "../data/footer";
 
-
 export default function Footer() {
     return (
-        <footer className="bg-gray-100 flex flex-col items-center self-stretch gap-16 py-8 px-4">
-            <div className="flex flex-col items-center self-stretch gap-8 px-16">
-                <div className="flex items-center justify-between self-stretch">
+        <footer className="w-full py-12 px-4 bg-gray-100">
+            <div className="max-w-7xl mx-auto space-y-12">
+                {/* Top Links */}
+                <div className="flex flex-wrap justify-between gap-8">
                     {footerItems.map((item) => (
                         <FooterItem key={item.title} title={item.title} items={item.items} />
                     ))}
                 </div>
 
-            </div>
-            <hr className="w-full border-gray-300" />
-            <div className="flex flex-row items-center self-stretch justify-between px-16">
-                <div className="flex flex-col items-start justify-start">
-                    {/*SBM Concepts Logo */}
-                    <Image src="/Logo_title.png" alt="SBM Concepts Logo" width={120} height={40} />
-                </div>
-                <div className="flex flex-col items-end justify-end">
-                    <p>&copy; {new Date().getFullYear()} SBM Concepts. All rights reserved.</p>
-                </div>
+                {/* Divider */}
+                <hr className="border-t border-gray-300 w-full" />
 
+                {/* Bottom Logo + Copy */}
+                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <Image
+                        src="/Logo_title.png"
+                        alt="SBM Concepts company logo"
+                        width={120}
+                        height={40}
+                        className="object-contain"
+                    />
+                    <p className="text-sm-regular text-center md:text-right">
+                        &copy; {new Date().getFullYear()} SBM Concepts. All rights reserved.
+                    </p>
+                </div>
             </div>
         </footer>
     );

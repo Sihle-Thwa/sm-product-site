@@ -23,7 +23,7 @@ export function FeatureCard({
             <p className="mt-2 text-sm-regular">{description}</p>
             {showButton && (
                 <div className="mt-4">
-                    <Button className="button button-sm button-outline-accent">
+                    <Button className="button button-lg button-outline-accent">
                         Learn More
                     </Button>
                 </div>

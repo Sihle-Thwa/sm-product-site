@@ -4,6 +4,7 @@
 @import "../styles/tokens/pricing-card.css";
 @import "../styles/tokens/button.css";
 @import "../styles/tokens/testimonial-card.css";
+@import "../styles/tokens/icons.css";
 
 /* Base Reset */
 @layer base {

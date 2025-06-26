@@ -1,13 +1,23 @@
 "use client";
 import React from "react";
 
-export default function FooterItem({ title, items }: { title: string; items: { label: string; href: string }[] }) {
+interface FooterItemProps {
+    title: string;
+    items: { label: string; href: string }[];
+}
+
+export default function FooterItem({ title, items }: FooterItemProps) {
     return (
-        <div className="flex flex-col items-start self-stretch gap-4">
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <div className="flex flex-col items-start self-stretch gap-2">
+        <div className="flex flex-col gap-4">
+            <h3 className="text-sm-semibold">{title}</h3>
+            <div className="flex flex-col gap-2">
                 {items.map((item) => (
-                    <a key={item.label} href={item.href} className="text-sm text-gray-600 hover:underline">
+                    <a
+                        key={item.label}
+                        href={item.href}
+                        className="text-xs-regular"
+                        aria-label={`Navigate to ${item.label}`}
+                    >
                         {item.label}
                     </a>
                 ))}
