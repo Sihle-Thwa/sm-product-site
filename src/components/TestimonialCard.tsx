@@ -6,41 +6,48 @@ interface TestimonialProps {
     name: string;
     role: string;
     testimonial: string;
-    image?: string; // Image should be a string URL or path
-    rating: number; // New property for rating stars
-    organization: string; // New property for organization
+    image?: string;
+    rating: number;
+    organization: string;
 }
 
-export default function TestimonialCard({ name, role, testimonial, image, rating, organization }: TestimonialProps) {
-    // Render star rating
-    const renderStars = () => {
-        return Array.from({ length: 5 }, (_, index) => (
-            <span key={index} className={index < rating ? 'text-lg-regular ' : 'text-gray-400'}>
-                ★
-            </span>
-        ));
-    };
+export default function TestimonialCard({
+    name,
+    role,
+    testimonial,
+    image,
+    rating,
+    organization,
+}: TestimonialProps) {
+    const renderStars = () => (
+        <span role="img" aria-label={`${rating} out of 5 stars`} className="">
+            {Array.from({ length: 5 }, (_, index) => (
+                <span key={index} className={index < rating ? "text-lg-regular" : "text-gray-400"}>
+                    ★
+                </span>
+            ))}
+        </span>
+    );
 
     return (
         <div className="testimonial-card">
-            {/* Only render Image if imageSrc is not null */}
             {image && (
                 <Image
                     src={image}
                     width={500}
                     height={500}
-                    alt={name}
+                    alt={`Photo of ${name}`}
                     className="testimonial-card-image"
                 />
             )}
             <div className="testimonial-card-content">
-                <blockquote className="text-sm-regular italic">
-                    {testimonial}
-                </blockquote>
-                <div className="flex">{renderStars()}</div>
-                <div className="text-lg-semibold">{name}</div>
-                <p className="text-sm-medium">{role}</p>
-                <p className="text-sm-regular">{organization}</p>
+                <blockquote className="italic text-sm-regular">“{testimonial}”</blockquote>
+                <div className="flex justify-center">{renderStars()}</div>
+                <figcaption className="space-y-1">
+                    <div className="text-lg-semibold">{name}</div>
+                    <p className="text-sm-medium">{role}</p>
+                    <p className="text-sm-regular">{organization}</p>
+                </figcaption>
             </div>
         </div>
     );

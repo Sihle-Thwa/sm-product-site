@@ -12,9 +12,11 @@ import SocialProofSection from "@/components/SocialProofSection";
 import MetricSection from "@/components/MetricSection";
 import SectionDivider from "@/components/SectionDivider";
 
+
 export const metadata = {
   title: "U-Organise - Product Site",
   description: "U-Organise is a powerful tool for managing your players and teams efficiently.",
+  viewport: { width: "device-width", initialScale: 1, maximumScale: 1 },
 };
 
 export default function Home() {
@@ -22,8 +24,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        {[
-          <HeroSection key="hero" />,
+        {[<HeroSection key="hero" />,
           <SocialProofSection key="social-proof" />,
           <FeatureSection key="feature" />,
           <TestimonialsSection key="testimonials" />,
