@@ -13,17 +13,16 @@ export default function FAQSection() {
     return (
         <section
             className="w-full px-4 py-24"
-            aria-labelledby="faq-heading"
+            aria-labelledby="faq-section"
         >
             <div className="max-w-4xl mx-auto text-center space-y-6">
                 <h2 id="faq-heading" className="heading-lg-medium">
                     Frequently asked questions
                 </h2>
-                <p className="text-md-medium">
+                <p className="text-lg-medium">
                     Everything you need to know about the product and billing.
                 </p>
             </div>
-
             <div className="mt-12 max-w-3xl mx-auto">
                 <Accordion
                     type="single"
@@ -40,7 +39,7 @@ export default function FAQSection() {
                             <AccordionTrigger className="text-lg-medium">
                                 {faq.question}
                             </AccordionTrigger>
-                            <AccordionContent className="text-sm-regular pt-4">
+                            <AccordionContent className="pt-4 text-sm-regular">
                                 {faq.answer}
                             </AccordionContent>
                         </AccordionItem>
@@ -56,12 +55,12 @@ export default function FAQSection() {
                     <div className="w-12 h-12 rounded-full bg-[var(--accent)] border-2 border-[var(--border-muted)]" />
                 </div>
                 <div>
-                    <div className="text-lg font-semibold">Still have questions?</div>
-                    <p className="text-base text-[--text-muted]">
+                    <div className="text-lg-semibold">Still have questions?</div>
+                    <p className="text-sm-medium text-[--text-muted]">
                         Can’t find the answer you’re looking for? Please chat to our friendly team.
                     </p>
                 </div>
-                <Button asChild className="px-6 py-3">
+                <Button asChild className="button button-lg button-accent px-6 py-3">
                     <a href="mailto:sbcmthethwa79@gmail.com">Get in Touch</a>
                 </Button>
             </div>

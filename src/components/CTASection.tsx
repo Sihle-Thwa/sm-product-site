@@ -35,7 +35,7 @@ import { Button } from "./ui/button";
 export default function CTASection() {
     return (
         <section
-            className="w-full bg-[--surface-primary] py-12 px-4 text-center"
+            className="w-full py-12 px-4 text-center"
             aria-labelledby="cta-heading"
         >
             <div className="mx-auto max-w-3xl">
