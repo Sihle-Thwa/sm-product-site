@@ -15,7 +15,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
     return (
-      <header className="w-full border-b border-[--border-subtle] bg-[--surface-base]">
+        <header className="w-full border-b border-gray-300">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
               {/* Logo */}
               <Link href="/">
@@ -37,20 +37,20 @@ export default function Header() {
               <div className="md:hidden">
                   <Sheet>
                       <SheetTrigger asChild>
-                          <Button variant="ghost" size="icon">
+                            <Button className="button button-icon button-outline-accent">
                               <Menu className="w-5 h-5" />
                           </Button>
                       </SheetTrigger>
                       <SheetContent side="left" className="space-y-6 pt-8">
                           <SheetTitle className="sr-only">Mobile navigation</SheetTitle>
                           <nav className="flex flex-col gap-4" aria-label="Mobile navigation">
-                              <Link href="/products" className="text-base text-[--text-primary] hover:underline">
+                                <Link href="/products" className="text-sm-regular">
                                   Products
                               </Link>
-                              <Link href="/resources" className="text-base text-[--text-primary] hover:underline">
-                                  Resources
+                                <Link href="/features" className="text-sm-regular">
+                                    Features
                               </Link>
-                              <Link href="/pricing" className="text-base text-[--text-primary] hover:underline">
+                                <Link href="/pricing" className="text-sm-regular">
                                   Pricing
                               </Link>
                           </nav>
