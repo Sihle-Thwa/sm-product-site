@@ -32,7 +32,6 @@ export default function Home() {
         <MetricSection key="metric" />,
         <SectionDivider key="section-divider-6" />,
         <CTASection key="cta" />,
-
       </main>
       <Footer />
     </>

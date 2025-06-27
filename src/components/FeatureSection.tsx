@@ -6,8 +6,8 @@ import { FeatureCard } from "./FeatureCard";
 
 export default function FeatureSection() {
     return (
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto space-y-12">
+        <section className="flex flex-col items-center w-full py-16">
+            <div className="max-w-7xl mx-auto space-y-12">
                 {/* Section Intro */}
                 <div className="text-left space-y-4">
                     <h2 className="text-lg-semibold tracking-wider">

@@ -5,16 +5,20 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="w-full py-20">
-            <div className="max-w-7xl mx-auto px-4 space-y-16 text-center">
+
+        <section className="flex flex-col items-center w-full py-16">
+            <div className="container mx-auto flex flex-col items-center gap-8">
                 {/* Hero Content */}
                 <div className="space-y-8 max-w-4xl mx-auto">
-                    <h1 className="heading-xl-bold md:heading-lg-bold ">
+                    {/* Hero Title */}
+                    <div className="heading-xl-semibold md:heading-lg-semibold ">
                         The Complete Sports Management Solution
-                    </h1>
-                    <p className="text-lg-medium md:text-md-medium max-w-2xl mx-auto">
+                    </div>
+                    {/* Hero Description */}
+                    <div className="text-md-medium md:text-sm-medium mx-auto">
                         Streamline team management, player development, and operations in one uniformed platform.
-                    </p>
+                    </div>
+
                     <div className="flex justify-center gap-4">
                         <Button className="button button-lg button-accent">Book Demo</Button>
                         <Button className="button button-lg button-primary">Sign Up</Button>
@@ -28,7 +32,7 @@ export default function HeroSection() {
                         alt="Athletes using the sports management platform"
                         width={1220}
                         height={710}
-                        className="w-full max-w-5xl h-auto"
+                        className="w-full h-auto"
                         priority
                     />
                 </div>

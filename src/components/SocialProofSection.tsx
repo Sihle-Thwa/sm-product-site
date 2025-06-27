@@ -6,9 +6,9 @@ export default function SocialProofSection() {
     return (
         // This section is designed to showcase the trust and credibility of the product by highlighting its use by various organizations.
         //Social Section
-        <section className="flex flex-col items-center w-full">
+        <section className="flex flex-col items-center w-full py-16">
             { /* Section */}
-            <div className="flex flex-col items-center w-full gap-16 pt-24">
+            <div className="max-w-7xl mx-auto space-y-12">
                 { /* Container */}
                 <div className="container mx-auto flex flex-col items-center gap-8 px-8">
                     { /*Content*/}
