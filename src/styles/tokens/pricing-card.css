@@ -1,3 +1,11 @@
+
+/* This file contains styles for the pricing card component */
+:root {
+--pricing-surface-dark: oklch();
+--pricing-surface-light: oklch(0.985 0 0);
+--pricing-card: oklch(0.15 0.02 250.8);
+
+}
 .pricing-card {
   display: flex;
   flex-direction: column;
@@ -11,19 +19,25 @@
   border: 1px solid transparent;
 }
 
-.pricing-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(4px);
-}
-
 .pricing-card.highlight {
-  background-color: var(--card);
+  background-color: var(--pricing-surface-light);
   color: var(--primary);
   border: none;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
   z-index: 10;
 }
+.pricing-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(4px);
+}
+
+
+.pricing-card .price {
+  font: var(--heading-lg-semibold);
+  color: inherit;
+}
+
 
 .pricing-card-badge {
   position: absolute;
@@ -40,12 +54,6 @@
   font: var(--text-xl-semibold);
   text-align: center;
   color: inherit;
-}
-
-.pricing-card .price {
-  font: var(--heading-lg-semibold);
-  color: inherit;
-  text-align: center;
 }
 
 .pricing-card .description {

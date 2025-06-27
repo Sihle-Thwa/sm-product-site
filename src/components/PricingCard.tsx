@@ -24,9 +24,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
             {highlight && <span className="pricing-card-badge">Most Popular</span>}
 
             <div className="text-center">
-                <h3 className="text-xl font-semibold">{tier.name}</h3>
-                <p className="price text-4xl font-bold">{tier.price}</p>
-                <p className="description">{tier.description}</p>
+                <div className="text-xl-semibold">{tier.name}</div>
+                <div className="text-lg-semibold">{tier.price}</div>
+                <div className="text-xs-medium">{tier.description}</div>
             </div>
 
             <ul className="mt-6 flex flex-col gap-4">
@@ -38,7 +38,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
                 ))}
             </ul>
 
-            <a href={tier.cta.href} className="cta mt-6 block text-center font-semibold rounded-md px-6 py-3">
+            <a href={tier.cta.href} className="button button-lg button-primary px-6 py-3">
                 {tier.cta.label}
             </a>
         </div>

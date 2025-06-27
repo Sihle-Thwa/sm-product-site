@@ -10,8 +10,8 @@ const PricingSection: React.FC = () => {
                 <div className="flex flex-col items-start w-full gap-12">
                     <div className="flex flex-col gap-6 items-start">
                         <div className="text-sm-medium items-start px-3 py-1 text-[var(--accent)]">Pricing</div>
-                        <h2 className="heading-md-semibold text-[var(--primary-foreground)]">Simple, transparent pricing</h2>
-                        <p className="text-xl-regular text-[var(--primary-foreground)]">
+                        <h2 className="heading-md-semibold ">Simple, transparent pricing</h2>
+                        <p className="text-sm-medium text-[var(--text-secondary)]">
                             We believe Untitled should be accessible to all companies, no matter the size.
                         </p>
                     </div>
