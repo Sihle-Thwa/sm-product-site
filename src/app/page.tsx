@@ -13,30 +13,26 @@ import MetricSection from "@/components/MetricSection";
 import SectionDivider from "@/components/SectionDivider";
 
 
-export const metadata = {
-  title: "U-Organise - Product Site",
-  description: "U-Organise is a powerful tool for managing your players and teams efficiently.",
-  viewport: { width: "device-width", initialScale: 1, maximumScale: 1 },
-};
-
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        {[<HeroSection key="hero" />,
-          <SocialProofSection key="social-proof" />,
-          <FeatureSection key="feature" />,
-          <TestimonialsSection key="testimonials" />,
-          <FAQSection key="faq" />,
-          <PricingSection key="pricing" />,
-          <MetricSection key="metric" />,
-          <CTASection key="cta" />,
-        ].flatMap((Component, i, arr) => (
-          i < arr.length - 1
-            ? [Component, <SectionDivider key={`divider-${i}`} />]
-            : [Component]
-        ))}
+        <HeroSection key="hero" />,
+        <SocialProofSection key="social-proof" />,
+        <SectionDivider key="section-divider" />,
+        <FeatureSection key="feature" />,
+        <SectionDivider key="section-divider-2" />,
+        <TestimonialsSection key="testimonials" />,
+        <SectionDivider key="section-divider-3" />,
+        <FAQSection key="faq" />,
+        <SectionDivider key="section-divider-4" />,
+        <PricingSection key="pricing" />,
+        <SectionDivider key="section-divider-5" />,
+        <MetricSection key="metric" />,
+        <SectionDivider key="section-divider-6" />,
+        <CTASection key="cta" />,
+
       </main>
       <Footer />
     </>

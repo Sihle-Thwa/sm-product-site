@@ -140,15 +140,15 @@ nav a:focus {
 
   /* Core Palette - Light Theme */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.3297 0.0579 250.8);
+  --foreground: var(--primary);
 
   --card: oklch(1 0 0);
   --glass-card: oklch(1 0 0 / 50%);
   --glass-card-border: oklch(1 0 0 / 50%);
-  --card-foreground: oklch(0.3297 0.0579 250.8);
+  --card-foreground: var(--secondary);
 
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.3297 0.0579 250.8);
+  --popover-foreground: var(--secondary);
 
   --primary: oklch(0.3297 0.0579 250.8);
   --primary-foreground: oklch(0.985 0.002 247.839);
@@ -165,6 +165,10 @@ nav a:focus {
   --destructive: oklch(0.577 0.245 27.325);
 
   --border: oklch(0.8865 0.0026 165.07);
+  --border-muted: oklch(0.8865 0.0026 165.07);
+  --border-subtle: oklch(0.8865 0.0026 165.07 / 10%);
+
+
   --input: oklch(0.928 0.006 264.531);
   --ring: oklch(0.707 0.022 261.325);
 
@@ -261,4 +265,11 @@ nav a:focus {
   --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+.section-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--border-muted);
+  margin: 32px 0;
 }
