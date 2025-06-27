@@ -1,17 +1,16 @@
-"use client";
 import React from "react";
 import { tiers } from "@/data/pricing";
 import PricingCard from "./PricingCard";
 
 const PricingSection: React.FC = () => {
     return (
-        <section className="bg-radial-gradient from-var(--primary) via-var(--secondary) to-var(--accent) flex flex-col items-center w-full py-16 px-4 sm:px-6 lg:px-8">
+        <section className="bg-gradient-to-b from-[var(--pricing-surface-dark)] to-[var(--primary)] flex flex-col items-center w-full py-16 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto flex flex-col items-center gap-8">
                 <div className="flex flex-col items-start w-full gap-12">
                     <div className="flex flex-col gap-6 items-start">
                         <div className="text-sm-medium items-start px-3 py-1 text-[var(--accent)]">Pricing</div>
                         <h2 className="heading-md-semibold ">Simple, transparent pricing</h2>
-                        <p className="text-sm-medium text-[var(--text-secondary)]">
+                        <p className="text-sm-medium ">
                             We believe Untitled should be accessible to all companies, no matter the size.
                         </p>
                     </div>
