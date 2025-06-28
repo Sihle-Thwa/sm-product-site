@@ -18,20 +18,20 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <HeroSection key="hero" />,
-        <SocialProofSection key="social-proof" />,
-        <SectionDivider key="section-divider" />,
-        <FeatureSection key="feature" />,
-        <SectionDivider key="section-divider-2" />,
-        <TestimonialsSection key="testimonials" />,
-        <SectionDivider key="section-divider-3" />,
-        <FAQSection key="faq" />,
-        <SectionDivider key="section-divider-4" />,
-        <PricingSection key="pricing" />,
-        <SectionDivider key="section-divider-5" />,
-        <MetricSection key="metric" />,
-        <SectionDivider key="section-divider-6" />,
-        <CTASection key="cta" />,
+        <HeroSection />,
+        <SocialProofSection />,
+        <SectionDivider />,
+        <FeatureSection />,
+        <SectionDivider />,
+        <TestimonialsSection />,
+        <SectionDivider />,
+        <FAQSection />,
+        <SectionDivider />,
+        <PricingSection />,
+        <SectionDivider />,
+        <MetricSection />,
+        <SectionDivider />,
+        <CTASection />,
       </main>
       <Footer />
     </>
