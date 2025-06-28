@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "./ui/button";
 import MetricCard from "./MetricCard";
 import { metrics } from "@/data/metric";
-import Image from "next/image";
 
 export default function MetricSection() {
     return (
@@ -38,15 +37,8 @@ export default function MetricSection() {
                 {/*Container 2 */}
                 <div className="container flex flex-col max-w-[1280px] py-8 items-start">
                     { /*Container Metrics-Cards */}
-                    <div className="flex max-h-[336px] p-16 justify-center items-center gap-8 self-stretch rounded-lg">
-                        <Image
-                            src=""
-                            alt="Metrics Board"
-                            layout="fill"
-                            objectFit="cover"
-                            className="w-full h-full rounded-lg"
-                            priority
-                        />
+                    <div className="metric-bg-image flex flex-row w-[1280px] h-[380px] items-center justify-between gap-8 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                    >
                         {metrics.map((metric) => (
                             <MetricCard key={metric.title} {...metric} />
                         ))}

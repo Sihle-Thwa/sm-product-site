@@ -6,6 +6,7 @@
 @import "../styles/tokens/testimonial-card.css";
 @import "../styles/tokens/icons.css";
 @import "../styles/tokens/header.css";
+@import "../styles/tokens/metrics-card.css";
 
 /* Base Reset */
 @layer base {
@@ -271,4 +272,11 @@ nav a:focus {
   border: none;
   border-top: 1px solid var(--border-muted);
   margin: 32px 0;
+}
+
+.metric-bg-image {
+  background-image: url('../../public/metricboard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,51 @@
+@import "../typography.css";
+
+:root {
+    --metrics-card-border: 1px solid var(--color-border);
+    --metrics-card-border-radius: var(--radius);
+    --metrics-card-background: var(--color-card);
+    --metrics-card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --metrics-card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Metrics Card Styles */
+.metrics-card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    max-height: 400px;
+    height:auto;
+    width: 100%;
+    min-height: 200px;
+    min-width: 290px;
+    flex: 1 auto;
+    gap: 20px;
+    padding: 32px 24px;
+    border: var(--metrics-card-border);
+    border-radius: var(--metrics-card-border-radius);
+    background: var(--metrics-card-background);
+    backdrop-filter: blur(4px);
+}
+
+.metrics-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.metrics-card-value {
+    text-align: center;
+    align-self: stretch;
+}
+
+
+.metrics-card-supporting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}

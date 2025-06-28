@@ -9,17 +9,20 @@ interface MetricProps {
 
 export default function MetricCard({ title, value, description }: MetricProps) {
     return (
-        <div className=" flex flex-col px-8 py-6 items-center gap-5 flex-1">
-            <div className="p-0 flex flex-col items-center text-center gap-4">
-                <div className="text-xl-bold lg:text-lg-bold mb-2">
+        <div className="metrics-card">
+            <div className="metrics-card-content">
+                <div className="metrics-card-value heading-xl-bold lg:text-lg-bold ">
                     {value}
                 </div>
-                <div className="text-md-semibold mb-1">
-                    {title}
+                <div className="metrics-card-supporting">
+                    <div className="text-md-semibold  self-stretch">
+                        {title}
+                    </div>
+                    <div className="text-sm-regular ">
+                        {description}
+                    </div>
                 </div>
-                <div className="text-sm-regular leading-relaxed">
-                    {description}
-                </div>
+
             </div>
         </div>
     );
