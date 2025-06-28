@@ -35,22 +35,25 @@ import { Button } from "./ui/button";
 export default function CTASection() {
     return (
         <section
-            className="w-full py-12 px-4 text-center"
-            aria-labelledby="cta-heading"
+            className="flex flex-col items-center w-full py-16"
+            aria-labelledby="cta-section"
         >
-            <div className="mx-auto max-w-3xl">
-                <h2 id="cta-heading" className="heading-xl-medium">
+            <div className="container mx-auto flex flex-col items-center gap-8">
+                <div className="space-y-8 max-w-4xl mx-auto">
+                    <div id="cta-heading" className="heading-xl-medium">
                     Start your free trial
-                </h2>
-                <p className="mt-4 text-lg-medium">
+                    </div>
+                    <div className="text-lg-medium self-stretch">
                     Join over 500+ organizations already growing with us.
-                </p>
-                <div className="mt-8 flex justify-center">
-                    <Button className="button button-md button-primary">
-                        Get Started
-                    </Button>
-                </div>
+                    </div>
+                    <div className="flex justify-center gap-4">
+                        <Button className="button button-lg button-primary">
+                            Get Started
+                        </Button>
+                    </div>  
             </div>
+            </div>
+
         </section>
     );
 }
