@@ -6,7 +6,7 @@ import { FeatureCard } from "./FeatureCard";
 
 export default function FeatureSection() {
     return (
-        <section className="flex flex-col items-center w-full py-16">
+        <section className="s_features-wrap">
             <div className="max-w-7xl mx-auto space-y-12">
                 {/* Section Intro */}
                 <div className="text-left space-y-4">
