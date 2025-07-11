@@ -15,14 +15,14 @@ export function FeatureCard({
     showButton = true,
 }: FeatureCardProps) {
     return (
-        <div className="p-8 text-left">
-            <div className="mb-4">
+        <div className="c_feature-card">
+            <div className="_feature-card-icon">
                 <Icon className="icon icon-md icon-accent" />
             </div>
-            <h2 className="text-md-semibold">{title}</h2>
-            <p className="mt-2 text-sm-regular">{description}</p>
+            <div className="_feature-card-title text-md-semibold">{title}</div>
+            <div className="_feature-card-description text-sm-regular">{description}</div>
             {showButton && (
-                <div className="mt-4">
+                <div className="_feature-card-button">
                     <Button className="button button-lg button-outline-accent">
                         Learn More
                     </Button>

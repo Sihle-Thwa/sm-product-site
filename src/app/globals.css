@@ -7,7 +7,7 @@
 @import "../styles/tokens/icons.css";
 @import "../styles/tokens/header.css";
 @import "../styles/tokens/metrics-card.css";
-
+@import "../styles/tokens/features.css";
 /* Base Reset */
 @layer base {
   

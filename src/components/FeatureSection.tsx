@@ -7,16 +7,16 @@ import { FeatureCard } from "./FeatureCard";
 export default function FeatureSection() {
     return (
         <section className="s_features-wrap">
-            <div className="max-w-7xl mx-auto space-y-12">
+            <div className="c_feature-wrap">
                 {/* Section Intro */}
-                <div className="text-left space-y-4">
-                    <h2 className="text-lg-semibold tracking-wider">
+                <div className=".c_feature-intro">
+                    <div className="text-lg-semibold tracking-wider">
                         Features
-                    </h2>
-                    <h3 className="text-md-semibold">
+                    </div>
+                    <div className="_feature-subheading text-md-medium">
                         Overflowing with useful features
-                    </h3>
-                    <p className="text-xs-medium">
+                    </div>
+                    <p className="_feature-description text-xs-medium">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
                         gain a competitive advantage both on and off the field.
@@ -24,9 +24,9 @@ export default function FeatureSection() {
                 </div>
 
                 {/* Feature Content */}
-                <div className="flex flex-col lg:flex-row gap-12 items-start">
+                <div className="_feature-content">
                     {/* Features List */}
-                    <div className="flex flex-col w-full gap-8">
+                    <div className="_feature-list">
                         {features.map((f, index) => (
                             <FeatureCard
                                 key={`${f.title}-${index}`}
@@ -38,7 +38,7 @@ export default function FeatureSection() {
                     </div>
 
                     {/* Feature Illustration */}
-                    <div className="w-full lg:w-[100%] flex justify-end lg:justify-end">
+                    <div className="_feature-illustration">
                         <Image
                             src="/FeatureSection.png"
                             alt="Platform feature illustration"

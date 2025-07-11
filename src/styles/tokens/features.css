@@ -1,0 +1,95 @@
+@import "../typography.css";
+.c_feature-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+    
+}
+
+@media  (width: 640px) {
+    .c_feature-wrap {
+        padding: 24px;
+    }
+    
+}
+
+@media  (width: 768px) {
+    .c_feature-wrap {
+        padding: 32px;
+    }
+
+}
+
+._feature-title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+._feature-subheading {
+    margin-top: 8px;
+    margin-bottom: 16px; 
+    gap: 24px;
+
+}
+._feature-description {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    
+}
+
+.c_feature-intro {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+._feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+@media(width >= 1024px) {
+    ._feature-content {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+._feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+._feature-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: end;
+}
+
+/*Feature Card Styles*/
+
+.c_feature-card {
+    padding: 8px;
+    text-align: left;
+}
+
+._feature-card-icon {
+    margin-bottom: 8px;
+}
+
+._feature-card-title {
+    margin-bottom: 8px;
+}
+
+._feature-card-description {
+    margin-bottom: 8px;
+}
+
+._feature-card-button {
+    margin-top: 8px;
+}
