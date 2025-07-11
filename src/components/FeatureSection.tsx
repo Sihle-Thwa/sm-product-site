@@ -10,13 +10,13 @@ export default function FeatureSection() {
             <div className="c_feature-wrap">
                 {/* Section Intro */}
                 <div className=".c_feature-intro">
-                    <div className="text-lg-semibold tracking-wider">
+                    <div className="heading-lg-semibold tracking-wider">
                         Features
                     </div>
-                    <div className="_feature-subheading text-md-medium">
+                    <div className="_feature-subheading text-lg-medium">
                         Overflowing with useful features
                     </div>
-                    <p className="_feature-description text-xs-medium">
+                    <p className="_feature-description text-sm-medium">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
                         gain a competitive advantage both on and off the field.

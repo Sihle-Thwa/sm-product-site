@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 export interface FeatureCardProps {
     icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -25,6 +26,7 @@ export function FeatureCard({
                 <div className="_feature-card-button">
                     <Button className="button button-lg button-outline-accent">
                         Learn More
+                        <ArrowRight className="icon icon-sm icon-muted" />
                     </Button>
                 </div>
             )}

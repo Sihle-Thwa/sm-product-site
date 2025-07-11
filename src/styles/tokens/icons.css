@@ -90,6 +90,13 @@
     background-color: var(--accent-fill);
   }
   
+  .icon-muted {
+    color: transparent;
+    fill: var(--accent-fill); /* Example brightness adjustment */
+    stroke: var(--accent-fill);    /* Icon stroke color */
+    border-color: currentColor;
+    background-color: transparent;
+  }
 /* Interactive States */
 
 .icon-button {
