@@ -4,8 +4,8 @@ import PricingCard from "./PricingCard";
 
 const PricingSection: React.FC = () => {
     return (
-        <section className="bg-gradient-to-b from-[var(--pricing-surface-dark)] to-[var(--primary)] flex flex-col items-center w-full py-16 px-4 sm:px-6 lg:px-8">
-            <div className="container mx-auto flex flex-col items-center gap-8">
+        <section className="bg-[var(--pricing-surface-light)] flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto flex flex-col items-center w-full gap-8 py-16">
                 <div className="flex flex-col items-start w-full gap-12">
                     <div className="flex flex-col gap-6 items-start">
                         <div className="text-sm-medium items-start px-3 py-1 text-[var(--accent)]">Pricing</div>

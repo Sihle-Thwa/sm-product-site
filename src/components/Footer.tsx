@@ -7,7 +7,7 @@ import SectionDivider from "./SectionDivider";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center w-full py-16 bg-gray-100">
+        <footer className="flex flex-row items-center w-full py-16 bg-gray-100">
             <div className="container mx-auto flex flex-col items-center gap-8">
                 {/* Top Links */}
                 <div className="flex flex-col md:flex-row justify-between items-start w-full max-w-6xl gap-8 px-4">

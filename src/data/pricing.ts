@@ -23,7 +23,7 @@ export const tiers = [
             "Unlimited teams",
         ],
         cta: {
-            label: "Start Free Trial",
+            label: "Get Started",
             href: "#",
         },
     },
@@ -37,7 +37,7 @@ export const tiers = [
             "Unlimited everything",
         ],
         cta: {
-            label: "Contact Sales",
+            label: "Get Started",
             href: "#",
         },
     },
