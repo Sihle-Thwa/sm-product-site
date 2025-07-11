@@ -30,17 +30,17 @@ export default function TestimonialCard({
     );
 
     return (
-        <div className="testimonial-card">
+        <div className="_testimonial-card">
             {image && (
                 <Image
                     src={image}
                     width={500}
                     height={500}
                     alt={`Photo of ${name}`}
-                    className="testimonial-card-image"
+                    className="_testimonial-card-image"
                 />
             )}
-            <div className="testimonial-card-content">
+            <div className="_testimonial-card-content">
                 <blockquote className="italic text-sm-regular">“{testimonial}”</blockquote>
                 <div className="flex justify-center">{renderStars()}</div>
                 <figcaption className="space-y-1">

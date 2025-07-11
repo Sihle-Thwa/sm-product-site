@@ -8,16 +8,16 @@ import { motion } from "framer-motion";
 export default function TestimonialsSection() {
     return (
         <section
-            className="flex flex-col items-center w-full py-16"
+            className="s_testimonial-wrap"
             aria-labelledby="testimonials-section"
         >
-            <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
+            <div className="c_testimonial-wrap">
                 <div id="testimonials-heading"
-                    className="container space-y-4 w-full">
+                    className="c_testimonial-container">
                     {/*Content Heading SubHeading and CTA */}
-                    <div className="flex justify-between items-start self-stretch">
+                    <div className="_testimonial-content">
                         { /* Content Heading SubHeading and CTA */}
-                        <div className="flex flex-col items-start gap-5">
+                        <div className="_testimonial-intro">
                             { /* Heading and Subheading and description */}
                             <div className="text-xl-semibold self-stretch ">
                                 Don’t just take our word for it
@@ -39,13 +39,13 @@ export default function TestimonialsSection() {
                     </div>
                 </div>
                 {/* Testimonials Cards */}
-                <div className="flex flex-row justify-center items-center gap-8">
+                <div className="_testimonial-card-wrap">
                     {Testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ delay: index * 0.4 }}
                             viewport={{ once: true }}
                         >
                             <TestimonialCard
