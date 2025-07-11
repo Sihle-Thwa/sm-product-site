@@ -32,9 +32,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       <Header />
-      <main>
+      <main >
         <HeroSection />,
         <SocialProofSection />,
         <SectionDivider />,
@@ -51,6 +51,6 @@ export default function Home() {
         <CTASection />,
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,7 +1,9 @@
 .s_footer-wrap{
-    z-index: 1;
-    position: relative;
-    background-color: var(--color-gray-100);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: var(--color-gray-100);
 }
 
 .c_footer-container {
@@ -11,6 +13,8 @@ align-items: center;
 gap: 32px;
 padding-top: 32px;
 padding-bottom: 32px;
+width: 100%;
+max-width: 1280px;
 }
 
 ._footer-content {
@@ -45,7 +49,7 @@ padding-bottom: 32px;
     flex-direction: row;
     justify-content: center;
     padding: 32px 16px;
-    width: 1280px;
+    width: 100%;
     min-width: 100%;
 }
 

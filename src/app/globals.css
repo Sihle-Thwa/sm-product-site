@@ -18,9 +18,10 @@
     display: flex;
     font-family: var(--font-inter);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-size-adjust: 100%;
     -webkit-locale: "en";
+    -webkit-text-size-adjust: 100%;
 
   }
   body {
@@ -40,7 +41,6 @@
     margin-left: 0px;
     margin-right: 0px;
     min-height: 100%;
-    position: relative;
     -webkit-font-smoothing: antialiased;
     color: var(--color-foreground);
     background: var(--color-background);
@@ -48,9 +48,6 @@
 
 }
 
-.page-wrapper {
-  position: relative;
-}
 
 /* Section Styles*/
 

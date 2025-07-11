@@ -1,0 +1,5 @@
+
+@media (width >= 40rem) { ... } - sm
+@media (width >= 48rem) { ... } - md
+@media (width >= 64rem) { ... } - lg
+@media (width >= 80rem) { ... } - xl
