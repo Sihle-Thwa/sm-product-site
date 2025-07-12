@@ -1,0 +1,69 @@
+.s_faq-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 32px;
+}
+
+/* FAQ Card Styles */
+
+._faq-card-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+}
+
+._faq-card {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-end;
+	position: relative;
+	overflow: hidden;
+	width: 360px;
+	height: 480px;
+	padding: 96px 24px 24px 24px;
+	border: var(--faq-border);
+	border-radius: var(--faq-border-radius);
+	flex-shrink: 0;
+}
+._faq-card-image {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: var(--faq-border-radius);
+	position: absolute;
+}
+._faq-card-content {
+	display: flex;
+	padding: 24px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	background: var(--glass-card);
+	border: 1px solid var(--glass-card-border);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px); /* Safari support */
+	border-radius: 0 0 var(--faq-border-radius) var(--faq-border-radius);
+	margin-top: auto;
+}
+
+/* Ensure text is readable on glass background */
+._faq-card-content * {
+	color: white;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Star rating styling */
+._faq-card-content .flex {
+	gap: 2px;
+}
