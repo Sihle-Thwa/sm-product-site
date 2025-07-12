@@ -9,13 +9,13 @@ interface MetricProps {
 
 export default function MetricCard({ title, value, description }: MetricProps) {
     return (
-        <div className="metrics-card">
+        <div className="container metrics-card">
             <div className="metrics-card-content">
-                <div className="metrics-card-value heading-xl-bold lg:text-lg-bold ">
+                <div className="metrics-card-value heading-lg-semibold">
                     {value}
                 </div>
                 <div className="metrics-card-supporting">
-                    <div className="text-md-semibold  self-stretch">
+                    <div className="text-md-semibold">
                         {title}
                     </div>
                     <div className="text-sm-regular ">

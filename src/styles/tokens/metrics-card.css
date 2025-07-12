@@ -14,16 +14,15 @@
 .metrics-card {
     display:flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     max-width: 400px;
     max-height: 400px;
-    height:auto;
     width: 100%;
     min-height: 200px;
-    min-width: 290px;
-    flex: 1 auto;
-    gap: 20px;
-    padding: 32px 24px;
+    min-width: 200px;
+    padding: 32px 32px;
+
     border: var(--metrics-card-border);
     border-radius: var(--metrics-card-border-radius);
     background: var(--metrics-card-background);
@@ -34,7 +33,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
 }
 
 .metrics-card-value {
