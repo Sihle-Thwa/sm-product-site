@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/tokens/pricing-card.css";
 import { CheckCircle } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface Tier {
     name: string;
@@ -24,12 +25,16 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
             {highlight && <span className="pricing-card-badge">Most Popular</span>}
 
             <div className="text-center">
-                <div className="text-xl-semibold">{tier.name}</div>
-                <div className="text-lg-semibold">{tier.price}</div>
-                <div className="text-xs-medium">{tier.description}</div>
+                <div className="heading-sm-semibold">{tier.name}</div>
+                <div className="flex flex-row items-baseline justify-center gap-2">
+                    <div className="heading-lg-semibold">{tier.price}</div>
+                    <span className="text-sm-medium">/mo</span>
+                </div>
+
+                <div className="text-sm-medium">{tier.description}</div>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-4">
+            <ul className="flex flex-col gap-4">
                 {tier.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-[--accent]" />
@@ -38,9 +43,15 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
                 ))}
             </ul>
 
-            <a href={tier.cta.href} className="button button-lg button-primary px-6 py-3">
-                {tier.cta.label}
-            </a>
+            <div className="py-3 text-center">
+                <Button className="button button-lg button-primary">
+                    <a href={tier.cta.href} >
+                        {tier.cta.label}
+                    </a>
+                </Button>
+            </div>
+
+
         </div>
     );
 };

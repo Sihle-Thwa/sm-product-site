@@ -13,7 +13,7 @@ export default function FeatureSection() {
                     <div className="heading-lg-semibold tracking-wider">
                         Features
                     </div>
-                    <div className="_feature-subheading text-lg-medium">
+                    <div className="_feature-subheading text-lg-semibold">
                         Overflowing with useful features
                     </div>
                     <p className="_feature-description text-sm-medium">
