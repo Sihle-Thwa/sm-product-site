@@ -13,21 +13,18 @@ export default function Header() {
                 {/* Logo */}
 
                 <Link href="/" className="flex items-center shrink-0">
-                        <Image
-                            src="/Logo_title.png"
-                            alt="SBM Concepts logo"
-                            width={100}
-                            height={80}
+                    <Image
+                        src="/Logo_title.png"
+                        alt="SBM Concepts logo"
+                        width={100}
+                        height={80}
                         className="object-contain h-10 w-auto"
-                        />
+                    />
                 </Link>
-
-
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex w-full justify-end">
                     <Navigation />
                 </div>
-
                 {/* Mobile Menu */}
                 <div className="md:hidden flex items-center">
                     <MobileMenu />

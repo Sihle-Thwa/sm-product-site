@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       <Header />
       <main>
         <HeroSection />,

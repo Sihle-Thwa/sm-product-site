@@ -26,11 +26,10 @@ export default function MobileMenu() {
                         <Menu className="w-5 h-5" />
                     </Button>
                 </PopoverTrigger>
-
                 <PopoverContent
                     side="bottom"
                     align="end"
-                    className="z-50 w-[320px] mt-2 p-4 bg-background rounded-lg shadow-lg border animate-fade-in"
+                    className="z-100 w-[320px] mt-2 p-4 bg-background rounded-lg shadow-lg border animate-fade-in"
                 >
                     <nav className="flex flex-col" aria-label="Mobile navigation">
                         {navItems.map((item) => (
