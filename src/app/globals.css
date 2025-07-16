@@ -9,6 +9,7 @@
 @import "../styles/tokens/header.css";
 @import "../styles/tokens/metrics-card.css";
 @import "../styles/tokens/features.css";
+@import "../styles/tokens/mobilemenu.css";
 @import "../styles/tokens/footer.css";
 
 /* Base Reset */
@@ -23,7 +24,9 @@
 
 	html {
 		font-family: var(--font-inter), var(--font-sans);
-		height: 100vh;
+		max-height: 870px;
+		height: 100%;
+		min-height: 100%;
 		max-width: 1440px;
 		width: 100%;
 		min-width: 320px;
@@ -33,21 +36,38 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 	body {
-		width: 100vw;
+		max-width: 1280px;
+		width: 100%;
 		min-width: 320px;
-		max-height: 100vh;
-		height: 100%;
-		min-height: 870px;
-		margin: 0;
-		padding: 0;
+		height: 870px;
+		min-height: 100%;
+		min-width: inherit;
 		overflow-x: hidden;
-		overflow-y: auto;
+		overflow-y: hidden;
 		display: flex;
 		flex-direction: column;
 		scroll-behavior: smooth;
 		color: var(--color-foreground);
 		background: var(--color-background);
 	}
+@media (max-width: 768px) {
+	body {
+		max-width: 768px;
+		width: 100%;
+		min-width: 320px;
+		height: auto;
+		
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+		max-width: 320px;
+		width: 100%;
+		height: auto;
+		
+	}
+}
 }
 
 /* Theme Tokens */
@@ -100,6 +120,8 @@
 	--border: oklch(0.8865 0.0026 165.07);
 	--border-muted: oklch(0.8865 0.0026 165.07);
 	--border-subtle: oklch(0.8865 0.0026 165.07 / 10%);
+	--border-accent: oklch(0.7874 0.1715 69.12);
+	
 
 	--input: oklch(0.928 0.006 264.531);
 	--ring: oklch(0.707 0.022 261.325);
@@ -202,7 +224,7 @@
 	width: 100%;
 	border: none;
 	border-top: 1px solid var(--border-muted);
-	margin: 0 auto;
+	margin: 0;
 }
 
 .metric-bg-image {
