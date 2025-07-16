@@ -26,9 +26,10 @@ export default function Footer() {
                 <Image
                     src="/Logo_title.png"
                     alt="SBM Concepts company logo"
-                    width={120}
-                    height={40}
-                    className="object-cover"
+                    width={150}
+                    height={50}
+                    className="_footer-logo"
+                    priority
                 />
                 <div className="_footer-bottom-text text-sm-regular">
                     &copy; {new Date().getFullYear()} SBM Concepts. All rights reserved.
