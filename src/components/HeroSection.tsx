@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function HeroSection() {
     return (
 
-        <section className="s_hero-wrap" data-theme="default" >
+        <section className="w-full flex flex-col items-center justify-center py-8" data-theme="default" >
             <div className="container mx-auto max-w-7xl space-y-12 flex flex-col  gap-8 px-8">
                 {/* Hero Content */}
-                <div className="flex flex-col items-center gap-4 text-center">
+                <div className="flex flex-col items-center gap-4 text-center ">
                     {/* Hero Title */}
                     <div className="heading-xl-semibold md:heading-lg-semibold ">
                         The Complete Sports Management Solution

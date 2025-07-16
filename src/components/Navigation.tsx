@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
     NavigationMenu,
@@ -16,13 +17,13 @@ const navItems = [
 
 export default function Navigation() {
     return (
-        <NavigationMenu>
-            <NavigationMenuList className="flex items-center gap-6">
+        <NavigationMenu className="navMenu">
+            <NavigationMenuList className="navMenuList">
                 {navItems.map(({ label, href }) => (
-                    <NavigationMenuItem key={label}>
+                    <NavigationMenuItem className="navMenuItem" key={label}>
                         <NavigationMenuLink
                             href={href}
-                            className="text-sm-medium"
+                            className="navMenuLink text-sm-medium"
                         >
                             {label}
                         </NavigationMenuLink>
