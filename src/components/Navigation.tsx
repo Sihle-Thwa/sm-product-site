@@ -17,13 +17,13 @@ const navItems = [
 
 export default function Navigation() {
     return (
-        <NavigationMenu className="navMenu">
-            <NavigationMenuList className="navMenuList">
+        <NavigationMenu className="hidden md:flex">
+            <NavigationMenuList className="flex gap-6">
                 {navItems.map(({ label, href }) => (
-                    <NavigationMenuItem className="navMenuItem" key={label}>
+                    <NavigationMenuItem key={label}>
                         <NavigationMenuLink
                             href={href}
-                            className="navMenuLink text-sm-medium"
+                            className="navMenuLink text-sm-regular "
                         >
                             {label}
                         </NavigationMenuLink>

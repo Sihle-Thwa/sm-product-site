@@ -9,27 +9,27 @@ export default function Header() {
 
     return (
         <header>
-            <div className="container max-w-7xl w-full  mx-auto px-4 py-4 flex flex-row items-center justify-between ">
+            <div className="max-w-7xl w-full mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-start">
-                    <Link href="/" className="flex items-center">
+
+                <Link href="/" className="flex items-center shrink-0">
                         <Image
                             src="/Logo_title.png"
                             alt="SBM Concepts logo"
                             width={100}
                             height={80}
-                            className="object-contain"
+                        className="object-contain h-10 w-auto"
                         />
-                    </Link>
-                </div>
+                </Link>
+
 
                 {/* Desktop Navigation */}
-                <div className=" items-end w-full hidden md:flex  ">
+                <div className="hidden md:flex w-full justify-end">
                     <Navigation />
                 </div>
 
                 {/* Mobile Menu */}
-                <div className="items-end md:hidden">
+                <div className="md:hidden flex items-center">
                     <MobileMenu />
                 </div>
             </div>

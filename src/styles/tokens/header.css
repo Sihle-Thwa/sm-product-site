@@ -1,22 +1,40 @@
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 	position: sticky;
-	max-width: 1280px;
-	width: 100%;
-	min-width: 320px;
-	max-height: 60px;
-	height: 60px;
-	overflow: hidden;
-	min-height: 100%;
-	padding: 16px 16px;
 	top: 0;
 	left: 0;
 	right: 0;
-	border: 1px solid var(--border);
 	z-index: var(--z-header);
-	background-color: var(--background);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /* Optional: for logo & nav */
+
+	height: 60px;
+	width: 100%;
+	padding: 0 16px;
+
+	background-color: var(--background)/90;
+	backdrop-filter: blur(5px);
+	border-bottom: 1px solid var(--border);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+	/* Responsive container */
+	max-width: 100%;
+	margin-inline: auto;
 }
 
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* 16px */
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  header .logo {
+    display: flex;
+    align-items: center;
+    height: 2.5rem; /* 40px */
+  }

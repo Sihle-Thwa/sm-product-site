@@ -17,14 +17,37 @@
 .navMenuLink {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	padding: 8px 16px;
 	transition-duration: 0.15s;
 }
 
 .navMenuLink:hover {
 	color: var(--color-accent);
+	transition: color 0.15s ease-in-out;
 }
 .navMenuLink:focus {
 	color: var(--color-accent);
+	transition: color 0.15s ease-in-out;
 }
+
+ /* Navigation (Desktop) */
+  .desktop-nav {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: flex;
+      gap: 1.5rem; /* 24px */
+    }
+  }
+
+  /* Mobile menu container */
+  .mobile-nav {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-nav {
+      display: none;
+    }
+  }

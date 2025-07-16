@@ -23,51 +23,27 @@
 	}
 
 	html {
-		font-family: var(--font-inter), var(--font-sans);
-		max-height: 870px;
-		height: 100%;
-		min-height: 100%;
-		max-width: 1440px;
-		width: 100%;
-		min-width: 320px;
 		text-size-adjust: 100%;
 		-webkit-text-size-adjust: 100%;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-	}
-	body {
-		max-width: 1280px;
+		height: 100%;
 		width: 100%;
 		min-width: 320px;
-		height: 870px;
-		min-height: 100%;
-		min-width: inherit;
-		overflow-x: hidden;
-		overflow-y: hidden;
+		scroll-behavior: smooth;
+	}
+	body {
+		min-height: 100dvh; 
+		width: 100%;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		scroll-behavior: smooth;
 		color: var(--color-foreground);
 		background: var(--color-background);
+		overflow-x: hidden;
 	}
-@media (max-width: 768px) {
-	body {
-		max-width: 768px;
-		width: 100%;
-		min-width: 320px;
-		height: auto;
-		
-	}
-}
 
-@media (max-width: 320px) {
-	body {
-		max-width: 320px;
-		width: 100%;
-		height: auto;
-		
-	}
-}
+	
 }
 
 /* Theme Tokens */
@@ -121,7 +97,6 @@
 	--border-muted: oklch(0.8865 0.0026 165.07);
 	--border-subtle: oklch(0.8865 0.0026 165.07 / 10%);
 	--border-accent: oklch(0.7874 0.1715 69.12);
-	
 
 	--input: oklch(0.928 0.006 264.531);
 	--ring: oklch(0.707 0.022 261.325);
@@ -233,3 +208,4 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
