@@ -8,7 +8,7 @@ import SectionDivider from "./SectionDivider";
 export default function Footer() {
     return (
         <footer className="s_footer-wrap">
-            <div className="c_footer-container">
+            <section className="c_footer-container">
                 {/* Top Links */}
                 <div className="_footer-content">
                     {footerItems.map((item) => (
@@ -16,12 +16,13 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* Divider */}
-                <SectionDivider />
 
-            </div>
+
+            </section>
+            {/* Divider */}
+            <SectionDivider />
             {/* Bottom Logo + Copy */}
-            <div className="_footer-bottom-wrap ">
+            <section className="_footer-bottom-wrap ">
                 <Image
                     src="/Logo_title.png"
                     alt="SBM Concepts company logo"
@@ -32,7 +33,7 @@ export default function Footer() {
                 <div className="_footer-bottom-text text-sm-regular">
                     &copy; {new Date().getFullYear()} SBM Concepts. All rights reserved.
                 </div>
-            </div>
+            </section>
         </footer>
     );
 }
