@@ -1,35 +1,17 @@
 import React from "react";
-import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
 
-export interface FeatureCardProps {
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+interface FeatureCardProps {
+    icon: React.ReactNode;
     title: string;
     description: string;
-    showButton?: boolean;
 }
 
-export function FeatureCard({
-    icon: Icon,
-    title,
-    description,
-    showButton = true,
-}: FeatureCardProps) {
+export const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
         <div className="c_feature-card">
-            <div className="_feature-card-icon">
-                <Icon className="icon icon-md icon-accent" />
-            </div>
-            <div className="_feature-card-title text-md-semibold">{title}</div>
-            <div className="_feature-card-description text-sm-regular">{description}</div>
-            {showButton && (
-                <div className="_feature-card-button">
-                    <Button className="button button-lg button-outline-accent">
-                        Learn More
-                        <ArrowRight className="icon icon-sm icon-muted" />
-                    </Button>
-                </div>
-            )}
+            <div className="c_feature-card-icon">{icon}</div>
+            <div className="c_feature-card-title text-md-semibold md:text-sm-semibold">{title}</div>
+            <div className="c_feature-card-description text-sm-regular md:text-xs-regular">{description}</div>
         </div>
     );
-}
+};

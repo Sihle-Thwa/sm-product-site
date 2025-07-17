@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import features from "@/data/features";
@@ -9,46 +10,46 @@ export default function FeatureSection() {
         <section className="s_features-wrap">
             <div className="c_feature-wrap">
                 {/* Section Intro */}
-                <div className=".c_feature-intro">
-                    <div className="heading-lg-semibold tracking-wider">
+                <div className="c_feature-intro">
+                    <div className="c_feature-heading heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold tracking-wider">
                         Features
                     </div>
-                    <div className="_feature-subheading text-lg-semibold">
+                    <div className="c_feature-subheading text-lg-semibold md:text-md-semibold">
                         Overflowing with useful features
                     </div>
-                    <p className="_feature-description text-sm-medium">
+                    <div className="c_feature-description text-sm-medium md:text-xs-medium">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
                         gain a competitive advantage both on and off the field.
-                    </p>
+                    </div>
                 </div>
 
-                {/* Feature Content */}
-                <div className="_feature-content">
-                    {/* Features List */}
-                    <div className="_feature-list">
-                        {features.map((f, index) => (
+                <div className="c_feature-content">
+                    {/* Feature Cards */}
+                    <div className="c_feature-list">
+                        {features.map((feature, index) => (
                             <FeatureCard
-                                key={`${f.title}-${index}`}
-                                icon={f.icon}
-                                title={f.title}
-                                description={f.description}
+                                key={`${feature.title}-${index}`}
+                                icon={<feature.icon />}
+                                title={feature.title}
+                                description={feature.description}
                             />
                         ))}
                     </div>
 
-                    {/* Feature Illustration */}
-                    <div className="_feature-illustration">
+                    {/* Illustration */}
+                    <div className="c_feature-illustration">
                         <Image
                             src="/FeatureSection.png"
                             alt="Platform feature illustration"
                             width={500}
                             height={500}
-                            className="w-full max-w-lg object-cover"
+                            className="w-full object-cover max-w-lg"
                             loading="lazy"
                         />
                     </div>
                 </div>
+
             </div>
         </section>
     );
