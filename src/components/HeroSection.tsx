@@ -6,33 +6,33 @@ import Image from "next/image";
 export default function HeroSection() {
     return (
 
-        <section className="w-full flex flex-col items-center justify-center py-8" data-theme="default" >
-            <div className="container mx-auto max-w-7xl space-y-12 flex flex-col  gap-8 px-8">
+        <section className="s_hero-wrap" data-theme="default" >
+            <div className="c_hero-container">
                 {/* Hero Content */}
-                <div className="flex flex-col items-center gap-4 text-center ">
+                <div className="_hero-content">
                     {/* Hero Title */}
-                    <div className="heading-xl-semibold md:heading-lg-semibold ">
+                    <div className="_hero-content-title heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold ">
                         The Complete Sports Management Solution
                     </div>
                     {/* Hero Description */}
-                    <div className="text-md-medium md:text-sm-medium mx-auto">
+                    <div className="_hero-content-description text-md-medium md:text-sm-medium sm:text-xs-medium">
                         Streamline team management, player development, and operations in one uniformed platform.
                     </div>
 
-                    <div className="flex justify-center gap-4">
-                        <Button className="button button-lg button-accent">Book Demo</Button>
-                        <Button className="button button-lg button-primary">Sign Up</Button>
+                    <div className="_hero-content-cta">
+                        <Button className="button button-lg md:button-md sm:button-sm button-accent">Book Demo</Button>
+                        <Button className="button button-lg md:button-md sm:button-sm button-primary">Sign Up</Button>
                     </div>
                 </div>
 
                 {/* Hero Image */}
-                <div className="flex justify-center">
+                <div className="c_hero-image">
                     <Image
                         src="/HeroSection.png"
                         alt="Athletes using the sports management platform"
                         width={1220}
                         height={710}
-                        className="w-full h-auto"
+                        className="_hero-image"
                         priority
                     />
                 </div>
