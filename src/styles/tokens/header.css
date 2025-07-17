@@ -7,13 +7,14 @@ header {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between; /* Optional: for logo & nav */
+	justify-content: space-between;
+	/* Optional: for logo & nav */
 
 	height: 60px;
 	width: 100%;
 	padding: 0 16px;
 
-	background-color: var(--background)/90;
+	background-color: var(--background) / 90;
 	backdrop-filter: blur(5px);
 	border-bottom: 1px solid var(--border);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -23,18 +24,90 @@ header {
 	margin-inline: auto;
 }
 
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; /* 16px */
-    max-width: 1280px;
-    width: 100%;
-    margin-inline: auto;
-  }
+._header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--space-sm);
+	max-width: 1440px;
+	width: 100%;
+	margin-inline: auto;
+}
 
-  header .logo {
-    display: flex;
-    align-items: center;
-    height: 2.5rem; /* 40px */
-  }
+._header-logo {
+	display: flex;
+	align-items: center;
+	height: auto;
+	width: auto;
+	object-fit: contain;
+}
+
+/* Responsive styles */
+
+
+/*Laptop*/
+@media (width: 1024px) {
+	
+	header {
+		max-width: 1024px;
+		margin-inline: auto;
+	}
+	._header-container {
+		max-width: 1024px;
+		padding: var(--space-md);
+	}
+
+	._header-logo {
+		height: var(--space-md);
+		width: auto;
+	}
+}
+
+/*Tablet*/
+@media (width: 768px) {
+	._header-container {
+		padding: var(--space-sm);
+	}
+
+	._header-logo {
+		height: var(--space-sm);
+		width: auto;
+	}
+}
+
+/*lg Mobile*/
+@media (width: 425px) {
+	._header-container {
+		padding: var(--space-md);
+	}
+
+	._header-logo {
+		height: var(--space-md);
+		width: auto;
+	}
+}
+
+/*md Mobile*/
+
+@media (width: 375px) {
+	._header-container {
+		padding: var(--space-sm);
+	}
+
+	._header-logo {
+		height: var(--space-sm);
+		width: auto;
+	}
+}
+
+/*sm Mobile*/
+@media (width: 320px) {
+	._header-container {
+		padding: var(--space-sm);
+	}
+
+	._header-logo {
+		height: var(--space-sm);
+		width: auto;
+	}
+}

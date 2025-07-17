@@ -3,110 +3,107 @@
 @import "../typography.css";
 
 :root {
-    /* Button Base Colors */
-    --primary: oklch(0.3297 0.0579 250.8);
-    --secondary: oklch(0.39 0.0576 251.2);
-    --accent: oklch(0.7874 0.1715 69.12);
+	/* Button Base Colors */
+	--primary: oklch(0.3297 0.0579 250.8);
+	--secondary: oklch(0.39 0.0576 251.2);
+	--accent: oklch(0.7874 0.1715 69.12);
 
-    /* Button Text Colors */
-    --primary-text: oklch(98.463% 0.00181 249.248);
-    --accent-text: oklch(0.7874 0.1715 69.12);
+	/* Button Text Colors */
+	--primary-text: oklch(98.463% 0.00181 249.248);
+	--secondary-text: oklch(0.39 0.0576 251.2);
+	--accent-text: oklch(0.7874 0.1715 69.12);
 
+	/* Button Sizes */
+	--button-size-lg: 28px;
+	--button-size-md: 24px;
+	--button-size-sm: 20px;
 
-    /* Button Sizes */
-    --button-size-lg: 28px;
-    --button-size-md: 24px;
-    --button-size-sm: 20px;
-
-    /* Button Shadow */
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(0, 0, 0, 0.2);
-
-    
+	/* Button Shadow */
+	--shadow-color: rgba(0, 0, 0, 0.1);
+	--shadow-hover: rgba(0, 0, 0, 0.2);
 }
 
 /* Base Button Class */
 .button {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    padding: 8px 16px;
-    text-transform: uppercase;
-    transition: 0.2s ease, color 0.2s ease;
-    cursor: pointer;
-    border-radius: var(--radius);
-    box-shadow: 0 2px 4px var(--shadow-color);
-    font-family: var(--font-inter);
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	padding: 8px 16px;
+	text-transform: uppercase;
+	transition: 0.2s ease, color 0.2s ease;
+	cursor: pointer;
+	border-radius: var(--radius);
+	box-shadow: 0 2px 4px var(--shadow-color);
+	font-family: var(--font-inter);
 }
 
-  /* Size Variants */
+/* Size Variants */
 
 .button-lg {
-    width: fit-content;
-    height: var(--button-size-lg);
-    font: var(--text-lg-regular);
-    background-color: currentColor;
-    color: currentColor; 
+	width: fit-content;
+	height: var(--button-size-lg);
+	font: var(--text-lg-regular);
+	background-color: currentColor;
+	color: currentColor;
 }
 
 .button-md {
-    width: fit-content;
-    height: var(--button-size-md);
-    font: var(--text-md-regular);
-    background-color: currentColor;
-    color: currentColor; 
+	width: fit-content;
+	height: var(--button-size-md);
+	font: var(--text-md-regular);
+	background-color: currentColor;
+	color: currentColor;
 }
 
 .button-sm {
-    width: fit-content;
-    height: var(--button-size-sm);
-    font: var(--text-sm-regular);
-    background-color: currentColor;
-    color: currentColor; 
+	width: fit-content;
+	height: var(--button-size-sm);
+	font: var(--text-sm-regular);
+	background-color: currentColor;
+	color: currentColor;
 }
 
-  /* Color Variants */
+/* Color Variants */
 .button-primary {
-    background-color: var(--primary);
-    color: var(--primary-text);
+	background-color: var(--primary);
+	color: var(--primary-text);
 }
 .button-secondary {
-    background-color: var(--secondary);
-    color: var(--primary-text);
+	background-color: var(--secondary);
+	color: var(--primary-text);
 }
 
 .button-accent {
-    border: none !important;
-    background-color: var(--accent);
-    color: var(--primary-text);
+	border: none !important;
+	background-color: var(--accent);
+	color: var(--primary-text);
 }
 
 .button-outline {
-    border: none;
-    background-color: transparent;
-    color: var(--primary);
+	border: none;
+	background-color: transparent;
+	color: var(--primary);
 }
 .button-outline-secondary {
-    border: var(--border) 1px solid;
-    background-color: transparent;
-    color: var(--primary-text);
+	border: var(--border) 1px solid;
+	background-color: transparent;
+	color: var(--primary-text);
 }
 .button-outline-accent {
-    background-color: transparent;
-    color: var(--accent-text);
+	background-color: transparent;
+	color: var(--accent-text);
 }
 /* Interactive States */
 
 .button:hover {
-  box-shadow: var(--shadow-hover);
-  transform: scale(1.05); /* Scale effect on hover */
+	box-shadow: var(--shadow-hover);
+	transform: scale(1.05); /* Scale effect on hover */
 }
 .button:active {
-    transform: scale(0.95); /* Scale effect on click */
+	transform: scale(0.95); /* Scale effect on click */
 }
 .button:disabled {
-    background-color: var(--secondary);
-    color: var(--primary-text);
-    cursor: not-allowed;
+	background-color: var(--secondary);
+	color: var(--primary-text);
+	cursor: not-allowed;
 }
-

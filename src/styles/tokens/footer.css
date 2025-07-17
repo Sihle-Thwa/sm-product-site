@@ -4,81 +4,51 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background-color: var(--color-gray-100);
+width: 100%;
 }
 
 .c_footer-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 32px;
-padding-top: 32px;
-padding-bottom: 32px;
-width: 100%;
-max-width: 1280px;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 16px;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
 }
 
 ._footer-content {
-    display: flex;
+  display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    padding-left: 16px;
-    padding-right: 16px;
     justify-content: space-between;
-    align-items: start;
-}
-
-@media screen and (width: 640px) {
-    ._footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-
-@media screen and (width: 768px) {
-    ._footer-content {
-        flex-direction: row;
-        align-items: center;
-    }
-    
-}
-
-._footer-bottom-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 32px 16px;
+    align-items: flex-start;
+    gap: 60px; 
+    padding-inline: 16px;
     width: 100%;
-    min-width: 100%;
 }
 
-@media screen and (width: 640px) {
-    ._footer-bottom-wrap {
-        align-items: center;
-    }
-    
-}
-
-@media screen and (width: 768px) {
-    ._footer-bottom-wrap {
-        align-items: center;
-    }
-    
-}
-
-._footer-bottom-text{
-    text-align: right;
-    padding: 0 16px;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-
-}
-
-@media screen and (width: 768px) {
-    ._footer-bottom-text {
+@media (max-width: 768px) {
+    ._footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
       text-align: center;
     }
-    
-}
+  }
+
+  ._footer-bottom-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    width: 100%;
+  }
+
+  ._footer-bottom-text {
+    text-align: end;
+    width: 100%;
+    font-size: var(--text-sm-medium); 
+    color: var(--color-muted-foreground);
+  }
+

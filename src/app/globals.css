@@ -33,7 +33,7 @@
 		scroll-behavior: smooth;
 	}
 	body {
-		min-height: 100dvh; 
+		min-height: 100dvh;
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
@@ -55,6 +55,14 @@
 	--radius-xl: calc(var(--radius) + 4px);
 	--radius-2xl: calc(var(--radius) + 8px);
 	--radius-full: 9999px;
+
+	/* Spacing */
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
 
 	/* Z-Index */
 	--z-header: 100;
@@ -206,4 +214,3 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
