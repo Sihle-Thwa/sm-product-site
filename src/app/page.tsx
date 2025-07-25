@@ -32,10 +32,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-[1024px] px-4 sm:px-6 lg:px-8">
+    <div >
         <Header />
-        <main>
+      <main className="flex flex-col gap-auto">
           <HeroSection />
           <SocialProofSection />
           <SectionDivider />
@@ -51,8 +50,7 @@ export default function Home() {
           <SectionDivider />
           <CTASection />
         </main>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
