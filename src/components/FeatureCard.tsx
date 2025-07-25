@@ -6,12 +6,20 @@ interface FeatureCardProps {
     description: string;
 }
 
-export const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+export const FeatureCard: React.FC<FeatureCardProps> = ({
+    icon,
+    title,
+    description,
+}) => {
     return (
         <div className="c_feature-card">
             <div className="c_feature-card-icon">{icon}</div>
-            <div className="c_feature-card-title text-md-semibold md:text-sm-semibold">{title}</div>
-            <div className="c_feature-card-description text-sm-regular md:text-xs-regular">{description}</div>
-        </div>
-    );
+          <h3 className="c_feature-card-title text-md-semibold md:text-sm-semibold">
+              {title}
+          </h3>
+          <p className="c_feature-card-description text-sm-regular md:text-xs-regular">
+              {description}
+          </p>
+      </div>
+  );
 };

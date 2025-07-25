@@ -1,28 +1,26 @@
-// src/sections/SocialProofSection.tsx
 "use client";
+
 import React from "react";
 
 export default function SocialProofSection() {
     return (
-        // This section is designed to showcase the trust and credibility of the product by highlighting its use by various organizations.
-        //Social Section
-        <section className="flex flex-col items-center w-full py-16">
-            { /* Section */}
-            <div className="max-w-7xl mx-auto space-y-12">
-                { /* Container */}
-                <div className="container mx-auto flex flex-col items-center gap-8 px-8">
-                    { /*Content*/}
-                    <div className="flex flex-col items-center w-full gap-12">
-                        { /* Text and Partner Logos */}
-                        <div className="flex flex-col items-center gap-6 max-w-4xl text-center">
-                            { /* Text */}
-                            <p className="text-sm-regular">
-                                Trusted by schools, district teams, and national organizations to manage over 50,000 athletes worldwide.
-                            </p>
-                            { /* Logos: Add School, Districts, Organization logos here */}
-                        </div>
-                    </div>
+        <section
+            className="w-full flex justify-center bg-background py-16"
+            aria-label="Social proof section"
+        >
+            <div className="w-full max-w-[1024px] px-4 md:px-8 flex flex-col items-center gap-12">
+                <div className="max-w-3xl text-center space-y-6">
+                    <p className="text-sm-regular text-muted-foreground">
+                        Trusted by schools, district teams, and national organizations to manage over 50,000 athletes worldwide.
+                    </p>
 
+                    {/* Logos will go here */}
+                    <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
+                        {/* Example: 
+              <Image src="/logos/school1.svg" alt="School 1" width={100} height={40} />
+              <Image src="/logos/partner2.png" alt="Partner 2" width={100} height={40} />
+            */}
+                    </div>
                 </div>
             </div>
         </section>
