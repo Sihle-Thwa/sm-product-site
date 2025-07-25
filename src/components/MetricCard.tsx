@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 
 interface MetricProps {
@@ -9,20 +10,13 @@ interface MetricProps {
 
 export default function MetricCard({ title, value, description }: MetricProps) {
     return (
-        <div className="container metrics-card">
+        <div className="metrics-card">
             <div className="metrics-card-content">
-                <div className="metrics-card-value heading-lg-semibold">
-                    {value}
-                </div>
+                <div className="metrics-card-value heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">{value}</div>
                 <div className="metrics-card-supporting">
-                    <div className="text-md-semibold">
-                        {title}
-                    </div>
-                    <div className="text-sm-regular ">
-                        {description}
-                    </div>
+                    <div className="text-md-semibold md:text-sm-semibold sm:text-xs-semibold">{title}</div>
+                    <div className="text-sm-regular text-muted-foreground md:text-xs-regular sm:text-xs-regular">{description}</div>
                 </div>
-
             </div>
         </div>
     );

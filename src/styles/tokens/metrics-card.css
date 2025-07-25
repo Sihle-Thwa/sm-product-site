@@ -1,61 +1,61 @@
 @import "../typography.css";
 
 :root {
-    --metrics-card-border: 1px solid var(--color-border);
-    --metrics-card-border-radius: var(--radius);
-    --metrics-card-background: var(--color-card);
-    --metrics-card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --metrics-card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --metrics-card-border: 1px solid var(--color-border);
+  --metrics-card-border-radius: var(--radius);
+  --metrics-card-background: var(--color-card);
+  --metrics-card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --metrics-card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* Metrics Card Styles */
 .metrics-card {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-    max-height: 400px;
-    width: 100%;
-    min-height: 200px;
-    min-width: 200px;
-    padding: 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  width: 100%;
+  padding: 32px;
 
-    border: var(--metrics-card-border);
-    border-radius: var(--metrics-card-border-radius);
-    background: var(--metrics-card-background);
-    backdrop-filter: blur(4px);
+  background: var(--metrics-card-background);
+  border: var(--metrics-card-border);
+  border-radius: var(--metrics-card-border-radius);
+  backdrop-filter: blur(4px);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.metrics-card:hover {
+  box-shadow: var(--metrics-card-hover-shadow);
 }
 
 .metrics-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  height: 100%;
 }
 
 .metrics-card-value {
-    text-align: center;
-    align-self: stretch;
+  text-align: center;
 }
-
 
 .metrics-card-supporting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
 }
 
+/* Background Image */
 .metric-bg-image {
-	background-image: url("../../../public/metricboard.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-image: url("../../../public/metricboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
