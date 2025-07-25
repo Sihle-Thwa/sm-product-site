@@ -35,20 +35,20 @@ export default function Home() {
     <div className="relative">
       <Header />
       <main>
-        <HeroSection />,
-        <SocialProofSection />,
-        <SectionDivider />,
-        <FeatureSection />,
-        <SectionDivider />,
-        <TestimonialsSection />,
-        <SectionDivider />,
-        <FAQSection />,
-        <SectionDivider />,
-        <PricingSection />,
-        <SectionDivider />,
-        <MetricSection />,
-        <SectionDivider />,
-        <CTASection />,
+        <HeroSection />
+        <SocialProofSection />
+        <SectionDivider />
+        <FeatureSection />
+        <SectionDivider />
+        <TestimonialsSection />
+        <SectionDivider />
+        <FAQSection />
+        <SectionDivider />
+        <PricingSection />
+        <SectionDivider />
+        <MetricSection />
+        <SectionDivider />
+        <CTASection />
       </main>
       <Footer />
     </div>
