@@ -1,0 +1,43 @@
+@import "../typography.css";
+
+.s_cta-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: var(--space-xl) var(--space-sm);
+	background-color: var(--color-background);
+}
+
+.c_cta-container {
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c_cta-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-md);
+	width: 100%;
+	text-align: center;
+}
+
+.c_cta-buttons {
+	display: flex;
+	justify-content: center;
+	gap: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+	.c_cta-content {
+		gap: var(--space-sm);
+	}
+
+	.c_cta-buttons {
+		flex-direction: column;
+		width: 100%;
+	}
+}
