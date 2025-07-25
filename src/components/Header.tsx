@@ -8,11 +8,17 @@ import MobileMenu from "./MobileMenu";
 
 export default function Header() {
     return (
-        <header className="border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-[var(--z-header)] sticky top-0">
+        <header
+            className="sticky top-0 z-[var(--z-header)] border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            aria-label="Site header"
+        >
             <div className="w-full flex justify-center">
                 <div className="_header-container w-full max-w-[1024px] px-4 md:px-8 flex items-center justify-between py-4">
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center shrink-0">
+                    <Link
+                        href="/"
+                        className="flex items-center shrink-0"
+                        aria-label="Homepage"
+                    >
                         <Image
                             src="/Logo_title.png"
                             alt="SBM Concepts logo"
@@ -23,12 +29,10 @@ export default function Header() {
                         />
                     </Link>
 
-                    {/* Desktop Navigation */}
-                    <nav className="hidden md:flex">
+                    <nav className="hidden md:flex" aria-label="Primary navigation">
                         <Navigation />
                     </nav>
 
-                    {/* Mobile Menu */}
                     <div className="md:hidden">
                         <MobileMenu />
                     </div>

@@ -11,7 +11,7 @@ export default function HeroSection() {
             aria-label="Hero section"
             data-theme="default"
         >
-            <div className="c_hero-container w-full max-w-[1024px] px-4 md:px-8 flex flex-col gap-12 md:gap-16 py-12 md:py-24">
+            <div className="c_hero-container w-full max-w-[1024px] px-4 md:px-8 py-16 md:py-24 flex flex-col gap-12 md:gap-16">
                 {/* Hero Content */}
                 <div className="_hero-content flex flex-col gap-6 md:gap-8 text-center md:text-left">
                     <h1 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold text-balance">

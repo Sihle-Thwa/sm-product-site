@@ -1,64 +1,63 @@
 @import "../typography.css";
 
 .s_hero-wrap {
-	display: flex;
-	justify-content: center;
-	width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-background);
 }
 
 .c_hero-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-inline: auto;
-	max-width: 1024px;
-	padding-inline: 16px;
-	width: 100%;
-	gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1024px;
+  width: 100%;
+  padding: var(--space-lg) clamp(1rem, 4vw, 2.5rem);
+  gap: var(--space-xl);
+  margin-inline: auto;
 }
 
+/* Text Content */
 ._hero-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  text-align: center;
 }
 
-._hero-content-title {
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-._hero-content-description {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	gap: 16px;
+@media (min-width: 768px) {
+  ._hero-content {
+    text-align: left;
+  }
 }
 
 ._hero-content-cta {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-sm);
 }
 
+@media (min-width: 640px) {
+  ._hero-content-cta {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+/* Image Block */
 .c_hero-image {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 ._hero-image {
-	width: 100%;
-	height: auto;
-	max-width: 100%;
-	object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
