@@ -29,6 +29,7 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		height: 100%;
+		max-width: 1024px;
 		width: 100%;
 		min-width: 320px;
 		scroll-behavior: smooth;

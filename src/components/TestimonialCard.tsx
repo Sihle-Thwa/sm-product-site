@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -20,13 +21,24 @@ export default function TestimonialCard({
     organization,
 }: TestimonialProps) {
     const renderStars = () => (
-        <span role="img" aria-label={`${rating} out of 5 stars`} className="">
+        <div
+            role="img"
+            aria-label={`${rating} out of 5 stars`}
+            className="_testimonial-card-content-rate"
+        >
             {Array.from({ length: 5 }, (_, index) => (
-                <span key={index} className={index < rating ? "text-lg-regular" : "text-gray-400"}>
+                <span
+                    key={index}
+                    className={
+                        index < rating
+                            ? "text-lg-regular md:text-md-regular sm:text-sm-regular"
+                            : "text-gray-400"
+                    }
+                >
                     ★
                 </span>
             ))}
-        </span>
+        </div>
     );
 
     return (
@@ -36,17 +48,29 @@ export default function TestimonialCard({
                     src={image}
                     width={500}
                     height={500}
-                    alt={`Photo of ${name}`}
+                    alt={`Testimonial from ${name}`}
                     className="_testimonial-card-image"
+                    priority
                 />
             )}
             <div className="_testimonial-card-content">
-                <blockquote className="italic text-sm-regular">“{testimonial}”</blockquote>
-                <div className="flex justify-center">{renderStars()}</div>
+                <blockquote
+                    className="italic lg:text-sm-regular text-xs-regular"
+                    aria-label={`Testimonial from ${name}`}
+                >
+                    “{testimonial}”
+                </blockquote>
+                {renderStars()}
                 <figcaption className="space-y-1">
-                    <div className="text-lg-semibold">{name}</div>
-                    <p className="text-sm-medium">{role}</p>
-                    <p className="text-sm-regular">{organization}</p>
+                    <div className="text-lg-semibold md:text-md-semibold sm:text-sm-semibold">
+                        {name}
+                    </div>
+                    <div className="text-sm-medium md:text-sm-regular sm:text-xs-regular">
+                        {role}
+                    </div>
+                    <div className="text-sm-regular md:text-xs-regular sm:text-xs-regular">
+                        {organization}
+                    </div>
                 </figcaption>
             </div>
         </div>

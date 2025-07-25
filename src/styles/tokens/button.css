@@ -18,6 +18,14 @@
 	--button-size-md: 24px;
 	--button-size-sm: 20px;
 
+	/* Button Width */
+	--button-width-xl: 200px;
+	--button-width-lg: 120px;
+	--button-width-md: 95px;
+	--button-width-sm: 85px;
+
+
+
 	/* Button Shadow */
 	--shadow-color: rgba(0, 0, 0, 0.1);
 	--shadow-hover: rgba(0, 0, 0, 0.2);
@@ -40,7 +48,7 @@
 /* Size Variants */
 
 .button-lg {
-	width: fit-content;
+	width: var(--button-width-lg);
 	height: var(--button-size-lg);
 	font: var(--text-lg-regular);
 	background-color: currentColor;
@@ -48,7 +56,7 @@
 }
 
 .button-md {
-	width: fit-content;
+	width: var(--button-width-md);
 	height: var(--button-size-md);
 	font: var(--text-md-regular);
 	background-color: currentColor;
@@ -56,7 +64,7 @@
 }
 
 .button-sm {
-	width: fit-content;
+	width: var(--button-width-sm);
 	height: var(--button-size-sm);
 	font: var(--text-sm-regular);
 	background-color: currentColor;
