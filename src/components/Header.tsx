@@ -9,27 +9,30 @@ export default function Header() {
 
     return (
         <header>
-            <div className="_header-container">
-                {/* Logo */}
+            <section className="w-full flex justify-center">
+                <div className="_header-container w-full max-w-[1024px] px-4 md:px-8">
+                    {/* Logo */}
 
-                <Link href="/" className="flex items-center shrink-0">
-                    <Image
-                        src="/Logo_title.png"
-                        alt="SBM Concepts logo"
-                        width={100}
-                        height={80}
-                        className="_header-logo object-contain h-10"
-                    />
-                </Link>
-                {/* Desktop Navigation */}
-                <div className="hidden md:flex w-full items-end justify-end">
-                    <Navigation />
+                    <Link href="/" className="flex items-center shrink-0">
+                        <Image
+                            src="/Logo_title.png"
+                            alt="SBM Concepts logo"
+                            width={100}
+                            height={80}
+                            className="_header-logo object-contain h-10"
+                        />
+                    </Link>
+                    {/* Desktop Navigation */}
+                    <div className="hidden md:flex w-full items-end justify-end">
+                        <Navigation />
+                    </div>
+                    {/* Mobile Menu */}
+                    <div className="md:hidden flex items-center">
+                        <MobileMenu />
+                    </div>
                 </div>
-                {/* Mobile Menu */}
-                <div className="md:hidden flex items-center">
-                    <MobileMenu />
-                </div>
-            </div>
+            </section>
+
         </header >
     );
 }

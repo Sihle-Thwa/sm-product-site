@@ -7,7 +7,7 @@ export default function HeroSection() {
     return (
 
         <section className="s_hero-wrap" data-theme="default" >
-            <div className="c_hero-container">
+            <div className="c_hero-container w-full max-w-[1024px] px-4 md:px-8">
                 {/* Hero Content */}
                 <div className="_hero-content">
                     {/* Hero Title */}

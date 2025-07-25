@@ -32,25 +32,27 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative">
-      <Header />
-      <main>
-        <HeroSection />
-        <SocialProofSection />
-        <SectionDivider />
-        <FeatureSection />
-        <SectionDivider />
-        <TestimonialsSection />
-        <SectionDivider />
-        <FAQSection />
-        <SectionDivider />
-        <PricingSection />
-        <SectionDivider />
-        <MetricSection />
-        <SectionDivider />
-        <CTASection />
-      </main>
-      <Footer />
+    <div className="w-full flex justify-center">
+      <div className="w-full max-w-[1024px] px-4 sm:px-6 lg:px-8">
+        <Header />
+        <main>
+          <HeroSection />
+          <SocialProofSection />
+          <SectionDivider />
+          <FeatureSection />
+          <SectionDivider />
+          <TestimonialsSection />
+          <SectionDivider />
+          <FAQSection />
+          <SectionDivider />
+          <PricingSection />
+          <SectionDivider />
+          <MetricSection />
+          <SectionDivider />
+          <CTASection />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ const navItems = [
 export default function Navigation() {
     return (
         <NavigationMenu className="hidden md:flex w-full justify-end">
-            <NavigationMenuList className="flex gap-8">
+            <NavigationMenuList className="flex gap-6">
                 {navItems.map(({ label, href }) => (
                     <NavigationMenuItem key={label}>
                         <NavigationMenuLink
