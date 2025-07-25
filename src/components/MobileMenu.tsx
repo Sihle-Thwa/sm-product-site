@@ -29,7 +29,7 @@ export default function MobileMenu() {
                 <PopoverContent
                     side="bottom"
                     align="end"
-                    className="z-100 w-[320px] mt-2 p-4 bg-background rounded-lg shadow-lg border animate-fade-in"
+                    className="z-[100] w-[320px] mt-2 p-4 bg-background rounded-lg shadow-lg border animate-fade-in"
                 >
                     <nav className="flex flex-col" aria-label="Mobile navigation">
                         {navItems.map((item) => (
