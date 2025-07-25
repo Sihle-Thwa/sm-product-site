@@ -1,6 +1,7 @@
 /* Imports */
 @import "tailwindcss";
 @import "../styles/typography.css";
+@import "../styles/tokens/sectiondivider.css";
 @import "../styles/tokens/navigation.css";
 @import "../styles/tokens/herosection.css";
 @import "../styles/tokens/pricing-card.css";
@@ -207,12 +208,3 @@
 	--sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-/* ===================================================
-  🧩 Utility Classes
-=================================================== */
-.section-divider {
-	width: 100%;
-	border: none;
-	border-top: 1px solid var(--border-muted);
-	margin: 0;
-}
