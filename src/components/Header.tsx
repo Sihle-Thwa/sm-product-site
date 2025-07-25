@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -6,13 +7,11 @@ import Navigation from "./Navigation";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
-
     return (
-        <header>
-            <section className="w-full flex justify-center">
-                <div className="_header-container w-full max-w-[1024px] px-4 md:px-8">
+        <header className="border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-[var(--z-header)] sticky top-0">
+            <div className="w-full flex justify-center">
+                <div className="_header-container w-full max-w-[1024px] px-4 md:px-8 flex items-center justify-between py-4">
                     {/* Logo */}
-
                     <Link href="/" className="flex items-center shrink-0">
                         <Image
                             src="/Logo_title.png"
@@ -20,19 +19,21 @@ export default function Header() {
                             width={100}
                             height={80}
                             className="_header-logo object-contain h-10"
+                            priority
                         />
                     </Link>
+
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex w-full items-end justify-end">
+                    <nav className="hidden md:flex">
                         <Navigation />
-                    </div>
+                    </nav>
+
                     {/* Mobile Menu */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden">
                         <MobileMenu />
                     </div>
                 </div>
-            </section>
-
-        </header >
+            </div>
+        </header>
     );
 }
