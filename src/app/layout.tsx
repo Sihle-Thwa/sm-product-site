@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} `}>
       <body className="min-h-screen font-inter antialiased">
-        <div className="relative flex min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="relative flex min-h-screen px-4 sm:px-6 lg:px-8 xl:px-10">
           <div className="">
             {children}
           </div>

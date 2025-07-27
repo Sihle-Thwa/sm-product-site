@@ -46,7 +46,7 @@
 	html {
 		height: 100%;
 		min-width: 320px;
-		max-width: 1024px;
+		max-width: 2560px;
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
@@ -60,7 +60,7 @@
 	}
 	body {
 		min-height: 100dvh; /* modern viewport unit for mobile devices */
-		max-width: 1024px;
+		max-width: 2560px;
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
@@ -223,4 +223,48 @@
 	--sidebar-accent-foreground: oklch(0.985 0.002 247.839);
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+/* ===========================
+📱 Responsive Layout System
+=========================== */
+
+/* SM: up to 420px */
+@media (max-width: 420px) {
+  html,
+  body {
+    padding-inline: var(--space-xs);
+  }
+}
+
+/* MD: up to 768px */
+@media (max-width: 768px) {
+  html,
+  body {
+    padding-inline: var(--space-sm);
+  }
+}
+
+/* LG: up to 1024px */
+@media (max-width: 1024px) {
+  html,
+  body {
+    padding-inline: var(--space-md);
+  }
+}
+
+/* XL: up to 1440px */
+@media (max-width: 1440px) {
+  html,
+  body {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* 2XL: up to 2560px */
+@media (max-width: 2560px) {
+  html,
+  body {
+    padding-inline: var(--space-xl);
+  }
 }

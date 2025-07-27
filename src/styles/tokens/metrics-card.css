@@ -8,22 +8,74 @@
   --metrics-card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.s_metric-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+  padding-block: var(--space-xl);
+  width: 100%;
+  background-color: var(--color-background);
+}
+
+.c_metric-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  text-align: center;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.c_metric-cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .c_metric-cta {
+    flex-direction: row;
+  }
+}
+
+.c_metric-board {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.metric-bg-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-xl);
+  background-image: url("../../../public/metricboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
 .metrics-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 400px;
   min-width: 200px;
-  min-height: 200px;
+  max-width: 400px;
   width: 100%;
-  padding: 32px;
-
+  min-height: 200px;
+  padding: var(--space-lg);
   background: var(--metrics-card-background);
   border: var(--metrics-card-border);
   border-radius: var(--metrics-card-border-radius);
-  backdrop-filter: blur(4px);
   text-align: center;
+  backdrop-filter: blur(4px);
   transition: box-shadow 0.3s ease;
 }
 
@@ -34,10 +86,9 @@
 .metrics-card-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--space-sm);
+  align-items: center;
   width: 100%;
-  height: 100%;
 }
 
 .metrics-card-value {
@@ -47,15 +98,6 @@
 .metrics-card-supporting {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  gap: var(--space-xs);
   text-align: center;
-}
-
-/* Background Image */
-.metric-bg-image {
-  background-image: url("../../../public/metricboard.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

@@ -1,23 +1,27 @@
+/* Base Navigation Container */
 .navMenu {
   display: flex;
   gap: var(--space-sm);
-  max-width: 60px;
   width: 100%;
+  max-width: 60px;
   height: 100%;
 }
 
+/* Navigation List */
 .navMenuList {
-    display: flex;
+  display: flex;
   gap: var(--space-sm);
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Navigation Items */
 .navMenuItem {
   list-style: none;
 }
 
+/* Navigation Links */
 .navMenuLink {
   display: flex;
   align-items: center;
@@ -34,25 +38,75 @@
   outline: none;
 }
 
-/* Desktop Navigation */
+/* Desktop Navigation - Hidden by default */
 .desktop-nav {
   display: none;
 }
 
+/* Mobile Navigation - Visible by default */
+.mobile-nav {
+  display: flex;
+}
+
+/* ----------------- Breakpoints ----------------- */
+
+/* MD and up: show desktop nav, hide mobile */
 @media (min-width: 768px) {
   .desktop-nav {
     display: flex;
     gap: var(--space-md);
   }
-}
 
-/* Mobile Navigation */
-.mobile-nav {
-  display: flex;
-}
-
-@media (min-width: 768px) {
   .mobile-nav {
     display: none;
+  }
+}
+
+/* LG - max-width: 1024px */
+@media (max-width: 1024px) {
+  .navMenu {
+    gap: var(--space-sm);
+  }
+
+  .navMenuList {
+    gap: var(--space-sm);
+  }
+
+  .navMenuLink {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}
+
+/* MD - max-width: 768px */
+@media (max-width: 768px) {
+  .navMenu {
+    gap: var(--space-xs);
+  }
+
+  .navMenuList {
+    gap: var(--space-xs);
+  }
+
+  .navMenuLink {
+    padding: var(--space-xs) var(--space-xs);
+  }
+}
+
+/* SM - max-width: 420px */
+@media (max-width: 420px) {
+  .navMenu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .navMenuList {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .navMenuLink {
+    width: 100%;
+    padding: var(--space-xs);
   }
 }

@@ -1,5 +1,6 @@
 
-@media (width >= 40rem) { ... } - sm
-@media (width >= 48rem) { ... } - md
-@media (width >= 64rem) { ... } - lg
-@media (width >= 80rem) { ... } - xl
+@media (max-width: 420px) { ... } - sm
+@media (max-width: 768px) { ... } - md
+@media (max-width: 1024px) { ... } - lg
+@media (max-width: 1440px) { ... } - xl
+@media (max-width: 2560px) { ... } - 2xl

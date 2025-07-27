@@ -8,42 +8,26 @@ import { motion } from "framer-motion";
 
 export default function TestimonialsSection() {
     return (
-        <section
-            className="s_testimonial-wrap"
-            aria-labelledby="testimonials-section"
-        >
+        <section className="s_testimonial-wrap" aria-labelledby="testimonials-section">
             <div className="c_testimonial-container">
-                <div id="testimonials-heading" className="c_testimonial-container">
-                    {/* Section Heading + CTA */}
-                    <div className="_testimonial-content">
-                        <div className="_testimonial-intro">
-                            <h2 className="_testimonial_title text-xl-semibold sm:text-md-semibold md:text-lg-semibold">
-                                Don’t just take our word for it
-                            </h2>
-                            <p className="_testimonial_subtitle text-lg-medium md:text-md-medium sm:text-sm-medium">
-                                Hear from some of our amazing customers.
-                            </p>
-                            <p className="_testimonial_description text-sm-regular md:text-xs-regular sm:text-xs-regular">
-                                Our platform has transformed the way sports organizations
-                                operate, and our customers are thrilled with the results.
-                            </p>
-                        </div>
+                {/* Heading + CTA */}
+                <div id="testimonials-heading" className="_testimonial-content">
+                    <div className="_testimonial-intro">
+                        <h2 className="_testimonial_title heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">
+                            Don’t just take our word for it
+                        </h2>
+                        <p className="_testimonial_subtitle text-lg-medium md:text-md-medium sm:text-sm-medium">
+                            Hear from some of our amazing customers.
+                        </p>
+                        <p className="_testimonial_description text-sm-regular md:text-xs-regular sm:text-xs-regular">
+                            Our platform has transformed the way sports organizations operate, and our customers are thrilled with the results.
+                        </p>
+                    </div>
 
-                        <div className="_testimonial-cta">
-                            <div className="_testimonial-cta-buttons">
-                                <Button
-                                    className="button button-lg md:button-md sm:button-sm button-accent"
-                                    aria-label="See Our Customers"
-                                >
-                                    Our Customers
-                                </Button>
-                                <Button
-                                    className="button button-lg md:button-md sm:button-sm button-primary"
-                                    aria-label="Create Your Account"
-                                >
-                                    Create account
-                                </Button>
-                            </div>
+                    <div className="_testimonial-cta">
+                        <div className="_testimonial-cta-buttons">
+                            <Button className="button button-lg md:button-md sm:button-sm button-accent">Our Customers</Button>
+                            <Button className="button button-lg md:button-md sm:button-sm button-primary">Create Account</Button>
                         </div>
                     </div>
                 </div>
@@ -60,11 +44,7 @@ export default function TestimonialsSection() {
                         >
                             <TestimonialCard
                                 {...testimonial}
-                                image={
-                                    typeof testimonial.image === "string"
-                                        ? testimonial.image
-                                        : testimonial.image?.src
-                                }
+                                image={typeof testimonial.image === "string" ? testimonial.image : testimonial.image?.src}
                             />
                         </motion.div>
                     ))}

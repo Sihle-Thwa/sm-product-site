@@ -3,34 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--space-lg);
   gap: var(--space-lg);
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+  padding-block: var(--space-xl);
+  width: 100%;
 }
 
-/* Optional FAQ Card (if reused) */
-._faq-card-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-lg);
-}
-
-._faq-card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-end;
-  position: relative;
-  overflow: hidden;
-  width: 360px;
-  height: 480px;
-  padding: 96px 24px 24px;
-  border: var(--faq-border);
-  border-radius: var(--faq-border-radius);
-  flex-shrink: 0;
-}
-
+/* FAQ Card Image Style */
 ._faq-card-image {
   width: 100%;
   height: 100%;

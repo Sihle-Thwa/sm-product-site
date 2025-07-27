@@ -12,9 +12,9 @@ const FAQAccordion = () => {
     };
 
     return (
-        <div className="flex flex-col w-full gap-4">
+        <section className="s_faq-wrap">
             {faqs.map((faq, index) => (
-                <div key={index} className="border rounded-lg border-border w-full">
+                <div key={index} className="border rounded-lg border-border w-full max-w-2xl">
                     <button
                         onClick={() => toggleItem(index)}
                         aria-expanded={openItem === index}
@@ -34,7 +34,7 @@ const FAQAccordion = () => {
                     </div>
                 </div>
             ))}
-        </div>
+        </section>
     );
 };
 
