@@ -1,43 +1,81 @@
 @import "../typography.css";
 
+:root {
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 60px;
+}
+
 .s_cta-wrap {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding: var(--space-xl) var(--space-sm);
-	background-color: var(--color-background);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl) var(--space-sm);
+    background-color: var(--color-background);
 }
 
 .c_cta-container {
-	width: 100%;
-	max-width: 1280px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .c_cta-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: var(--space-md);
-	width: 100%;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    width: 100%;
+    text-align: center;
 }
 
 .c_cta-buttons {
-	display: flex;
-	justify-content: center;
-	gap: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 420px) {
+    .s_cta-wrap {
+        padding: var(--space-sm);
+    }
+
+    .c_cta-content {
+        gap: var(--space-sm);
+    }
 }
 
 @media (max-width: 768px) {
-	.c_cta-content {
-		gap: var(--space-sm);
-	}
+    .c_cta-content {
+        gap: var(--space-sm);
+    }
 
-	.c_cta-buttons {
-		flex-direction: column;
-		width: 100%;
-	}
+    .c_cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .s_cta-wrap {
+        padding: var(--space-md);
+    }
+}
+
+@media (max-width: 1440px) {
+    .s_cta-wrap {
+        padding: var(--space-lg);
+    }
+}
+
+@media (max-width: 2560px) {
+    .s_cta-wrap {
+        padding: var(--space-xl);
+    }
 }
