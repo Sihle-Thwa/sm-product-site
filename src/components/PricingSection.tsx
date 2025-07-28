@@ -4,7 +4,7 @@ import PricingCard from "./PricingCard";
 
 const PricingSection: React.FC = () => {
     return (
-        <section className="bg-[var(--pricing-surface-light)] flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
+        <section className="bg-[var(--pricing-surface-light)] flex flex-col items-center w-full sm:px-4 md:px-6 lg:px-8">
             <div className="w-full flex flex-col gap-12 py-16">
                 {/* Section Header */}
                 <div className="text-left space-y-4">
