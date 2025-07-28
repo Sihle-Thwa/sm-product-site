@@ -1,6 +1,47 @@
+:root {
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 60px;
+}
+
 .section-divider {
-	width: 100%;
-	border: none;
-	border-top: 1px solid var(--border-muted);
-	margin: 0;
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--border-muted);
+    margin: 0;
+    padding: var(--space-xs) 0; /* Add padding for spacing */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 420px) {
+    .section-divider {
+        padding: var(--space-xs) 0; /* Adjust padding for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .section-divider {
+        padding: var(--space-sm) 0; /* Adjust padding for medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-divider {
+        padding: var(--space-md) 0; /* Adjust padding for large screens */
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-divider {
+        padding: var(--space-lg) 0; /* Adjust padding for extra-large screens */
+    }
+}
+
+@media (max-width: 2560px) {
+    .section-divider {
+        padding: var(--space-xl) 0; /* Adjust padding for 2x large screens */
+    }
 }
