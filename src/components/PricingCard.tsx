@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/tokens/pricing-card.css";
+import "@/styles/tokens/pricingsection.css";
 import { CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 

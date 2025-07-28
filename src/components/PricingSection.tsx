@@ -5,7 +5,7 @@ import PricingCard from "./PricingCard";
 const PricingSection: React.FC = () => {
     return (
         <section className="bg-[var(--pricing-surface-light)] flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
-            <div className="w-full max-w-[1024px] flex flex-col gap-12 py-16">
+            <div className="w-full flex flex-col gap-12 py-16">
                 {/* Section Header */}
                 <div className="text-left space-y-4">
                     <div className="text-lg-semibold text-[var(--accent)]">Pricing</div>
