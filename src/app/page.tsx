@@ -1,4 +1,4 @@
-//app/page.tsx
+// app/page.tsx
 import React from "react";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
@@ -12,7 +12,6 @@ import SocialProofSection from "@/components/SocialProofSection";
 import MetricSection from "@/components/MetricSection";
 import SectionDivider from "@/components/SectionDivider";
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "U-Organise",
@@ -32,24 +31,24 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div >
-        <Header />
-      <main className="flex flex-col gap-auto">
-          <HeroSection />
-          <SocialProofSection />
-          <SectionDivider />
-          <FeatureSection />
-          <SectionDivider />
-          <TestimonialsSection />
-          <SectionDivider />
-          <FAQSection />
-          <SectionDivider />
-          <PricingSection />
-          <SectionDivider />
-          <MetricSection />
-          <SectionDivider />
-          <CTASection />
-        </main>
+    <div className="page-container">
+      <Header />
+      <main className="flex flex-col gap-0">
+        <HeroSection />
+        <SocialProofSection />
+        <SectionDivider />
+        <FeatureSection />
+        <SectionDivider />
+        <TestimonialsSection />
+        <SectionDivider />
+        <FAQSection />
+        <SectionDivider />
+        <PricingSection />
+        <SectionDivider />
+        <MetricSection />
+        <SectionDivider />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
