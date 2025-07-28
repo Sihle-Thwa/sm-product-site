@@ -30,18 +30,18 @@
 
 @media (max-width: 1024px) {
     .section-divider {
-        padding: var(--space-md) 0; /* Adjust padding for large screens */
+        padding: var(--space-sm) 0; /* Adjust padding for large screens */
     }
 }
 
 @media (max-width: 1440px) {
     .section-divider {
-        padding: var(--space-lg) 0; /* Adjust padding for extra-large screens */
+        padding: var(--space-sm) 0; /* Adjust padding for extra-large screens */
     }
 }
 
 @media (max-width: 2560px) {
     .section-divider {
-        padding: var(--space-xl) 0; /* Adjust padding for 2x large screens */
+        padding: var(--space-sm) 0; /* Adjust padding for 2x large screens */
     }
 }

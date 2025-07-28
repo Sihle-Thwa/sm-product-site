@@ -16,7 +16,7 @@ const FAQSection = () => {
         <section className="s_faq-wrap">
             <div className="flex flex-col w-full gap-4">
                 {faqs.map((faq, index) => (
-                    <div key={index} className="border rounded-lg border-border w-full max-w-2xl">
+                    <div key={index} className="border rounded-lg border-border w-full">
                         <Button
                             onClick={() => toggleItem(index)}
                             aria-expanded={openItem === index}

@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="page-container">
       <Header />
-      <main className="flex flex-col gap-0">
+      <main className="flex flex-col">
         <HeroSection />
         <SocialProofSection />
         <SectionDivider />

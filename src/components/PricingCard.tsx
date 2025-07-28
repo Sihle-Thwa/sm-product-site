@@ -22,7 +22,7 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) => {
     return (
         <div className={`pricing-card ${highlight ? "highlight" : ""}`}>
-            {highlight && <span className="pricing-card-badge">Most Popular</span>}
+            {highlight && <span className="pricing-card-badge ">Most Popular</span>}
 
             <div className="text-center space-y-2">
                 <div className="heading-sm-semibold">{tier.name}</div>
@@ -33,18 +33,18 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
                 <div className="text-sm-medium text-muted-foreground">{tier.description}</div>
             </div>
 
-            <ul className="flex flex-col gap-4">
+            <ul className="feature-list">
                 {tier.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                    <li key={index}>
                         <CheckCircle className="w-5 h-5 text-[--accent]" />
                         <span>{feature}</span>
                     </li>
                 ))}
             </ul>
 
-            <div className="py-3 text-center">
+            <div className="text-center w-full">
                 <Button className="button button-lg button-primary w-full">
-                    <a href={tier.cta.href}>{tier.cta.label}</a>
+                    <a href={tier.cta.href} className="block w-full">{tier.cta.label}</a>
                 </Button>
             </div>
         </div>

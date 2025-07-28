@@ -12,7 +12,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--space-lg);
     padding-inline: clamp(1rem, 4vw, 2.5rem);
     padding-block: var(--space-xl);
     width: 100%;
@@ -56,6 +55,7 @@
 @media (max-width: 420px) {
     .s_faq-wrap {
         padding-block: var(--space-sm);
+        
     }
 }
 
