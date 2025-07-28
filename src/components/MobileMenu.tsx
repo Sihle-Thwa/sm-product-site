@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const navItems = [
@@ -29,19 +29,37 @@ export default function MobileMenu() {
                 <PopoverContent
                     side="bottom"
                     align="end"
-                    className="z-[100] w-[320px] mt-2 p-4 bg-background rounded-lg shadow-lg border animate-fade-in"
+                    sideOffset={8}
+                    className="!p-0 !border-0 z-[var(--z-overlay)]"
+                    asChild
                 >
-                    <nav className="flex flex-col" aria-label="Mobile navigation">
-                        {navItems.map((item) => (
-                            <a
-                                key={item.label}
-                                href={item.href}
-                                className="px-4 py-3 text-sm-medium text-foreground hover:bg-muted transition-colors border-b last:border-b-0"
-                            >
-                                {item.label}
-                            </a>
-                        ))}
-                    </nav>
+                    <div className="fixed inset-0 bg-[oklch(0 0 0 / 0.7)] backdrop-blur-sm flex flex-col justify-start items-end">
+                        <div className="w-full max-w-lg bg-background h-full shadow-lg p-[var(--space-lg)] flex flex-col gap-[var(--space-md)]">
+                            <div className="flex justify-end">
+                                <PopoverTrigger asChild>
+                                    <Button
+                                        size="icon"
+                                        variant="ghost"
+                                        className="button button-icon"
+                                        aria-label="Close menu"
+                                    >
+                                        <X className="w-5 h-5" />
+                                    </Button>
+                                </PopoverTrigger>
+                            </div>
+                            <nav className="flex flex-col gap-[var(--space-md)]" aria-label="Mobile Fullscreen Navigation">
+                                {navItems.map((item) => (
+                                    <a
+                                        key={item.label}
+                                        href={item.href}
+                                        className="text-lg-medium text-foreground hover:text-accent transition-colors"
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </nav>
+                        </div>
+                    </div>
                 </PopoverContent>
             </Popover>
         </div>

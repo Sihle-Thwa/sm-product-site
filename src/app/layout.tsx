@@ -16,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <body className="min-h-screen font-inter antialiased">
-        <div className="relative flex min-h-screen px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
-          <div className="flex-grow">
+        <div className="min-h-screen relative ">
+          <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
             {children}
+
           </div>
+
         </div>
       </body>
     </html>
