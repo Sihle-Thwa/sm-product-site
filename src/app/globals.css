@@ -27,52 +27,52 @@
 	}
 
 	::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: var(--border);
-  }
-
-  ::-webkit-scrollbar-thumb {
-	background-color: var(--color-primary);
-	border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-	background-color: var(--color-secondary);
-  }
-
-    }
-	html {
-		height: 100%;
-		min-width: 320px;
-		max-width: 2560px;
-		width: 100%;
-		margin: 0 auto;
-		display: flex;
-		padding-inline: clamp(1rem, 4vw, 2.5rem);
-		justify-content: center;
-		scroll-behavior: smooth;
-		text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		width: 8px;
 	}
-	body {
-		min-height: 100dvh; /* modern viewport unit for mobile devices */
-		max-width: 2560px;
-		width: 100%;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		overflow-x: hidden;
-		padding-inline: clamp(1rem, 4vw, 2.5rem);
-		color: var(--color-foreground);
-		background-color: var(--color-background);
-		font-family: var(--font-inter, system-ui, sans-serif);
+
+	::-webkit-scrollbar-track {
+		background: var(--border);
 	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--color-primary);
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--color-secondary);
+	}
+}
+
+html {
+	height: 100%;
+	min-width: 320px;
+	max-width: 2560px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding-inline: clamp(1rem, 4vw, 2.5rem);
+	justify-content: center;
+	scroll-behavior: smooth;
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	min-height: 100dvh; /* modern viewport unit for mobile devices */
+	max-width: 2560px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	padding-inline: clamp(1rem, 4vw, 2.5rem);
+	color: var(--color-foreground);
+	background-color: var(--color-background);
+	font-family: var(--font-inter, system-ui, sans-serif);
+}
 
 /* ===================================================
   🌐 Theme Tokens (Light Mode Defaults)
@@ -232,40 +232,40 @@
 
 /* SM: up to 420px */
 @media (max-width: 420px) {
-  html,
-  body {
-    padding-inline: var(--space-xs);
-  }
+	html,
+	body {
+		padding-inline: var(--space-xs);
+	}
 }
 
 /* MD: up to 768px */
 @media (max-width: 768px) {
-  html,
-  body {
-    padding-inline: var(--space-sm);
-  }
+	html,
+	body {
+		padding-inline: var(--space-sm);
+	}
 }
 
 /* LG: up to 1024px */
 @media (max-width: 1024px) {
-  html,
-  body {
-    padding-inline: var(--space-md);
-  }
+	html,
+	body {
+		padding-inline: var(--space-md);
+	}
 }
 
 /* XL: up to 1440px */
 @media (max-width: 1440px) {
-  html,
-  body {
-    padding-inline: var(--space-lg);
-  }
+	html,
+	body {
+		padding-inline: var(--space-lg);
+	}
 }
 
 /* 2XL: up to 2560px */
 @media (max-width: 2560px) {
-  html,
-  body {
-    padding-inline: var(--space-xl);
-  }
+	html,
+	body {
+		padding-inline: var(--space-xl);
+	}
 }
