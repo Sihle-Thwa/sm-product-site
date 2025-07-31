@@ -11,8 +11,8 @@ export default function Header() {
         <header
             aria-label="Site header"
         >
-            <div className="w-full flex justify-center">
-                <div className="_header-container px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-row w-full">
+                <div className="_header-container">
                     <Link
                         href="/"
                         className="flex shrink-0 items-center"

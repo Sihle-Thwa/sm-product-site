@@ -17,7 +17,7 @@ export default function HeroSection() {
                     <h1 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold text-balance">
                         The Complete Sports Management Solution
                     </h1>
-                    <p className="text-md-medium md:text-sm-medium sm:text-xs-medium text-muted-foreground max-w-prose mx-auto md:mx-0">
+                    <p className="text-md-medium md:text-sm-medium sm:text-xs-medium text-muted-foreground ">
                         Streamline team management, player development, and operations in one uniformed platform.
                     </p>
 

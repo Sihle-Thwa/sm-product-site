@@ -12,7 +12,8 @@
 
 .s_hero-wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
     background-color: var(--color-background);
 }
@@ -20,13 +21,12 @@
 .c_hero-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    max-width: 2440px;
+    max-width: 1440px;
     width: 100%;
-    gap: var(--space-xl);
-    padding-block: var(--space-xl);
-    padding-inline: clamp(1rem, 4vw, 2.5rem);
-    margin-inline: auto;
+    gap: var(--space-lg);
+    
 }
 
 ._hero-content {
@@ -36,11 +36,7 @@
     text-align: center;
 }
 
-@media (min-width: 420px) {
-    ._hero-content {
-        text-align: left;
-    }
-}
+
 
 ._hero-content-cta {
     display: flex;
@@ -49,12 +45,6 @@
     justify-content: center;
 }
 
-@media (min-width: 640px) {
-    ._hero-content-cta {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-}
 
 .c_hero-image {
     display: flex;
@@ -66,38 +56,33 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: var(--radius-xl);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive Media Queries */
-@media (max-width: 420px) {
-    .c_hero-container {
-        padding-block: var(--space-sm);
-        gap: var(--space-md);
+
+
+@media (min-width: 425px) {
+   .c_hero-container {
+   }
+    ._hero-content {
+        align-items: center;
+    }
+    ._hero-content-cta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media (max-width: 768px) {
-    .c_hero-container {
-        padding-block: var(--space-md);
-    }
+    
 }
 
 @media (max-width: 1024px) {
-    .c_hero-container {
-        padding-block: var(--space-lg);
-    }
+    
 }
 
 @media (max-width: 1440px) {
-    .c_hero-container {
-        padding-block: var(--space-xl);
-    }
-}
-
-@media (max-width: 2560px) {
-    .c_hero-container {
-        padding-block: var(--space-2xl);
-    }
+    
 }

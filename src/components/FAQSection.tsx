@@ -14,7 +14,7 @@ const FAQSection = () => {
 
     return (
         <section className="s_faq-wrap">
-            <div className="flex flex-col w-full gap-4">
+            <div className="_faq-card-content">
                 {faqs.map((faq, index) => (
                     <div key={index} className="border rounded-lg border-border w-full">
                         <Button
@@ -22,7 +22,7 @@ const FAQSection = () => {
                             aria-expanded={openItem === index}
                             className="flex items-center justify-between w-full text-left p-5 cursor-pointer"
                         >
-                            <span className="text-sm-semibold">{faq.question}</span>
+                            <span className="text-md-semibold">{faq.question}</span>
                             <ChevronDown
                                 className={`w-5 h-5 transition-transform duration-200 ${openItem === index ? "rotate-180" : ""}`}
                             />

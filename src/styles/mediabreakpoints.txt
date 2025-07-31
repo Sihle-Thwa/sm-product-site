@@ -1,5 +1,5 @@
 
-@media (max-width: 420px) { ... } - sm
+@media (max-width: 425px) { ... } - sm
 @media (max-width: 768px) { ... } - md
 @media (max-width: 1024px) { ... } - lg
 @media (max-width: 1440px) { ... } - xl

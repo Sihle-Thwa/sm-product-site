@@ -46,12 +46,10 @@
 
 html {
 	height: 100%;
-	min-width: 320px;
-	max-width: 2560px;
 	width: 100%;
-	margin: 0 auto;
 	display: flex;
-	padding-inline: clamp(1rem, 4vw, 2.5rem);
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 	scroll-behavior: smooth;
 	text-size-adjust: 100%;
@@ -61,14 +59,15 @@ html {
 
 body {
 	min-height: 100dvh; /* modern viewport unit for mobile devices */
-	max-width: 2560px;
+	height: 100%;
+	overflow-y: auto;
+	max-width: 1440px;
 	width: 100%;
-	margin: 0 auto;
+	min-width: 425px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	overflow-x: hidden;
-	padding-inline: clamp(1rem, 4vw, 2.5rem);
 	color: var(--color-foreground);
 	background-color: var(--color-background);
 	font-family: var(--font-inter, system-ui, sans-serif);
@@ -230,11 +229,11 @@ body {
 📱 Responsive Layout System
 =========================== */
 
-/* SM: up to 420px */
-@media (max-width: 420px) {
+/* SM: up to 425px */
+@media (max-width: 425px) {
 	html,
 	body {
-		padding-inline: var(--space-xs);
+		padding: var(--space-sm);
 	}
 }
 
@@ -242,7 +241,7 @@ body {
 @media (max-width: 768px) {
 	html,
 	body {
-		padding-inline: var(--space-sm);
+		padding: var(--space-md);
 	}
 }
 
@@ -250,7 +249,7 @@ body {
 @media (max-width: 1024px) {
 	html,
 	body {
-		padding-inline: var(--space-md);
+		padding: var(--space-md);
 	}
 }
 
@@ -258,14 +257,6 @@ body {
 @media (max-width: 1440px) {
 	html,
 	body {
-		padding-inline: var(--space-lg);
-	}
-}
-
-/* 2XL: up to 2560px */
-@media (max-width: 2560px) {
-	html,
-	body {
-		padding-inline: var(--space-xl);
+		padding: var(--space-lg);
 	}
 }
