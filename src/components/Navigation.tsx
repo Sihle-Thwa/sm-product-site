@@ -17,7 +17,7 @@ const navItems = [
 
 export default function Navigation() {
     return (
-        <NavigationMenu className="hidden md:flex justify-end">
+        <NavigationMenu className="navMenu">
             <NavigationMenuList className="navMenuList">
                 {navItems.map(({ label, href }) => (
                     <NavigationMenuItem key={label} className="navMenuItem">

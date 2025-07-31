@@ -18,12 +18,14 @@
 
 /* Base Reset */
 @layer base {
+	html {
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
 	*,
 	*::before,
 	*::after {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
+		box-sizing: inherit;
 	}
 
 	::-webkit-scrollbar {
@@ -44,33 +46,15 @@
 	}
 }
 
-html {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	scroll-behavior: smooth;
-	text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-}
-
 body {
-	min-height: 100dvh; /* modern viewport unit for mobile devices */
-	height: 100%;
-	overflow-y: auto;
-	max-width: 1440px;
-	width: 100%;
-	min-width: 425px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-inter), sans-serif;
 	color: var(--color-foreground);
 	background-color: var(--color-background);
-	font-family: var(--font-inter, system-ui, sans-serif);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 /* ===================================================
@@ -88,12 +72,12 @@ body {
 	--radius-full: 9999px;
 
 	/* Spacing */
-	--space-xs: 8px;
-	--space-sm: 16px;
-	--space-md: 24px;
-	--space-lg: 32px;
-	--space-xl: 48px;
-	--space-2xl: 60px;
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 24px;
+	--space-xl: 32px;
+	--space-2xl: 48px;
 
 	/* Z-Index */
 	--z-header: 100;
@@ -226,37 +210,35 @@ body {
 }
 
 /* ===========================
-📱 Responsive Layout System
+ Responsive Layout System
 =========================== */
 
-/* SM: up to 425px */
 @media (max-width: 425px) {
-	html,
-	body {
+	:root {
 		padding: var(--space-sm);
 	}
 }
 
-/* MD: up to 768px */
 @media (max-width: 768px) {
-	html,
-	body {
+	:root {
 		padding: var(--space-md);
 	}
 }
 
-/* LG: up to 1024px */
 @media (max-width: 1024px) {
-	html,
-	body {
-		padding: var(--space-md);
+	:root {
+		padding: var(--space-lg);
 	}
 }
 
-/* XL: up to 1440px */
 @media (max-width: 1440px) {
-	html,
-	body {
-		padding: var(--space-lg);
+	:root {
+		padding: var(--space-xl);
+	}
+}
+
+@media (min-width: 1441px) {
+	:root {
+		padding: var(--space-2xl);
 	}
 }

@@ -38,11 +38,12 @@
 	justify-content: center;
 	padding: 8px 16px;
 	text-transform: uppercase;
+	text-decoration: none;
 	transition: 0.2s ease, color 0.2s ease;
 	cursor: pointer;
+	border: none;
 	border-radius: var(--radius);
 	box-shadow: 0 2px 4px var(--shadow-color);
-	font-family: var(--font-inter);
 }
 
 /* Size Variants */
@@ -115,3 +116,4 @@
 	color: var(--primary-text);
 	cursor: not-allowed;
 }
+
