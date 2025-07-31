@@ -13,13 +13,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: var(--space-xl) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
     background-color: var(--color-background);
 }
 
 .c_cta-container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-lg);
     width: 100%;
     text-align: center;
 }
@@ -45,19 +45,19 @@
     .s_cta-wrap {
         padding: var(--space-sm);
     }
-
+    
     .c_cta-content {
         gap: var(--space-sm);
+        padding: var(--space-sm);
     }
 }
 
 @media (max-width: 768px) {
     .c_cta-content {
-        gap: var(--space-sm);
+        gap: var(--space-md);
     }
 
     .c_cta-buttons {
-        flex-direction: column;
         width: 100%;
     }
 }

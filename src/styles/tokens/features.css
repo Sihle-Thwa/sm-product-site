@@ -24,7 +24,7 @@
     padding-block: var(--space-xl);
     padding-inline: clamp(1rem, 4vw, 2.5rem);
     width: 100%;
-    max-width: 1024px;
+    max-width: 1440px;
     margin-inline: auto;
 }
 
@@ -92,17 +92,13 @@
     text-align: center;
 }
 
-.c_feature-card-icon {
-    margin-bottom: var(--space-sm);
-}
+
 
 .c_feature-card-title {
     margin: var(--space-xs) 0;
 }
 
-.c_feature-card-description {
-    color: var(--color-muted, #666);
-}
+
 
 /* Responsive Media Queries */
 @media (max-width: 420px) {

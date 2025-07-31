@@ -13,11 +13,11 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
     return (
         <div className="c_feature-card">
-            <div className="c_feature-card-icon">{icon}</div>
+            <div className="icon icon-lg md:icon-md sm:icon-sm icon-accent">{icon}</div>
             <h3 className="c_feature-card-title text-md-semibold md:text-sm-semibold">
                 {title}
             </h3>
-            <p className="c_feature-card-description text-sm-regular md:text-xs-regular">
+            <p className="c_feature-card-description lg:text-sm-regular md:text-xs-regular sm:text-xs-regular">
                 {description}
             </p>
         </div>

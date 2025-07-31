@@ -87,7 +87,6 @@
     fill: var(--accent-fill); /* Example brightness adjustment */
     stroke: var(--icon-text-color);    /* Icon stroke color */
     border-color: currentColor;
-    background-color: var(--accent-fill);
   }
   
   .icon-muted {
