@@ -21,6 +21,8 @@
 	html {
 		box-sizing: border-box;
 		scroll-behavior: smooth;
+		padding: 0;
+		margin: 0;
 	}
 	*,
 	*::before,
@@ -33,16 +35,16 @@
 	}
 
 	::-webkit-scrollbar-track {
-		background: var(--border);
+		background: var(--accent);
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: var(--color-primary);
+		background-color: var(--accent);
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb:hover {
-		background-color: var(--color-secondary);
+		background-color: var(--accent);
 	}
 }
 
@@ -53,7 +55,7 @@ body {
 	color: var(--color-foreground);
 	background-color: var(--color-background);
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: var(--accent);
 	overflow-x: hidden;
 }
 
@@ -215,30 +217,40 @@ body {
 
 @media (max-width: 425px) {
 	:root {
-		padding: var(--space-sm);
+		padding: none;
+		max-width: 425px;
+		width: 100%;
 	}
 }
 
 @media (max-width: 768px) {
 	:root {
-		padding: var(--space-md);
+		padding: none;
+		max-width: 768px;
+		width: 100%;
 	}
 }
 
 @media (max-width: 1024px) {
 	:root {
-		padding: var(--space-lg);
+		padding: none;
+		max-width: 1024px;
+		width: 100%;
 	}
 }
 
 @media (max-width: 1440px) {
 	:root {
-		padding: var(--space-xl);
+		padding: none;
+		max-width: 1440px;
+		width: 100%;
 	}
 }
 
 @media (min-width: 1441px) {
 	:root {
-		padding: var(--space-2xl);
+		padding: none;
+		max-width: 100%;
+		width: 100%;
 	}
 }

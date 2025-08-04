@@ -12,7 +12,7 @@ export default function Header() {
             aria-label="Site header"
         >
             <div className="w-full flex justify-center">
-                <div className="_header-container px-4 sm:px-6 lg:px-8">
+                <div className="_header-container ">
                     <Link
                         href="/"
                         className="flex shrink-0 items-center"
