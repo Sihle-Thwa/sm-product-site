@@ -14,10 +14,10 @@ export default function HeroSection() {
             <div className="c_hero-container">
                 {/* Hero Content */}
                 <div className="_hero-content">
-                    <h1 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold text-balance">
+                    <h1 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">
                         The Complete Sports Management Solution
                     </h1>
-                    <p className="text-md-medium md:text-sm-medium sm:text-xs-medium text-muted-foreground ">
+                    <p className="text-md-medium md:text-sm-medium sm:text-xs-medium">
                         Streamline team management, player development, and operations in one uniformed platform.
                     </p>
 
