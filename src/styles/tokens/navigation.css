@@ -4,11 +4,9 @@
   top: 0;
   z-index: 100;
   display: flex;
-  gap: var(--space-md);
-  max-width: 1440px;
+  flex-direction: row;
   width: 100%;
-  
-  
+    
 }
 
 /* Navigation List */
@@ -52,27 +50,32 @@
   display: flex;
 }
 
-/* ----------------- Breakpoints ----------------- */
+/* ===========================
+ Responsive Layout System
+=========================== */
 
-/* MD and up: show desktop nav, hide mobile */
-@media (min-width: 768px) {
-  .desktop-nav {
-    display: flex;
-    max-width: 768px;
-    width: 100%;
-    gap: var(--space-md);
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-}
-
-/* LG - max-width: 1024px */
-@media (max-width: 1024px) {
+@media (min-width: 1441px) and (max-width: 2560px) {
   .navMenu {
-    flex-direction: row;
-    max-width: 1024px;
+    max-width: 2560px;
+    min-width: 1441px;
+    width: 100%;
+    gap: var(--space-lg);
+  }
+
+  .navMenuList {
+    gap: var(--space-lg);
+  }
+
+  .navMenuLink {
+    padding: var(--space-lg) var(--space-lg);
+  }
+
+}
+/* LG - max-width: 1024px */
+@media (min-width: 1025px) and (max-width: 1440px){
+  .navMenu {
+    max-width: 1440px;
+    min-width: 1025px;
     width: 100%;
     gap: var(--space-md);
   }
@@ -87,9 +90,10 @@
 }
 
 /* MD - max-width: 768px */
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .navMenu {
-    max-width: 768px;
+    max-width: 1024px;
+    min-width: 769px;
     width: 100%;
     gap: var(--space-md);
   }
@@ -99,35 +103,33 @@
   }
 
   .navMenuLink {
-    padding: var(--space-sm) var(--space-sm);
+    padding: var(--space-md) var(--space-md);
   }
 }
 
 /* SM - max-width: 425px */
-@media (max-width: 425px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .navMenu {
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 425px;
+    max-width: 768px;
+    min-width: 426px;
     width: 100%;
-    gap: var(--space-xs);
+    gap: var(--space-sm);
   }
 
   .navMenuList {
-    flex-direction: column;
-    gap: var(--space-xs);
+    gap: var(--space-sm);
   }
 
   .navMenuLink {
-    display: block;
     width: 100%;
-    padding: var(--space-xs);
+    padding: var(--space-sm);
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .navMenu {
     max-width: 425px;
+    min-width: 320px;
     width: 100%;
     gap: var(--space-xs);
   }

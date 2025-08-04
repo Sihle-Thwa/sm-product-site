@@ -216,42 +216,24 @@ body {
  Responsive Layout System
 =========================== */
 
-@media (max-width: 425px) {
-	:root {
-		padding: none;
-		max-width: 425px;
-		width: 100%;
-	}
+@media (min-width: 1441px) and (max-width: 2560px) {
+
+
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+
 }
 
-@media (max-width: 768px) {
-	:root {
-		padding: none;
-		max-width: 768px;
-		width: 100%;
-	}
+@media (min-width: 769px) and (max-width: 1024px) {
+
 }
 
-@media (max-width: 1024px) {
-	:root {
-		padding: none;
-		max-width: 1024px;
-		width: 100%;
-	}
+@media (min-width: 426px) and (max-width: 768px) {
+
 }
 
-@media (max-width: 1440px) {
-	:root {
-		padding: none;
-		max-width: 1440px;
-		width: 100%;
-	}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
 }
 
-@media (min-width: 1441px) {
-	:root {
-		padding: none;
-		max-width: 100%;
-		width: 100%;
-	}
-}
