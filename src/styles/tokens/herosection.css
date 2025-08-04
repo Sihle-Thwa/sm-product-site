@@ -105,7 +105,7 @@
 		padding: 0;
 	}
 	.c_hero-container {
-		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 		width: 100%;
 	}
 }

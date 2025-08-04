@@ -6,34 +6,39 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 
 const FAQSection = () => {
-    const [openItem, setOpenItem] = useState<number | null>(0);
+    const [openItem, setOpenItem] = useState<number | null>(null);
 
     const toggleItem = (index: number) => {
-        setOpenItem(openItem === index ? -1 : index);
+        setOpenItem(openItem === index ? null : index);
     };
 
     return (
         <section className="s_faq-wrap">
-            <div className="_faq-card-content">
-                {faqs.map((faq, index) => (
-                    <div key={index} className="border rounded-lg border-border w-full">
-                        <Button
-                            onClick={() => toggleItem(index)}
-                            aria-expanded={openItem === index}
-                            className="flex items-center justify-between w-full text-left p-5 cursor-pointer"
-                        >
-                            <span className="text-md-semibold">{faq.question}</span>
-                            <ChevronDown
-                                className={`w-5 h-5 transition-transform duration-200 ${openItem === index ? "rotate-180" : ""}`}
-                            />
-                        </Button>
-                        <div
-                            className={`overflow-hidden transition-all duration-300 ease-in-out ${openItem === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
-                        >
-                            <div className="p-5 text-sm-regular">{faq.answer}</div>
+            <div className="c_faq-container">
+                <h2 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold ">
+                    Frequently Asked Questions
+                </h2>
+                <div className="c_faq-list">
+                    {faqs.map((faq, index) => (
+                        <div key={index} className="faq-item">
+                            <Button
+                                onClick={() => toggleItem(index)}
+                                aria-expanded={openItem === index}
+                                className="faq-trigger"
+                            >
+                                <span className="faq-question text-md-semibold md:text-sm-semibold sm:text-xs-semibold ">
+                                    {faq.question}
+                                </span>
+                                <ChevronDown
+                                    className={`faq-chevron w-5 h-5 shrink-0 transition-transform duration-300 ${openItem === index ? "rotate-180" : ""}`}
+                                />
+                            </Button>
+                            <div className={`faq-content ${openItem === index ? "open" : ""}`}>
+                                <div className="faq-answer text-sm-regular sm:text-xs-regular">{faq.answer}</div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );
