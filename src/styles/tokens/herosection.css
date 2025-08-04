@@ -60,7 +60,9 @@
 	object-fit: cover;
 }
 
-/* Responsive Media Queries */
+/* ===========================
+ Responsive Layout System
+=========================== */
 
 @media (min-width: 320px) and (max-width: 425px) {
 	.s_hero-wrap {
