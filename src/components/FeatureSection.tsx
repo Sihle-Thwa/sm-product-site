@@ -8,16 +8,16 @@ import { FeatureCard } from "./FeatureCard";
 export default function FeatureSection() {
     return (
         <section className="s_features-wrap" aria-labelledby="features-heading">
-            <div className="c_feature-wrap">
+            <div className="c_feature-container">
                 {/* Section Intro */}
                 <div className="c_feature-intro">
-                    <h2 id="features-heading" className="c_feature-heading heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold tracking-wider">
+                    <h2 id="features-heading" className=" heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">
                         Features
                     </h2>
-                    <p className="c_feature-subheading text-lg-semibold md:text-md-semibold text-muted-foreground">
+                    <p className=" text-lg-semibold md:text-md-semibold sm:text-sm-semibold ">
                         Overflowing with useful features
                     </p>
-                    <p className="c_feature-description text-sm-medium md:text-xs-medium text-muted-foreground">
+                    <p className="text-sm-medium md:text-xs-medium sm:text-xs-regular">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
                         gain a competitive advantage both on and off the field.
@@ -38,14 +38,17 @@ export default function FeatureSection() {
                     </div>
 
                     <div className="c_feature-illustration">
-                        <Image
-                            src="/FeatureSection.png"
-                            alt="Platform feature illustration"
-                            width={500}
-                            height={500}
-                            className="w-full h-auto object-cover rounded-xl shadow-md"
-                            loading="lazy"
-                        />
+                        <div className="c_feature-image-container">
+                            <Image
+                                src="/FeatureSection.png"
+                                alt="Platform feature illustration"
+                                width={440}
+                                height={540}
+                                className="feature-image"
+                                loading="lazy"
+                            />
+                        </div>
+
                     </div>
                 </div>
             </div>

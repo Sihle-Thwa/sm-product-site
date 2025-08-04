@@ -1,47 +1,55 @@
 :root {
-    --space-xs: 8px;
-    --space-sm: 16px;
-    --space-md: 24px;
-    --space-lg: 32px;
-    --space-xl: 48px;
-    --space-2xl: 60px;
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
 }
 
 .section-divider {
-    width: 100%;
-    border: none;
-    border-top: 1px solid var(--border-muted);
-    margin: 0;
-    padding: var(--space-xs) 0; /* Add padding for spacing */
+	width: 100%;
+	border: none;
+	border-top: 1px solid var(--border-muted);
+	margin: 0;
+	padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs); /* Add padding for spacing */
 }
 
 /* Responsive Media Queries */
-@media (max-width: 420px) {
-    .section-divider {
-        padding: var(--space-xs) 0; /* Adjust padding for small screens */
-    }
+@media (min-width: 425px) {
+	.section-divider {
+		max-width: 425px;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
 }
 
-@media (max-width: 768px) {
-    .section-divider {
-        padding: var(--space-sm) 0; /* Adjust padding for medium screens */
-    }
+@media (max-width: 425px) {
+	.section-divider {
+		max-width: 425px;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
 }
 
-@media (max-width: 1024px) {
-    .section-divider {
-        padding: var(--space-sm) 0; /* Adjust padding for large screens */
-    }
+@media (min-width: 768px) {
+	.section-divider {
+		max-width: 768px;
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
 }
 
-@media (max-width: 1440px) {
-    .section-divider {
-        padding: var(--space-sm) 0; /* Adjust padding for extra-large screens */
-    }
+@media (min-width: 1024px) {
+	.section-divider {
+		max-width: 1024px;
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
 }
 
-@media (max-width: 2560px) {
-    .section-divider {
-        padding: var(--space-sm) 0; /* Adjust padding for 2x large screens */
-    }
+@media (min-width: 1440px) {
+	.section-divider {
+		max-width: 1440px;
+		width: 100%;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
 }
