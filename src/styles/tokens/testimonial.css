@@ -43,7 +43,7 @@
 	justify-content: center;
 	width: 100%;
 	padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
-	gap: var(--space-md);
+	gap: var(--space-lg);
 	text-align: center;
 }
 
@@ -137,7 +137,6 @@
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Star Rating */
 ._testimonial-card-content-rate {
 	display: flex;
 	gap: 2px;
@@ -243,4 +242,5 @@
 		justify-content: center;
 		gap: var(--space-lg);
 	}
+	
 }
