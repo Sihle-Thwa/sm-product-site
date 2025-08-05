@@ -1,16 +1,16 @@
 @import "../typography.css";
 
 :root {
-    --space-xs: 8px;
-    --space-sm: 16px;
-    --space-md: 24px;
-    --space-lg: 32px;
-    --space-xl: 48px;
-    --space-2xl: 60px;
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
 }
 
 .s_cta-wrap {
-   	display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -20,64 +20,175 @@
 }
 
 .c_cta-container {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.c_cta-content {display: flex;
+.c_cta-content {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	gap: var(--space-lg);
 }
 
 .c_cta-buttons {
-    display: flex;
+	display: flex;
 	flex-direction: column;
-	gap: var(--space-sm);
 	justify-content: center;
 }
 
-/* Responsive Media Queries */
-@media (max-width: 420px) {
-    .s_cta-wrap {
-        padding: var(--space-sm);
-    }
-    
-    .c_cta-content {
-        gap: var(--space-sm);
-        padding: var(--space-sm);
-    }
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.s_cta-wrap {
+		max-width: 2560px;
+		min-width: 1441px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_cta-container {
+		width: 100%;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+
+	.c_cta-content {
+		width: 100%;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		gap: var(--space-lg);
+		text-align: center;
+	}
+
+	.c_cta-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-lg);
+	}
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.s_cta-wrap {
+		max-width: 1440px;
+		min-width: 1025px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_cta-container {
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+
+	.c_cta-content {
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		gap: var(--space-md);
+		text-align: center;
+	}
+
+	.c_cta-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-md);
+	}
 }
 
-@media (max-width: 768px) {
-    .c_cta-content {
-        gap: var(--space-md);
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+	.s_cta-wrap {
+		max-width: 1024px;
+		min-width: 769px;
+		width: 100%;
+		padding: 0;
+	}
 
-    .c_cta-buttons {
-        width: 100%;
-    }
+	.c_cta-container {
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+
+	.c_cta-content {
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		gap: var(--space-md);
+		text-align: center;
+	}
+
+	.c_cta-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-md);
+	}
 }
 
-@media (max-width: 1024px) {
-    .s_cta-wrap {
-        padding: var(--space-md);
-    }
+@media (min-width: 426px) and (max-width: 768px) {
+	.s_cta-wrap {
+		max-width: 768px;
+		min-width: 426px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_cta-container {
+		width: 100%;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+	}
+
+	.c_cta-content {
+		width: 100%;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+		gap: var(--space-sm);
+		text-align: center;
+	}
+
+	.c_cta-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-sm);
+	}
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 320px) and (max-width: 425px) {
     .s_cta-wrap {
-        padding: var(--space-lg);
-    }
-}
+		max-width: 425px;
+		min-width: 320px;
+		width: 100%;
+		padding: 0;
+	}
 
-@media (max-width: 2560px) {
-    .s_cta-wrap {
-        padding: var(--space-xl);
-    }
+	.c_cta-container {
+		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+
+	.c_cta-content {
+		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+		gap: var(--space-xs);
+		text-align: center;
+	}
+
+	.c_cta-buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-xs);
+	}
 }
