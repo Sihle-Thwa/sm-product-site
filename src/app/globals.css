@@ -11,6 +11,7 @@
 @import "../styles/tokens/icons.css";
 @import "../styles/tokens/header.css";
 @import "../styles/tokens/metricsection.css";
+@import "../styles/tokens/metriccard.css";
 @import "../styles/tokens/features.css";
 @import "../styles/tokens/mobilemenu.css";
 @import "../styles/tokens/ctasection.css";
@@ -36,16 +37,16 @@
 	}
 
 	::-webkit-scrollbar-track {
-		background: var(--accent);
+		background: var(--primary-foreground);
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: var(--accent);
-		border-radius: 4px;
+		background-color: var(--primary);
+		border-radius: 6px;
 	}
 
 	::-webkit-scrollbar-thumb:hover {
-		background-color: var(--accent);
+		background-color: var(--secondary);
 	}
 }
 

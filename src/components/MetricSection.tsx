@@ -18,8 +18,8 @@ export default function MetricSection() {
                     Track your progress and stay on top of your game with our powerful metrics.
                 </p>
                 <div className="c_metric-cta">
-                    <Button className="button button-lg md:button-md sm:button-sm button-accent">View All Metrics</Button>
-                    <Button className="button button-lg md:button-md sm:button-sm button-primary">Book Demo</Button>
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-accent">View All Metrics</Button>
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-primary">Book Demo</Button>
                 </div>
             </div>
 

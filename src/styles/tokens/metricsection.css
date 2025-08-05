@@ -52,55 +52,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: var(--space-md);
-	padding: var(--space-lg);
-	border-radius: var(--radius-xl);
 	background-image: url("../../../public/metricboard.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-}
-
-.metrics-card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	min-width: 200px;
-	max-width: 400px;
-	width: 100%;
-	min-height: 200px;
-	padding: var(--space-lg);
-	background: var(--metrics-card-background);
-	border: var(--metrics-card-border);
-	border-radius: var(--metrics-card-border-radius);
-	text-align: center;
-	backdrop-filter: blur(4px);
-	transition: box-shadow 0.3s ease;
-}
-
-.metrics-card:hover {
-	box-shadow: var(--metrics-card-hover-shadow);
-}
-
-.metrics-card-content {
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-sm);
-	align-items: center;
-	width: 100%;
-}
-
-.metrics-card-value {
-	text-align: center;
-}
-
-.metrics-card-supporting {
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-xs);
-	text-align: center;
 }
 
 /* ===========================
@@ -139,58 +95,9 @@
 	}
 
 	.metric-bg-image {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: var(--space-xs);
 		padding: var(--space-xs);
 		border-radius: var(--radius-md);
-		background-image: url("../../../public/metricboard.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-	}
-
-	.metrics-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		min-width: 320px;
-		max-width: 420px;
-		width: 100%;
-		min-height: 200px;
-		padding: var(--space-xs);
-		background: var(--metrics-card-background);
-		border: var(--metrics-card-border);
-		border-radius: var(--metrics-card-border-radius);
-		text-align: center;
-		backdrop-filter: blur(4px);
-		transition: box-shadow 0.3s ease;
-	}
-
-	.metrics-card:hover {
-		box-shadow: var(--metrics-card-hover-shadow);
-	}
-
-	.metrics-card-content {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-xs);
-		align-items: center;
-		width: 100%;
-	}
-
-	.metrics-card-value {
-		text-align: center;
-	}
-
-	.metrics-card-supporting {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-xs);
-		text-align: center;
 	}
 }
 
@@ -226,58 +133,9 @@
 	}
 
 	.metric-bg-image {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: var(--space-sm);
 		padding: var(--space-sm);
 		border-radius: var(--radius-md);
-		background-image: url("../../../public/metricboard.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-	}
-
-	.metrics-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		min-width: 320px;
-		max-width: 420px;
-		width: 100%;
-		min-height: 200px;
-		padding: var(--space-sm);
-		background: var(--metrics-card-background);
-		border: var(--metrics-card-border);
-		border-radius: var(--metrics-card-border-radius);
-		text-align: center;
-		backdrop-filter: blur(4px);
-		transition: box-shadow 0.3s ease;
-	}
-
-	.metrics-card:hover {
-		box-shadow: var(--metrics-card-hover-shadow);
-	}
-
-	.metrics-card-content {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-sm);
-		align-items: center;
-		width: 100%;
-	}
-
-	.metrics-card-value {
-		text-align: center;
-	}
-
-	.metrics-card-supporting {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-sm);
-		text-align: center;
 	}
 }
 
@@ -313,58 +171,9 @@
 	}
 
 	.metric-bg-image {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: var(--space-md);
 		padding: var(--space-md);
 		border-radius: var(--radius-lg);
-		background-image: url("../../../public/metricboard.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-	}
-
-	.metrics-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		min-width: 320px;
-		max-width: 420px;
-		width: 100%;
-		min-height: 200px;
-		padding: var(--space-md);
-		background: var(--metrics-card-background);
-		border: var(--metrics-card-border);
-		border-radius: var(--metrics-card-border-radius);
-		text-align: center;
-		backdrop-filter: blur(4px);
-		transition: box-shadow 0.3s ease;
-	}
-
-	.metrics-card:hover {
-		box-shadow: var(--metrics-card-hover-shadow);
-	}
-
-	.metrics-card-content {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-md);
-		align-items: center;
-		width: 100%;
-	}
-
-	.metrics-card-value {
-		text-align: center;
-	}
-
-	.metrics-card-supporting {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-md);
-		text-align: center;
 	}
 }
 
@@ -386,7 +195,7 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-				padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 		gap: var(--space-lg);
 		text-align: center;
 	}
@@ -400,57 +209,8 @@
 	}
 
 	.metric-bg-image {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: var(--space-lg);
 		padding: var(--space-lg);
 		border-radius: var(--radius-xl);
-		background-image: url("../../../public/metricboard.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-	}
-
-	.metrics-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		min-width: 1025px;
-		max-width: 1440px;
-		width: 100%;
-		min-height: 200px;
-		padding: var(--space-lg);
-		background: var(--metrics-card-background);
-		border: var(--metrics-card-border);
-		border-radius: var(--metrics-card-border-radius);
-		text-align: center;
-		backdrop-filter: blur(4px);
-		transition: box-shadow 0.3s ease;
-	}
-
-	.metrics-card:hover {
-		box-shadow: var(--metrics-card-hover-shadow);
-	}
-
-	.metrics-card-content {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-lg);
-		align-items: center;
-		width: 100%;
-	}
-
-	.metrics-card-value {
-		text-align: center;
-	}
-
-	.metrics-card-supporting {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-lg);
-		text-align: center;
 	}
 }

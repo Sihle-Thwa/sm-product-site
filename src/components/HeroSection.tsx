@@ -22,10 +22,10 @@ export default function HeroSection() {
                     </p>
 
                     <div className="_hero-content-cta">
-                        <Button className="button button-lg md:button-md sm:button-sm button-accent">
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-accent">
                             Book Demo
                         </Button>
-                        <Button className="button button-lg md:button-md sm:button-sm button-primary">
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-primary">
                             Sign Up
                         </Button>
                     </div>

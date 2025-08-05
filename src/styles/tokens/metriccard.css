@@ -1,0 +1,69 @@
+@import "../typography.css";
+
+:root {
+	--metrics-card-border: 1px solid var(--color-border);
+	--metrics-card-border-radius: var(--radius);
+	--metrics-card-background: var(--color-card);
+	--metrics-card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--metrics-card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
+}
+.metrics-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 200px;
+	max-width: 400px;
+	width: 100%;
+	min-height: 200px;
+	padding: var(--space-lg);
+	background: var(--metrics-card-background);
+	border: var(--metrics-card-border);
+	border-radius: var(--metrics-card-border-radius);
+	text-align: center;
+	backdrop-filter: blur(4px);
+	transition: box-shadow 0.3s ease;
+}
+
+.metrics-card-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+	align-items: center;
+	width: 100%;
+}
+
+.metrics-card-value {
+	text-align: center;
+}
+
+.metrics-card-supporting {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xs);
+	text-align: center;
+}
+
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+}
