@@ -19,13 +19,19 @@
 	--button-size-md: 24px;
 	--button-size-sm: 20px;
 
+	/* Button Border Radius */
+	--radius: 8px;
+	--radius-sm: 4px;
+	--radius-md: 6px;
+	--radius-lg: 10px;
+	--radius-xl: 12px;
+
 	/* Button Width */
-	--button-width-xl: 200px;
+	--button-width-xl: 150px;
 	--button-width-lg: 120px;
 	--button-width-md: 95px;
 	--button-width-sm: 85px;
-
-
+	--button-width-xs: 75px;
 
 	/* Button Shadow */
 	--shadow-color: rgba(0, 0, 0, 0.1);
@@ -34,51 +40,71 @@
 
 /* Base Button Class */
 .button {
-	align-items: center;
 	display: inline-flex;
+	align-items: center;
 	justify-content: center;
-	padding: 8px 16px;
+	line-height: normal;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.2s ease, color 0.2s ease;
 	cursor: pointer;
-	border: none;
 	border-radius: var(--radius);
 	box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 /* Size Variants */
 .button-xl {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+	padding-right: 24px;
+	height: 32px;
 	width: var(--button-width-xl);
-	height: var(--button-size-xl);
-	font: var(--text-xl-regular);
 	background-color: currentColor;
 	color: currentColor;
 }
 .button-lg {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 28px;
 	width: var(--button-width-lg);
-	height: var(--button-size-lg);
-	font: var(--text-lg-regular);
 	background-color: currentColor;
 	color: currentColor;
 }
 
 .button-md {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 24px;
 	width: var(--button-width-md);
-	height: var(--button-size-md);
-	font: var(--text-md-regular);
 	background-color: currentColor;
 	color: currentColor;
 }
 
 .button-sm {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 20px;
 	width: var(--button-width-sm);
-	height: var(--button-size-sm);
-	font: var(--text-sm-regular);
 	background-color: currentColor;
 	color: currentColor;
 }
-
+.button-xs {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	height: 16px;
+	width: var(--button-width-xs);
+	background-color: currentColor;
+	color: currentColor;
+}
 /* Color Variants */
 .button-primary {
 	background-color: var(--primary);
@@ -123,4 +149,3 @@
 	color: var(--primary-text);
 	cursor: not-allowed;
 }
-

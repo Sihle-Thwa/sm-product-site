@@ -15,7 +15,7 @@ export default function MetricCard({ title, value, description }: MetricProps) {
                 <div className="metrics-card-value heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">{value}</div>
                 <div className="metrics-card-supporting">
                     <div className="text-md-semibold md:text-sm-semibold sm:text-xs-semibold">{title}</div>
-                    <div className="text-sm-regular text-muted-foreground md:text-xs-regular sm:text-xs-regular">{description}</div>
+                    <div className="text-sm-medium md:text-sm-regular sm:text-xs-regular">{description}</div>
                 </div>
             </div>
         </div>
