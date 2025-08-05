@@ -332,6 +332,8 @@
 		gap: var(--space-lg);
 		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 		width: 100%;
+		display: flex;
+		justify-content: space-between;
 	}
 	.pricing-card {
 		width: 100%;

@@ -18,39 +18,34 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: var(--space-xl);
-	padding-inline: clamp(1rem, 4vw, 2.5rem);
-	padding-block: var(--space-xl);
+	justify-content: center;
 	width: 100%;
+	height: 100%;
 	background-color: var(--color-background);
 }
-
+.c_metric-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
 .c_metric-header {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-md);
-	text-align: center;
-	max-width: 1024px;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 }
 
 .c_metric-cta {
 	display: flex;
-	flex-direction: column;
-	gap: var(--space-sm);
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-}
-
-@media (min-width: 640px) {
-	.c_metric-cta {
-		flex-direction: row;
-	}
 }
 
 .c_metric-board {
 	width: 100%;
-	max-width: 1024px;
 }
 
 .metric-bg-image {
@@ -108,33 +103,354 @@
 	text-align: center;
 }
 
-/* Responsive Media Queries */
-@media (max-width: 420px) {
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 320px) and (max-width: 425px) {
 	.s_metric-wrap {
-		padding-block: var(--space-sm);
+		max-width: 425px;
+		min-width: 320px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_metric-container {
+		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+		gap: var(--space-xs);
+		text-align: center;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-xs);
+	}
+
+	.metric-bg-image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-xs);
+		padding: var(--space-xs);
+		border-radius: var(--radius-md);
+		background-image: url("../../../public/metricboard.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	}
+
+	.metrics-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 320px;
+		max-width: 420px;
+		width: 100%;
+		min-height: 200px;
+		padding: var(--space-xs);
+		background: var(--metrics-card-background);
+		border: var(--metrics-card-border);
+		border-radius: var(--metrics-card-border-radius);
+		text-align: center;
+		backdrop-filter: blur(4px);
+		transition: box-shadow 0.3s ease;
+	}
+
+	.metrics-card:hover {
+		box-shadow: var(--metrics-card-hover-shadow);
+	}
+
+	.metrics-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xs);
+		align-items: center;
+		width: 100%;
+	}
+
+	.metrics-card-value {
+		text-align: center;
+	}
+
+	.metrics-card-supporting {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xs);
+		text-align: center;
 	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
 	.s_metric-wrap {
-		padding-block: var(--space-md);
+		max-width: 768px;
+		min-width: 426px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_metric-container {
+		width: 100%;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+		gap: var(--space-sm);
+		text-align: center;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-sm);
+	}
+
+	.metric-bg-image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-sm);
+		padding: var(--space-sm);
+		border-radius: var(--radius-md);
+		background-image: url("../../../public/metricboard.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	}
+
+	.metrics-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 320px;
+		max-width: 420px;
+		width: 100%;
+		min-height: 200px;
+		padding: var(--space-sm);
+		background: var(--metrics-card-background);
+		border: var(--metrics-card-border);
+		border-radius: var(--metrics-card-border-radius);
+		text-align: center;
+		backdrop-filter: blur(4px);
+		transition: box-shadow 0.3s ease;
+	}
+
+	.metrics-card:hover {
+		box-shadow: var(--metrics-card-hover-shadow);
+	}
+
+	.metrics-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+		align-items: center;
+		width: 100%;
+	}
+
+	.metrics-card-value {
+		text-align: center;
+	}
+
+	.metrics-card-supporting {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+		text-align: center;
 	}
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1441px) {
 	.s_metric-wrap {
-		padding-block: var(--space-lg);
+		max-width: 1441px;
+		min-width: 769px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.c_metric-container {
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		gap: var(--space-md);
+		text-align: center;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-md);
+	}
+
+	.metric-bg-image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-md);
+		padding: var(--space-md);
+		border-radius: var(--radius-lg);
+		background-image: url("../../../public/metricboard.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	}
+
+	.metrics-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 320px;
+		max-width: 420px;
+		width: 100%;
+		min-height: 200px;
+		padding: var(--space-md);
+		background: var(--metrics-card-background);
+		border: var(--metrics-card-border);
+		border-radius: var(--metrics-card-border-radius);
+		text-align: center;
+		backdrop-filter: blur(4px);
+		transition: box-shadow 0.3s ease;
+	}
+
+	.metrics-card:hover {
+		box-shadow: var(--metrics-card-hover-shadow);
+	}
+
+	.metrics-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		align-items: center;
+		width: 100%;
+	}
+
+	.metrics-card-value {
+		text-align: center;
+	}
+
+	.metrics-card-supporting {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+		text-align: center;
 	}
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1441px) and (max-width: 2560px) {
 	.s_metric-wrap {
-		padding-block: var(--space-xl);
+		max-width: 2560px;
+		min-width: 1441px;
+		width: 100%;
+		padding: 0;
 	}
-}
 
-@media (max-width: 2560px) {
-	.s_metric-wrap {
-		padding-block: var(--space-2xl);
+	.c_metric-container {
+		width: 100%;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+				padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		gap: var(--space-lg);
+		text-align: center;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: var(--space-lg);
+	}
+
+	.metric-bg-image {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--space-lg);
+		padding: var(--space-lg);
+		border-radius: var(--radius-xl);
+		background-image: url("../../../public/metricboard.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	}
+
+	.metrics-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 1025px;
+		max-width: 1440px;
+		width: 100%;
+		min-height: 200px;
+		padding: var(--space-lg);
+		background: var(--metrics-card-background);
+		border: var(--metrics-card-border);
+		border-radius: var(--metrics-card-border-radius);
+		text-align: center;
+		backdrop-filter: blur(4px);
+		transition: box-shadow 0.3s ease;
+	}
+
+	.metrics-card:hover {
+		box-shadow: var(--metrics-card-hover-shadow);
+	}
+
+	.metrics-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-lg);
+		align-items: center;
+		width: 100%;
+	}
+
+	.metrics-card-value {
+		text-align: center;
+	}
+
+	.metrics-card-supporting {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-lg);
+		text-align: center;
 	}
 }

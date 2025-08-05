@@ -8,10 +8,13 @@ import { metrics } from "@/data/metric";
 export default function MetricSection() {
     return (
         <section className="s_metric-wrap">
-            {/* Section Header */}
-            <div className="c_metric-header">
+            {/* Section Container */}
+            <div className="c_metric-container">
+                {/* Header */}
+                <div className="c_metric-header">
+
                 <h2 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">Key Metrics</h2>
-                <p className="text-lg-medium md:text-md-medium sm:text-sm-medium text-muted-foreground ">
+                    <p className="text-lg-medium md:text-md-medium sm:text-sm-medium">
                     Track your progress and stay on top of your game with our powerful metrics.
                 </p>
                 <div className="c_metric-cta">
@@ -26,6 +29,7 @@ export default function MetricSection() {
                     {metrics.map((metric) => (
                         <MetricCard key={metric.title} {...metric} />
                     ))}
+                    </div>
                 </div>
             </div>
         </section>
