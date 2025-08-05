@@ -13,10 +13,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 1280px;
 	background-color: var(--color-background);
 	width: 100%;
-	height: 100%;
+	padding: 0;
+	max-width: 425px;
+	min-width: 320px;
 }
 
 /* Container */
@@ -25,9 +26,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 1024px;
 	width: 100%;
-	gap: var(--space-lg);
+	gap: var(--space-xs);
+	padding: var(--space-xs);
 }
 
 /* List */
@@ -37,29 +38,32 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-    padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
-	gap: var(--space-md);
+	padding: var(--space-xs);
+	gap: var(--space-xs);
 	text-align: center;
 }
 
 /* Item Wrapper */
 .faq-item {
-	border: 1px solid var(--color-border);
-	border-radius: var(--radius-lg);
-	background-color: var(--card);
-	overflow: hidden;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid var(--color-border);
+	background-color: var(--card);
+	border-radius: var(--radius-xs); /* small radius on mobile */
+	overflow: hidden;
 }
 
 /* Trigger */
 .faq-trigger {
 	width: 100%;
 	display: flex;
-	padding: var(--space-lg);
-	background: transparent;
-	border: none;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
 	cursor: pointer;
+	border: none;
+	padding: var(--space-xs);
 	transition: background-color 0.3s ease;
 }
 
@@ -69,36 +73,185 @@
 
 /* Chevron right aligned by default */
 .faq-question {
-	flex: 1;
-	text-align: right;
-	padding: var(--space-lg);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--space-xs);
 }
 
 .faq-chevron {
-	margin-right: var(--space-sm);
 	transition: transform 0.3s ease;
 }
 
 /* Content */
 .faq-content {
+	width: 100%;
 	max-height: 0;
-	overflow: hidden;
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease;
+	overflow: hidden;
+	transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .faq-content.open {
-	padding-block: var(--space-lg);
 	max-height: 320px;
 	opacity: 1;
 }
-
+.faq-content.collapsed {
+	max-height: 0;
+	opacity: 0;
+}
 .faq-answer {
-	padding: var(--space-lg), var(--space-lg), var(--space-lg), var(--space-lg);
+	max-height: 200px;
+	overflow-y: auto;
+	padding: var(--space-xs);
 }
 
-/* Responsive Media Queries */
+.s_faq-wrap,
+.c_faq-container,
+.c_faq-list,
+.faq-item {
+	flex-shrink: 0;
+	min-height: 0;
+	min-width: 0;
+}
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 426px) {
+	.s_faq-wrap {
+		max-width: 768px;
+		min-width: 426px;
+	}
+	.c_faq-container {
+		/* Remove padding on larger screens (outer padding handled by list) */
+		padding: 0;
+		gap: var(--space-sm);
+		/* Container width is still 100%, but max-width is controlled by .s_faq-wrap */
+	}
+	.c_faq-list {
+		padding: var(--space-sm);
+		gap: var(--space-sm);
+		/* Center-align text for consistency on small tablets */
+		text-align: center;
+	}
+	.faq-item {
+		border-radius: var(--radius-sm); /* slightly larger border radius */
+	}
+	.faq-trigger {
+		padding: var(--space-sm);
+	}
+	.faq-question {
+		padding: var(--space-sm);
+	}
+	.faq-chevron {
+		margin-right: var(--space-sm);
+	}
+	.faq-answer {
+		padding: var(--space-sm);
+	}
+}
+
+/* Medium devices (min-width: 769px, up to 1024px) */
+@media (min-width: 769px) {
+	.s_faq-wrap {
+		max-width: 1024px;
+		min-width: 769px;
+		width: 100%; /* Ensure it takes full width of the container */
+		align-items: center; /* Center align for medium screens */
+	}
+	.c_faq-container {
+		gap: var(--space-md);
+		/* No padding for container on medium devices (already 0 from previous media) */
+	}
+	.c_faq-list {
+		padding: var(--space-md);
+		gap: var(--space-md);
+		text-align: center;
+	}
+	.faq-item {
+		border-radius: var(--radius-md);
+	}
+	.faq-trigger {
+		padding: var(--space-md);
+	}
+	.faq-question {
+		padding: var(--space-md);
+	}
+	.faq-chevron {
+		margin-right: var(--space-md);
+	}
+	.faq-answer {
+		/* Increase padding if needed on medium screens (using sm or md based on design) */
+		padding: var(--space-md);
+	}
+}
+
+/* Large devices (min-width: 1025px, up to 1440px) */
+@media (min-width: 1025px) {
+	.s_faq-wrap {
+		display: flex;
+		max-width: 1440px;
+		min-width: 1025px;
+		width: 100%; /* Ensure it takes full width of the container */
+		align-items: center; /* Center align for larger screens */
+	}
+	.c_faq-container {
+		gap: var(--space-md);
+
+	}
+	.c_faq-list {
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		gap: var(--space-md);
+		text-align: center;
+	}
+	.faq-item {
+		/* Keep medium border-radius for large screens, or adjust if needed */
+		border-radius: var(--radius-md);
+	}
+	.faq-trigger {
+		/* Keep padding same as medium for large screens */
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+	.faq-question {
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+	.faq-chevron {
+		/* Maintain margin from medium */
+		margin-right: var(--space-md);
+	}
+	.faq-content{
+		/* Keep content padding same as medium for large screens */
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+
+	}
+	.faq-answer {
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+}
+
+/* Extra-large devices (min-width: 1441px and above, up to 2560px) */
+@media (min-width: 1441px) {
+	.s_faq_wrap {
+		display: flex;
+		max-width: 2560px;
+		min-width: 1441px;
+		width: 100%; /* Ensure it takes full width of the container */
+		align-items: center; /* Center align for larger screens */
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg); /* Add padding for extra-large screens */
+	}
+	.c_faq-container {
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg); 
+	}
+	.c_faq-list {
+		/* On very large screens, we can add larger padding if needed */
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		gap: var(--space-lg);
+		/* It may be preferable to left-align text on very wide screens for readability */
+		text-align: left;
+	}
+	.faq-item {
+		border-radius: var(--radius-lg);
+	}
+}

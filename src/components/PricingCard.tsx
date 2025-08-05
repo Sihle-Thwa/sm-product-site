@@ -25,12 +25,12 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
             {highlight && <span className="pricing-card-badge ">Most Popular</span>}
 
             <div className="text-center space-y-2">
-                <div className="heading-sm-semibold">{tier.name}</div>
+                <div className="heading-sm-semibold md:text-md-semibold sm:text-sm-semibold">{tier.name}</div>
                 <div className="flex flex-row items-baseline justify-center gap-2">
-                    <div className="heading-lg-semibold">{tier.price}</div>
-                    <span className="text-sm-medium">/mo</span>
+                    <div className="heading-lg-semibold md:text-md-semibold sm:text-sm-semibold">{tier.price}</div>
+                    <span className="text-sm-medium md:text-xs-medium sm:text-xs-regular">/mo</span>
                 </div>
-                <div className="text-sm-medium text-muted-foreground">{tier.description}</div>
+                <div className="text-sm-medium md:text-xs-medium sm:text-xs-regular">{tier.description}</div>
             </div>
 
             <ul className="feature-list">
@@ -43,7 +43,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
             </ul>
 
             <div className="text-center w-full">
-                <Button className="button button-lg button-primary w-full">
+                <Button className="button button-lg md:button-md sm:button-sm button-primary w-full">
                     <a href={tier.cta.href} className="block w-full">{tier.cta.label}</a>
                 </Button>
             </div>
