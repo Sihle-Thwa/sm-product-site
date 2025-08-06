@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="page-container">
       <Header />
-      <main className="flex flex-col items-center justify-center min-h-screen">
+      <main>
         <HeroSection />
         <SocialProofSection />
         <SectionDivider />
