@@ -4,34 +4,44 @@ import React from "react";
 import Image from "next/image";
 import FooterItem from "./FooterItem";
 import { footerItems } from "../data/footer";
+import SectionDivider from "./SectionDivider";
 
 export default function Footer() {
     return (
-        <div className="s_footer-wrap">
+        <footer className="s_footer-wrap">
+            {/* Top Section */}
             <div className="c_footer-container">
-                {/* Top Links */}
                 <div className="_footer-content">
                     {footerItems.map((item) => (
-                        <FooterItem key={item.title} title={item.title} items={item.items} />
+                        <FooterItem
+                            key={item.title}
+                            title={item.title}
+                            items={item.items} />
                     ))}
                 </div>
             </div>
 
+            {/* Divider */}
+            <SectionDivider />
+
             {/* Bottom Area */}
             <div className="_footer-bottom-container">
                 <div className="_footer-bottom-content">
-                    <Image
-                        src="/Logo_title.png"
-                        alt="SBM Concepts company logo"
-                        width={150}
-                        height={50}
-                        className="_footer-logo"
-                    />
-                    <div className="_footer-bottom-text text-sm-regular md:text-xs-regular sm:text-xs-regular">
+                    <div className="_footer-logo">
+                        <Image
+                            src="/Logo_title.png"
+                            alt="SBM Concepts company logo"
+                            width={160}
+                            height={40}
+
+                        />
+                    </div>
+
+                    <div className="_footer-bottom-text text-sm-medium">
                         &copy; {new Date().getFullYear()} SBM Concepts. All rights reserved.
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

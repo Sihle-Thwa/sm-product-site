@@ -9,21 +9,23 @@ interface FooterItemProps {
 
 export default function FooterItem({ title, items }: FooterItemProps) {
     return (
-        <div className="flex flex-col gap-4">
-            <h3 className="text-md-semibold md:text-sm-semibold sm:text-xs-semibold text-foreground">{title}</h3>
-            <ul className="flex flex-col gap-2">
-                {items.map((item) => (
-                    <li key={item.label}>
-                        <a
-                            href={item.href}
-                            className="text-sm-regular text-muted-foreground hover:text-accent transition-colors duration-150"
-                            aria-label={`Navigate to ${item.label}`}
-                        >
-                            {item.label}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+        <div className="s_footer-item-wrap">
+            <div className="c_footer-item-container">
+                <h3 className="c_footer-item-header">{title}</h3>
+                <ul className="c_footer-item-list">
+                    {items.map((item) => (
+                        <li key={item.label}>
+                            <a
+                                href={item.href}
+                                className="c_footer-item-link"
+                                aria-label={`Navigate to ${item.label}`}
+                            >
+                                {item.label}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
