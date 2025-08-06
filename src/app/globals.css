@@ -17,6 +17,7 @@
 @import "../styles/tokens/ctasection.css";
 @import "../styles/tokens/page.css";
 @import "../styles/tokens/footer.css";
+@import "../styles/tokens/footeritem.css";
 
 /* Base Reset */
 @layer base {
