@@ -11,30 +11,33 @@ export default function Header() {
         <header
             aria-label="Site header"
         >
-            <div className="w-full flex justify-center">
-                <div className="_header-container ">
-                    <Link
-                        href="/"
-                        className="flex shrink-0 items-center"
-                        aria-label="Homepage"
-                    >
-                        <Image
-                            src="/Logo_title.png"
-                            alt="SBM Concepts logo"
-                            width={100}
-                            height={80}
-                            className="_header-logo object-contain"
-                            priority
-                        />
-                    </Link>
+            <div className="s_header-wrap">
+                <div className="c_header-container ">
+                    <div className="c_header-content">
+                        <Link
+                            href="/"
+                            className="_brand-link"
+                            aria-label="Homepage"
+                        >
+                            <Image
+                                src="/Logo_title.png"
+                                alt="SBM Concepts logo"
+                                width={100}
+                                height={40}
+                                className="_header-logo"
 
-                    <nav className="hidden md:flex" aria-label="Primary navigation">
-                        <Navigation />
-                    </nav>
+                            />
+                        </Link>
 
-                    <div className="md:hidden">
-                        <MobileMenu />
+                        <div className="_nav-wrap" aria-label="Primary navigation">
+                            <Navigation />
+                        </div>
+
+                        <div className="_mobile-nav-wrap">
+                            <MobileMenu />
+                        </div>
                     </div>
+
                 </div>
             </div>
         </header>
