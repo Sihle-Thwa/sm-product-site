@@ -11,8 +11,8 @@ export default function FooterItem({ title, items }: FooterItemProps) {
     return (
         <div className="s_footer-item-wrap">
             <div className="c_footer-item-container">
-                <h3 className="c_footer-item-header">{title}</h3>
-                <ul className="c_footer-item-list">
+                <div className="c_footer-item-header text-sm-bold">{title}</div>
+                <div className="c_footer-item-list">
                     {items.map((item) => (
                         <li key={item.label}>
                             <a
@@ -24,7 +24,7 @@ export default function FooterItem({ title, items }: FooterItemProps) {
                             </a>
                         </li>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );
