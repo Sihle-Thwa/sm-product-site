@@ -22,6 +22,8 @@
 /* Navigation List */
 .navMenuList {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	gap: var(--space-md);
 	list-style: none;
 	padding: 0;
@@ -58,17 +60,21 @@
 		max-width: 2560px;
 		min-width: 1441px;
 		width: 100%;
-    padding: 0;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
 	}
 
 	/* Navigation List */
 	.navMenuList {
 		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		gap: var(--space-lg);
 		list-style: none;
-		
-        width: 100%;
-
+		width: 100%;
 	}
 
 	/* Navigation Items */
@@ -85,8 +91,7 @@
 		text-decoration: none;
 		border-radius: var(--radius-sm);
 		transition: color 0.2s ease, background-color 0.2s ease;
-        width: 100%;
-
+		width: 100%;
 	}
 
 	.navMenuLink:hover,
@@ -97,10 +102,16 @@
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .navMenu {
+	.navMenu {
 		max-width: 1440px;
 		min-width: 768px;
 		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
 	}
 
 	/* Navigation List */
@@ -108,7 +119,10 @@
 		display: flex;
 		gap: var(--space-md);
 		list-style: none;
-    width: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 100%;
 	}
 
 	/* Navigation Items */
@@ -125,9 +139,10 @@
 		text-decoration: none;
 		border-radius: var(--radius-sm);
 		transition: color 0.2s ease, background-color 0.2s ease;
-        width: 100%;
-
-
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 100%;
 	}
 
 	.navMenuLink:hover,
@@ -138,10 +153,13 @@
 }
 
 @media (min-width: 426px) and (max-width: 767px) {
-  .navMenu {
+	.navMenu {
 		max-width: 767px;
 		min-width: 426px;
 		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: 100%;
 	}
 
 	/* Navigation List */
@@ -151,6 +169,9 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		padding: 0;
+		margin: 0;
+		height: 100%;
 	}
 
 	/* Navigation Items */
@@ -167,6 +188,9 @@
 		text-decoration: none;
 		border-radius: var(--radius-sm);
 		transition: color 0.2s ease, background-color 0.2s ease;
+		padding: 0;
+		margin: 0;
+		height: 100%;
 	}
 
 	.navMenuLink:hover,
