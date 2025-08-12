@@ -15,7 +15,7 @@ export const footerItems = [
             { label: "Careers", href: "/careers" },
             { label: "Contact", href: "/contact" },
             { label: "Privacy Policy", href: "/privacy" },
-            { label: "Terms of Service", href: "/terms" },
+
         ],
     },
     {
@@ -23,7 +23,6 @@ export const footerItems = [
         items: [
             { label: "Blog", href: "/blog" },
             { label: "Help Center", href: "/help" },
-            { label: "API Documentation", href: "/api" },
             { label: "Community", href: "/community" },
             { label: "Support", href: "/support" },
         ],
@@ -34,13 +33,13 @@ export const footerItems = [
             { label: "Twitter", href: "https://twitter.com/yourhandle" },
             { label: "Facebook", href: "https://facebook.com/yourpage" },
             { label: "LinkedIn", href: "https://linkedin.com/company/yourcompany" },
+            { label: "Instagram", href: "https://instagram.com/yourprofile" },
         ],
     },
     {
         title: "Legal",
         items: [
             { label: "Cookie", href: "/cookie-policy" },
-            { label: "GDPR Compliance", href: "/gdpr" },
             { label: "Accessibility", href: "/accessibility" },
             { label: "Security", href: "/security" },
             { label: "DMCA", href: "/dmca" },
