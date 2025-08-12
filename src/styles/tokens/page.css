@@ -18,39 +18,3 @@
 /* ===========================
  Responsive Layout System
 =========================== */
-@media (min-width: 1441px) and (max-width: 2560px) {
-	.page-container {
-		max-width: 2560px;
-		min-width: 1441px;
-		width: 100%;
-		height: 100%;
-		padding: 0;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1440px) {
-	.page-container {
-		max-width: 1440px;
-		min-width: 768px;
-		width: 100%;
-		height: 100%;
-	}
-}
-
-@media (min-width: 426px) and (max-width: 767px) {
-	.page-container {
-		max-width: 767px;
-		min-width: 426px;
-		width: 100%;
-		height: 100%;
-	}
-}
-
-@media (min-width: 320px) and (max-width: 425px) {
-	.page-container {
-		max-width: 425px;
-		min-width: 320px;
-		width: 100%;
-		height: 100%;
-	}
-}
