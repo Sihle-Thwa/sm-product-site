@@ -1,5 +1,4 @@
 import React from "react";
-import "@/styles/tokens/pricingsection.css";
 import { CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -22,7 +21,7 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) => {
     return (
         <div className={`pricing-card ${highlight ? "highlight" : ""}`}>
-            {highlight && <span className="pricing-card-badge ">Most Popular</span>}
+            {highlight && <span className="pricing-card-badge">Most Popular</span>}
 
             <div className="text-center space-y-2">
                 <div className="heading-sm-semibold md:text-md-semibold sm:text-sm-semibold">{tier.name}</div>

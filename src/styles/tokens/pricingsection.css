@@ -88,11 +88,6 @@
 	z-index: 10;
 }
 
-.pricing-card-badge {
-	position: absolute;
-	background-color: var(--primary);
-	color: var(--primary-foreground);
-}
 
 /* Features */
 .feature-list {
@@ -183,13 +178,7 @@
 		transform: scale(1.05);
 		z-index: 10;
 	}
-	.pricing-card-badge {
-		top: var(--space-xs);
-		left: var(--space-xs);
-		font: var(--text-xs-semibold);
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-		border-radius: var(--space-xs);
-	}
+
 	/* Features */
 	.feature-list {
 		gap: var(--space-xs);
@@ -263,13 +252,7 @@
 		transform: scale(1.05);
 		z-index: 10;
 	}
-	.pricing-card-badge {
-		top: var(--space-xs);
-		left: var(--space-xs);
-		font: var(--text-xs-semibold);
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-		border-radius: var(--space-xs);
-	}
+
 	/* Features */
 	.feature-list {
 		gap: var(--space-sm);
@@ -343,13 +326,7 @@
 		transform: scale(1.05);
 		z-index: 10;
 	}
-	.pricing-card-badge {
-		top: var(--space-xs);
-		left: var(--space-xs);
-		font: var(--text-xs-semibold);
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-		border-radius: var(--space-xs);
-	}
+
 	/* Features */
 	.feature-list {
 		gap: var(--space-sm);
@@ -423,13 +400,7 @@
 		transform: scale(1.05);
 		z-index: 10;
 	}
-	.pricing-card-badge {
-		top: var(--space-xs);
-		left: var(--space-xs);
-		font: var(--text-xs-semibold);
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-		border-radius: var(--space-xs);
-	}
+
 	/* Features */
 	.feature-list {
 		gap: var(--space-sm);
@@ -503,13 +474,7 @@
 		transform: scale(1.05);
 		z-index: 10;
 	}
-	.pricing-card-badge {
-		top: var(--space-xs);
-		left: var(--space-xs);
-		font: var(--text-xs-semibold);
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-		border-radius: var(--space-xs);
-	}
+
 	/* Features */
 	.feature-list {
 		gap: var(--space-lg);
