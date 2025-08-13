@@ -23,13 +23,13 @@ export default function MetricSection() {
                 </div>
 
                 {/* Metric Cards */}
-                <div className="c_metric-board">
+
                     <div className="metric-bg-image">
                         {metrics.map((metric) => (
                             <MetricCard key={metric.title} {...metric} />
                         ))}
                     </div>
-                </div>
+
             </div>
         </section>
     );

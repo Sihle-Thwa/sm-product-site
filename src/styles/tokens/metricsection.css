@@ -54,19 +54,17 @@
 	justify-content: center;
 }
 
-.c_metric-board {
-	width: 100%;
-}
-
 .metric-bg-image {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	align-self: stretch;
 	background-image: url("../../../public/metricboard.jpg");
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	height: 100%;
+	width: 100%;
 }
 
 /* ===========================
@@ -118,8 +116,14 @@
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 
-	.c_metric-board {
+	.metric-bg-image {
+		max-width: 320px;
+		min-width: 240px;
+		max-height: 780px;
+		min-height: 420px;
 		width: 100%;
+		height: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 }
 
@@ -166,8 +170,13 @@
 		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 	}
 
-	.c_metric-board {
+	.metric-bg-image {
+		max-width: 340px;
+		min-width: 280px;
+		max-height: 780px;
+		min-height: 420px;
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -215,8 +224,13 @@
 		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
 	}
 
-	.c_metric-board {
+	.metric-bg-image {
+		max-width: 769px;
+		min-width: 460px;
+		max-height: 360px;
+		min-height: 240px;
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -263,8 +277,13 @@
 		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 	}
 
-	.c_metric-board {
+	.metric-bg-image {
+		max-width: 1216px;
+		min-width: 768px;
+		max-height: 360px;
+		min-height: 240px;
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -312,7 +331,12 @@
 		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 	}
 
-	.c_metric-board {
+	.metric-bg-image {
+		max-width: 1216px;
+		min-width: 768px;
+		max-height: 360px;
+		min-height: 240px;
 		width: 100%;
+		height: 100%;
 	}
 }
