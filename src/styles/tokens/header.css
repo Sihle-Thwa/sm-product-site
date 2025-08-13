@@ -84,59 +84,7 @@ header {
  Responsive Layout System
 =========================== */
 
-@media (min-width: 320px) and (max-width: 424px) {
-	.header {
-		position: sticky;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 50;
-		width: 100%;
-		max-height: 60px;
-		min-height: none;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.s_header-wrap {
-		max-width: 424px;
-		min-width: 320px;
-		width: 100%;
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-	}
-	.c_header-content {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-	}
-	._header-logo,
-	._brand-link {
-		width: 100%;
-		display: flex;
-		overflow: hidden;
-	}
-	.c_header-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-
-	._mobile-nav-wrap {
-		z-index: 100;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-}
-
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 425px) {
 	.header {
 		position: sticky;
 		top: 0;
@@ -157,6 +105,58 @@ header {
 		max-width: 425px;
 		min-width: 320px;
 		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+	.c_header-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+	._header-logo,
+	._brand-link {
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+	}
+	.c_header-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	._mobile-nav-wrap {
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+	.header {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+		width: 100%;
+		max-height: 60px;
+		min-height: none;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.s_header-wrap {
+		max-width: 768px;
+		min-width: 426px;
+		width: 100%;
 		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 	}
 	.c_header-content {
@@ -188,7 +188,7 @@ header {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
 		.header {
 		position: sticky;
@@ -208,8 +208,8 @@ header {
 	}
 
 	.s_header-wrap {
-		max-width: 1023px;
-		min-width: 768px;
+		max-width: 1024px;
+		min-width: 769px;
 		width: 100%;
 		padding: 0;
 	}
@@ -242,7 +242,7 @@ header {
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
 	.header {
 		position: sticky;
 		top: 0;
@@ -261,8 +261,8 @@ header {
 	}
 
 	.s_header-wrap {
-		max-width: 1439px;
-		min-width: 1024px;
+		max-width: 1440px;
+		min-width: 1025px;
 		width: 100%;
 		padding: 0;
 	}
@@ -289,7 +289,7 @@ header {
 		align-items: center;
 	}
 }
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1441px) and (max-width: 2560px) {
 	.header {
 		position: sticky;
 		top: 0;
@@ -309,7 +309,7 @@ header {
 
 	.s_header-wrap {
 		max-width: 2560px;
-		min-width: 1440px;
+		min-width: 1441px;
 		width: 100%;
 		padding: 0;
 	}
@@ -319,8 +319,7 @@ header {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		padding: var(--space-md);
-		gap: var(--space-md);
+		gap: var(--space-xl);
 	}
 	._header-logo,
 	._brand-link {
@@ -337,7 +336,7 @@ header {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: var(--space-md);
+		gap: var(--space-xl);
 	}
 
 	._nav-wrap {
