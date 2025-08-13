@@ -12,23 +12,22 @@ export default function MetricSection() {
             <div className="c_metric-container">
                 {/* Header */}
                 <div className="c_metric-header">
-
-                <h2 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">Key Metrics</h2>
-                    <p className="text-lg-medium md:text-md-medium sm:text-sm-medium">
-                    Track your progress and stay on top of your game with our powerful metrics.
-                </p>
-                <div className="c_metric-cta">
-                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-accent">View All Metrics</Button>
-                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-primary">Book Demo</Button>
+                    <h2 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">Key Metrics</h2>
+                    <p className="text-lg-medium md:text-md-medium sm:text-sm-medium xs:text-xs-medium">
+                        Track your progress and stay on top of your game with our powerful metrics.
+                    </p>
+                    <div className="c_metric-cta">
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm xs:button-xs button-accent">View All Metrics</Button>
+                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm xs:button-xs button-primary">Book Demo</Button>
+                    </div>
                 </div>
-            </div>
 
-            {/* Metric Cards */}
-            <div className="c_metric-board">
-                <div className="metric-bg-image">
-                    {metrics.map((metric) => (
-                        <MetricCard key={metric.title} {...metric} />
-                    ))}
+                {/* Metric Cards */}
+                <div className="c_metric-board">
+                    <div className="metric-bg-image">
+                        {metrics.map((metric) => (
+                            <MetricCard key={metric.title} {...metric} />
+                        ))}
                     </div>
                 </div>
             </div>

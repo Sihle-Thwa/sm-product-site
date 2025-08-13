@@ -10,8 +10,8 @@
 	--space-sm: 16px;
 	--space-md: 24px;
 	--space-lg: 32px;
-	--space-xl: 48px;
-	--space-2xl: 60px;
+	--space-lg: 48px;
+	--space-2lg: 60px;
 }
 
 .s_metric-wrap {
@@ -20,8 +20,6 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 100%;
-	background-color: var(--color-background);
 }
 .c_metric-container {
 	display: flex;
@@ -33,11 +31,23 @@
 .c_metric-header {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	justify-content: center;
 	width: 100%;
 }
 
+.c_metric-header h2 {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.c_metric-header p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
 .c_metric-cta {
 	display: flex;
 	flex-direction: row;
@@ -62,3 +72,247 @@
 /* ===========================
  Responsive Layout System
 =========================== */
+
+@media (min-width: 320px) and (max-width: 425px) {
+	.s_metric-wrap {
+		max-width: 425px;
+		min-width: 320px;
+		width: 100%;
+		padding: 0;
+	}
+	.c_metric-container {
+		max-width: 320px;
+		min-width: 125px;
+		width: 100%;
+		gap: var(--space-xs);
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: var(--space-xs);
+	}
+
+	.c_metric-header h2 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.c_metric-header p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: var(--space-md);
+		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+	}
+
+	.c_metric-board {
+		width: 100%;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+	.s_metric-wrap {
+		width: 100%;
+		padding: 0;
+	}
+	.c_metric-container {
+		max-width: 768px;
+		min-width: 426px;
+		width: 100%;
+		gap: var(--space-sm);
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: var(--space-sm);
+	}
+
+	.c_metric-header h2 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.c_metric-header p {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: var(--space-md);
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+	}
+
+	.c_metric-board {
+		width: 100%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.s_metric-wrap {
+		width: 100%;
+		padding: 0;
+	}
+	.c_metric-container {
+		max-width: 1024px;
+		min-width: 769px;
+		width: 100%;
+		gap: var(--space-md);
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: var(--space-md);
+	}
+
+	.c_metric-header h2 {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+
+	.c_metric-header p {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: var(--space-md);
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+	}
+
+	.c_metric-board {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.s_metric-wrap {
+		width: 100%;
+		padding: 0;
+	}
+	.c_metric-container {
+		max-width: 1440px;
+		min-width: 1025px;
+		width: 100%;
+		gap: var(--space-lg);
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: var(--space-lg);
+	}
+
+	.c_metric-header h2 {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.c_metric-header p {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+
+	.c_metric-board {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.s_metric-wrap {
+		width: 100%;
+		padding: 0;
+	}
+	.c_metric-container {
+		max-width: 2560px;
+		min-width: 1441px;
+		width: 100%;
+		gap: var(--space-lg);
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+	.c_metric-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: var(--space-lg);
+	}
+
+	.c_metric-header h2 {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+
+	.c_metric-header p {
+		display: flex;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+	}
+	.c_metric-cta {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+
+	.c_metric-board {
+		width: 100%;
+	}
+}
