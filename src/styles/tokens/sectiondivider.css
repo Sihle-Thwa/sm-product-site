@@ -9,47 +9,49 @@
 
 .section-divider {
 	width: 100%;
-	border: none;
 	border-top: 1px solid var(--border-muted);
-	margin: 0;
-	padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs); /* Add padding for spacing */
+	padding: 0;
 }
+/* ===========================
+ Responsive Layout System
+=========================== */
 
-/* Responsive Media Queries */
-@media (min-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px){
 	.section-divider {
 		max-width: 425px;
+		min-width: 320px;
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 }
 
-@media (max-width: 425px) {
-	.section-divider {
-		max-width: 425px;
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
-	}
-}
-
-@media (min-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
 	.section-divider {
 		max-width: 768px;
-		width: 100%;
-		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
+		min-width: 426px;
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 	.section-divider {
 		max-width: 1024px;
-		width: 100%;
+		min-width: 769px;
 		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
 	.section-divider {
 		max-width: 1440px;
-		width: 100%;
+		min-width: 1025px;
 		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.section-divider {
+		max-width: 2560px;
+		min-width: 1441px;
+		padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
 	}
 }
