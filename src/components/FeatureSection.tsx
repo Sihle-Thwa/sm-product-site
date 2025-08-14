@@ -13,18 +13,18 @@ export default function FeatureSection() {
                 <div className="c_feature-intro">
                     <h2
                         id="features-heading"
-                        className=" heading-xl-semibold lg:heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold w-xs:heading-xs-semibold"
+                        className="_features-heading"
                     >
                         Features
                     </h2>
-                    <p className=" text-xl-semibold lg:text-lg-semibold md:text-md-semibold sm:text-sm-semibold w-xs:text-xs-semibold">
+                    <div className="_features-subheading">
                         Overflowing with useful features
-                    </p>
-                    <p className="text-md-medium lg:text-sm-medium md:text-sm-regular sm:text-xs-regular">
+                    </div>
+                    <div className="_features-subtitle">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
                         gain a competitive advantage both on and off the field.
-                    </p>
+                    </div>
                 </div>
 
                 {/* Content Section */}
