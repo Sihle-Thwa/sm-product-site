@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
         >
             <div className="c_testimonial-container">
                 {/* Heading + CTA */}
-                <div id="testimonials-heading" className="_testimonial-content">
+                <div className="_testimonial-content">
                     <div className="_testimonial-intro">
                         <h2 className="_testimonial-heading">
                             Don’t just take our word for it
@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Testimonial Cards */}
-                <section className="s_testimonial-card-wrap">
+                <div className="_testimonial-content">
                     {Testimonials.map((testimonial, index) => (
                         <motion.div
                             key={`testimonial-${testimonial.name}-${index}`}
@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
                             />
                         </motion.div>
                     ))}
-                </section>
+                </div>
             </div>
         </section>
     );
