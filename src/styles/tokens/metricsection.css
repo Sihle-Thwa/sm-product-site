@@ -58,13 +58,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	align-self: stretch;
 	background-image: url("../../../public/metricboard.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-	height: 100%;
-	width: 100%;
 }
 
 /* ===========================
@@ -79,12 +76,13 @@
 		padding: 0;
 	}
 	.c_metric-container {
-		max-width: 320px;
-		min-width: 125px;
+		max-width: 380px;
+		min-width: 280px;
 		width: 100%;
 		gap: var(--space-xs);
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 	.c_metric-header {
@@ -112,17 +110,18 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: var(--space-md);
+		gap: var(--space-sm);
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 
 	.metric-bg-image {
-		max-width: 320px;
-		min-width: 240px;
-		max-height: 780px;
-		min-height: 420px;
+		max-width: 380px;
+		min-width: 280px;
+		height: 780px;
 		width: 100%;
-		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xs);
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 }
@@ -171,12 +170,15 @@
 	}
 
 	.metric-bg-image {
-		max-width: 340px;
-		min-width: 280px;
-		max-height: 780px;
-		min-height: 420px;
+		max-width: 768px;
+		min-width: 426px;
+		height: 780px;
 		width: 100%;
-		height: 100%;
+		gap: var(--space-sm);
+		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+		display: flex;
+		flex-direction: column;
+
 	}
 }
 
@@ -225,12 +227,12 @@
 	}
 
 	.metric-bg-image {
-		max-width: 769px;
-		min-width: 460px;
-		max-height: 360px;
-		min-height: 240px;
+		max-width: 1024px;
+		min-width: 769px;
+		height: 360px;
 		width: 100%;
-		height: 100%;
+		gap: var(--space-md);
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
 	}
 }
 
@@ -278,12 +280,13 @@
 	}
 
 	.metric-bg-image {
-		max-width: 1216px;
-		min-width: 768px;
-		max-height: 360px;
-		min-height: 240px;
+		max-width: 1440px;
+		min-width: 1025px;
+		height: 360px;
 		width: 100%;
-		height: 100%;
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+
 	}
 }
 
@@ -296,10 +299,10 @@
 		max-width: 2560px;
 		min-width: 1441px;
 		width: 100%;
-		gap: var(--space-lg);
 		display: flex;
 		flex-direction: column;
-		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		gap: var(--space-xl);
+		padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
 	}
 	.c_metric-header {
 		display: flex;
@@ -307,7 +310,7 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		gap: var(--space-lg);
+		gap: var(--space-xl);
 	}
 
 	.c_metric-header h2 {
@@ -327,16 +330,16 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		gap: var(--space-lg);
-		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
+		gap: var(--space-xl);
+		padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
 	}
 
 	.metric-bg-image {
-		max-width: 1216px;
-		min-width: 768px;
-		max-height: 360px;
-		min-height: 240px;
+		max-width: 2560px;
+		min-width: 1441px;
+		height: 360px;
 		width: 100%;
-		height: 100%;
+		gap: var(--space-xl);
+		padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
 	}
 }

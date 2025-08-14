@@ -27,9 +27,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
                 <div className="heading-sm-semibold md:text-md-semibold sm:text-sm-semibold">{tier.name}</div>
                 <div className="flex flex-row items-baseline justify-center gap-2">
                     <div className="heading-lg-semibold md:text-md-semibold sm:text-sm-semibold">{tier.price}</div>
-                    <span className="text-sm-medium md:text-xs-medium sm:text-xs-regular">/mo</span>
+                    <span className="text-md-medium md:text-md-medium sm:text-sm-medium">/mo</span>
                 </div>
-                <div className="text-sm-medium md:text-xs-medium sm:text-xs-regular">{tier.description}</div>
+                <div className="xl:text-xl-regular lg:text-lg-regular md:text-md-regular sm:text-sm-regular">{tier.description}</div>
             </div>
 
             <ul className="feature-list">
@@ -41,9 +41,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, highlight = false }) =>
                 ))}
             </ul>
 
-            <div className="text-center w-full">
-                <Button className="button button-lg md:button-md sm:button-sm button-primary w-full">
-                    <a href={tier.cta.href} className="block w-full">{tier.cta.label}</a>
+            <div className="text-center">
+                <Button className="button button-primary">
+                    <a href={tier.cta.href} className="">{tier.cta.label}</a>
                 </Button>
             </div>
         </div>

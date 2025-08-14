@@ -31,8 +31,8 @@ export default function TestimonialCard({
                     key={index}
                     className={
                         index < rating
-                            ? "text-lg-regular md:text-md-regular sm:text-sm-regular"
-                            : "text-gray-400"
+                            ? "xl:text-xl-regular lg:text-lg-regular md:text-md-regular sm:text-sm-regular text-xs-regular text-yellow-500"
+                            : "text-yellow-500"
                     }
                 >
                     ★
@@ -55,20 +55,20 @@ export default function TestimonialCard({
             )}
             <div className="_testimonial-card-content">
                 <blockquote
-                    className="italic lg:text-sm-regular text-xs-regular"
+                    className="italic lg:text-md-regular md:text-sm-regular sm:text-xs-regular"
                     aria-label={`Testimonial from ${name}`}
                 >
                     “{testimonial}”
                 </blockquote>
                 {renderStars()}
                 <figcaption className="space-y-1">
-                    <div className="text-lg-semibold md:text-md-semibold sm:text-sm-semibold">
+                    <div className="text-xl-semibold lg:text-lg-semibold md:text-md-semibold sm:text-sm-semibold">
                         {name}
                     </div>
-                    <div className="text-sm-medium md:text-sm-regular sm:text-xs-regular">
+                    <div className="text-md-medium md:text-sm-regular sm:text-xs-regular">
                         {role}
                     </div>
-                    <div className="text-sm-regular md:text-xs-regular sm:text-xs-regular">
+                    <div className="text-sm-regular md:text-sm-regular sm:text-xs-regular">
                         {organization}
                     </div>
                 </figcaption>

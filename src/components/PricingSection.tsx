@@ -11,7 +11,7 @@ const PricingSection: React.FC = () => {
                     <h6 className="text-lg-semibold md:text-md-semibold sm:text-sm-semibold text-[var(--accent)]">Pricing
 
                     </h6>
-                    <h2 className="heading-md-medium md:heading-sm-medium sm:heading-xs-medium xs:heading-xs-regular">Simple, transparent pricing</h2>
+                    <h2 className="heading-lg-medium md:heading-md-medium sm:heading-sm-medium">Simple, transparent pricing</h2>
                     <p className="text-sm-medium md:text-xs-medium sm:text-xs-regular ">
                         We believe Untitled should be accessible to all companies, no matter the size.
                     </p>

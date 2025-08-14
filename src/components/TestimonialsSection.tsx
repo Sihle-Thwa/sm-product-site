@@ -13,21 +13,21 @@ export default function TestimonialsSection() {
                 {/* Heading + CTA */}
                 <div id="testimonials-heading" className="_testimonial-content">
                     <div className="_testimonial-intro">
-                        <h2 className="_testimonial_title heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">
+                        <h2 className="_testimonial_title xl:heading-xl-semibold lg:heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold heading-xs-semibold">
                             Don’t just take our word for it
                         </h2>
-                        <p className="_testimonial_subtitle text-lg-medium md:text-md-medium sm:text-sm-medium">
+                        <p className="_testimonial_subtitle xl:text-xl-semibold lg:text-lg-semibold md:text-md-semibold sm:text-sm-semibold text-xs-semibold">
                             Hear from some of our amazing customers.
                         </p>
-                        <p className="_testimonial_description text-sm-regular md:text-xs-regular sm:text-xs-regular">
+                        <p className="_testimonial_description xl:text-xl-regular lg:text-lg-regular md:text-md-regular sm:text-sm-regular text-xs-regular">
                             Our platform has transformed the way sports organizations operate, and our customers are thrilled with the results.
                         </p>
                     </div>
 
                     <div className="_testimonial-cta">
                         <div className="_testimonial-cta-buttons">
-                            <Button className="button button-lg md:button-md sm:button-sm button-accent">Our Customers</Button>
-                            <Button className="button button-lg md:button-md sm:button-sm button-primary">Create Account</Button>
+                            <Button className="button button-accent">Our Customers</Button>
+                            <Button className="button button-primary">Create Account</Button>
                         </div>
                     </div>
                 </div>
