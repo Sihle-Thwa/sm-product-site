@@ -19,14 +19,12 @@ export default function MobileMenu() {
         <div className="block md:hidden">
             <Popover open={open} onOpenChange={setOpen}>
                 <PopoverTrigger asChild>
-                    <Button
-                        size="icon"
-                        variant="outline"
+                    <button
                         className="button button-icon button-accent-outline"
                         aria-label="Toggle mobile menu"
                     >
                         <Menu className="w-5 h-5" />
-                    </Button>
+                    </button>
                 </PopoverTrigger>
 
                 <PopoverContent

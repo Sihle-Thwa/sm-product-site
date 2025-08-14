@@ -120,6 +120,34 @@
     font-weight: 700;
 }
 
+/* Heading XS */
+.heading-xs-regular {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    font-weight: 400;
+}
+
+.heading-xs-medium {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    font-weight: 500;
+}
+
+.heading-xs-semibold {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    font-weight: 600;
+}
+
+.heading-xs-bold {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    font-weight: 700;
+}
 
 
 /* Text XL */
