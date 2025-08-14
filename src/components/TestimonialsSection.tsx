@@ -8,7 +8,10 @@ import { motion } from "framer-motion";
 
 export default function TestimonialsSection() {
     return (
-        <section className="s_testimonial-wrap" aria-labelledby="testimonials-section">
+        <section
+            className="s_testimonial-wrap"
+            aria-labelledby="testimonials-section"
+        >
             <div className="c_testimonial-container">
                 {/* Heading + CTA */}
                 <div id="testimonials-heading" className="_testimonial-content">
@@ -20,7 +23,8 @@ export default function TestimonialsSection() {
                             Hear from some of our amazing customers.
                         </p>
                         <p className="_testimonial-subtitle">
-                            Our platform has transformed the way sports organizations operate, and our customers are thrilled with the results.
+                            Our platform has transformed the way sports organizations operate,
+                            and our customers are thrilled with the results.
                         </p>
                     </div>
 
@@ -44,7 +48,11 @@ export default function TestimonialsSection() {
                         >
                             <TestimonialCard
                                 {...testimonial}
-                                image={typeof testimonial.image === "string" ? testimonial.image : testimonial.image?.src}
+                                image={
+                                    typeof testimonial.image === "string"
+                                        ? testimonial.image
+                                        : testimonial.image?.src
+                                }
                             />
                         </motion.div>
                     ))}

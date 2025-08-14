@@ -1,0 +1,115 @@
+@import "../typography.css";
+
+:root {
+	--testimonial-border: 1px solid var(--color-border);
+	--testimonial-border-radius: var(--radius-lg);
+	--testimonial-background: var(--color-card);
+	--testimonial-foreground: var(--color-card-foreground);
+}
+
+/* Spacing */
+:root {
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
+}
+
+._testimonial-card {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding-top: 166px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	border: var(--testimonial-border);
+	border-radius: var(--radius-lg);
+}
+._testimonial-card-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+._testimonial-card-container {
+	display: flex;
+	width: 100%;
+	padding: 96px 24px 24px 24px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+._testimonial-card-content {
+	display: flex;
+	padding: 24px 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+	align-self: stretch;
+	background: var(--glass-card);
+	border: 1px solid var(--glass-card-border);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: var(--radius-lg);
+}
+._testimonial-card-content * {
+	color: white;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+._testimonial-card-content-customer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	align-self: stretch;
+}
+._customer-quote {
+	align-self: stretch;
+}
+._customer-rating {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+._customer-name {
+	align-self: stretch;
+}
+._testimonial-card-content-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+	align-self: stretch;
+}
+._customer-organisation {
+	align-self: stretch;
+}
+._customer-role {
+	align-self: stretch;
+}
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 320px) and (max-width: 425px) {
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+}

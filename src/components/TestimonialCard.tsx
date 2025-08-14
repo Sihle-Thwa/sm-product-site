@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import "../styles/tokens/testimonialcard.css";
 
 interface TestimonialProps {
     name: string;
@@ -46,31 +47,29 @@ export default function TestimonialCard({
             {image && (
                 <Image
                     src={image}
-                    width={360}
-                    height={320}
+                    width={500}
+                    height={500}
                     alt={`Testimonial from ${name}`}
                     className="_testimonial-card-image"
                 />
             )}
-            <div className="_testimonial-card-content">
-                <blockquote
-                    className="italic lg:text-md-regular md:text-sm-regular sm:text-xs-regular"
-                    aria-label={`Testimonial from ${name}`}
-                >
-                    “{testimonial}”
-                </blockquote>
-                {renderStars()}
-                <figcaption className="space-y-1">
-                    <div className="text-xl-semibold lg:text-lg-semibold md:text-md-semibold sm:text-sm-semibold">
-                        {name}
+            <div className="_testimonial-card-container">
+                <div className="_testimonial-card-content">
+                    <div className="_testimonial-card-content-customer">
+                        <div
+                            className="_customer-quote"
+                            aria-label={`Testimonial from ${name}`}
+                        >
+                            “{testimonial}”
+                        </div>
+                        <div className="_customer-rating">{renderStars()}</div>
+                        <div className="_customer-name">{name}</div>
                     </div>
-                    <div className="text-md-medium md:text-sm-regular sm:text-xs-regular">
-                        {role}
+                    <div className="_testimonial-card-content-info">
+                        <div className="_customer-organisation">{organization}</div>
+                        <div className="_customer-role">{role}</div>
                     </div>
-                    <div className="text-sm-regular md:text-sm-regular sm:text-xs-regular">
-                        {organization}
-                    </div>
-                </figcaption>
+                </div>
             </div>
         </div>
     );
