@@ -14,12 +14,12 @@ export default function HeroSection() {
             <div className="c_hero-container">
                 {/* Hero Content */}
                 <div className="_hero-content">
-                    <h1 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold">
+                    <div className="_hero-heading">
                         The Complete Sports Management Solution
-                    </h1>
-                    <p className="text-md-medium md:text-sm-medium sm:text-xs-medium">
+                    </div>
+                    <div className="_hero-subtitle">
                         Streamline team management, player development, and operations in one uniformed platform.
-                    </p>
+                    </div>
 
                     <div className="_hero-content-cta">
                         <Button className="button  button-accent">
