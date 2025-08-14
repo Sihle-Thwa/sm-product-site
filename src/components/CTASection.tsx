@@ -8,14 +8,14 @@ export default function CTASection() {
         <div className="s_cta-wrap" aria-labelledby="cta-section">
             <div className="c_cta-container">
                 <div className="c_cta-content">
-                    <h2 id="cta-heading" className="heading-lg-medium sm:heading-md-medium text-center">
+                    <div id="cta-heading" className="_cta-heading">
                         Start your free trial
-                    </h2>
-                    <p className="text-md-medium sm:text-sm-medium text-center ">
+                    </div>
+                    <p className="_cta-heading-subtitle">
                         Join over 500+ organizations already growing with us.
                     </p>
                     <div className="c_cta-buttons">
-                        <Button className="button button-xl lg:button-lg md:button-md sm:button-sm button-primary">
+                        <Button className="button button-primary">
                             Get Started
                         </Button>
                     </div>

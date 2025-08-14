@@ -70,20 +70,18 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
 	.s_metric-wrap {
-		max-width: 425px;
-		min-width: 320px;
 		width: 100%;
 		padding: 0;
 	}
 	.c_metric-container {
-		max-width: 380px;
-		min-width: 280px;
+		max-width: 280px;
+		min-width: 240px;
 		width: 100%;
-		gap: var(--space-xs);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+		gap: var(--space-xs);
 	}
 	.c_metric-header {
 		display: flex;
@@ -115,12 +113,13 @@
 	}
 
 	.metric-bg-image {
-		max-width: 380px;
+		max-width: 360px;
 		min-width: 280px;
 		height: 780px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: var(--space-xs);
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
@@ -178,7 +177,6 @@
 		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 		display: flex;
 		flex-direction: column;
-
 	}
 }
 
@@ -286,7 +284,6 @@
 		width: 100%;
 		gap: var(--space-lg);
 		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
-
 	}
 }
 

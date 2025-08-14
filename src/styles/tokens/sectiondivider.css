@@ -11,16 +11,16 @@
 	width: 100%;
 	border-top: 1px solid var(--border-muted);
 	padding: 0;
+	padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 }
 /* ===========================
  Responsive Layout System
 =========================== */
 
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 320px) and (max-width: 425px) {
 	.section-divider {
 		max-width: 425px;
 		min-width: 320px;
-		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 }
 
@@ -28,7 +28,6 @@
 	.section-divider {
 		max-width: 768px;
 		min-width: 426px;
-		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
 	}
 }
 
@@ -36,7 +35,6 @@
 	.section-divider {
 		max-width: 1024px;
 		min-width: 769px;
-		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
 	}
 }
 
@@ -44,7 +42,6 @@
 	.section-divider {
 		max-width: 1440px;
 		min-width: 1025px;
-		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 	}
 }
 
@@ -52,6 +49,5 @@
 	.section-divider {
 		max-width: 2560px;
 		min-width: 1441px;
-		padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
 	}
 }
