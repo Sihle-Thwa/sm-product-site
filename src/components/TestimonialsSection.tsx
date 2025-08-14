@@ -13,13 +13,13 @@ export default function TestimonialsSection() {
                 {/* Heading + CTA */}
                 <div id="testimonials-heading" className="_testimonial-content">
                     <div className="_testimonial-intro">
-                        <h2 className="_testimonial_title xl:heading-xl-semibold lg:heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold heading-xs-semibold">
+                        <h2 className="_testimonial-heading">
                             Don’t just take our word for it
                         </h2>
-                        <p className="_testimonial_subtitle xl:text-xl-semibold lg:text-lg-semibold md:text-md-semibold sm:text-sm-semibold text-xs-semibold">
+                        <p className="_testimonial-subheading">
                             Hear from some of our amazing customers.
                         </p>
-                        <p className="_testimonial_description xl:text-xl-regular lg:text-lg-regular md:text-md-regular sm:text-sm-regular text-xs-regular">
+                        <p className="_testimonial-subtitle">
                             Our platform has transformed the way sports organizations operate, and our customers are thrilled with the results.
                         </p>
                     </div>

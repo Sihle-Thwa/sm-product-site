@@ -46,11 +46,10 @@ export default function TestimonialCard({
             {image && (
                 <Image
                     src={image}
-                    width={500}
-                    height={500}
+                    width={360}
+                    height={320}
                     alt={`Testimonial from ${name}`}
                     className="_testimonial-card-image"
-                    priority
                 />
             )}
             <div className="_testimonial-card-content">

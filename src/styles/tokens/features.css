@@ -18,6 +18,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: var(--color-background);
+	padding: 0;
 }
 
 .c_feature-container {
@@ -187,6 +188,7 @@
 		justify-content: center;
 		width: 100%;
 		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
+		gap: var(--space-sm);
 	}
 	.c_feature-intro {
 		display: flex;
