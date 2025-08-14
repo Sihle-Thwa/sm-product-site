@@ -16,28 +16,27 @@ export default function TestimonialsSection() {
                 {/* Heading + CTA */}
                 <div className="_testimonial-content">
                     <div className="_testimonial-intro">
-                        <h2 className="_testimonial-heading">
+                        <div className="_testimonial-heading">
                             Don’t just take our word for it
-                        </h2>
-                        <p className="_testimonial-subheading">
+                        </div>
+                        <div className="_testimonial-subheading">
                             Hear from some of our amazing customers.
-                        </p>
-                        <p className="_testimonial-subtitle">
+                        </div>
+                        <div className="_testimonial-subtitle">
                             Our platform has transformed the way sports organizations operate,
                             and our customers are thrilled with the results.
-                        </p>
+                        </div>
                     </div>
 
                     <div className="_testimonial-cta">
-                        <div className="_testimonial-cta-buttons">
-                            <Button className="button button-accent">Our Customers</Button>
-                            <Button className="button button-primary">Create Account</Button>
-                        </div>
+
+                        <Button className="button button-accent">Our Customers</Button>
+                        <Button className="button button-primary">Create Account</Button>
                     </div>
                 </div>
 
                 {/* Testimonial Cards */}
-                <div className="_testimonial-content">
+                <div className="_testimonial-content-card">
                     {Testimonials.map((testimonial, index) => (
                         <motion.div
                             key={`testimonial-${testimonial.name}-${index}`}

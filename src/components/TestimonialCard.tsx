@@ -44,14 +44,16 @@ export default function TestimonialCard({
 
     return (
         <section className="s_testimonial-card-wrap">
-            <div className="_testimonial-card">
+            <div className="_testimonial-card"
+                style={{ position: "relative", objectFit: "cover", }}
+            >
                 {image && (
                     <Image
                         src={image}
-                        width={500}
-                        height={500}
                         alt={`Testimonial from ${name}`}
                         className="_testimonial-card-image"
+                        loading="lazy"
+                        fill={true}
                     />
                 )}
                 <div className="_testimonial-card-container">
