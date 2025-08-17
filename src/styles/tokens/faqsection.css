@@ -139,12 +139,7 @@
 	}
 
 	.c_faq-container {
-		max-width: 320px;
-		min-width: 125px;
 		width: 100%;
-		gap: var(--space-xs);
-		display: flex;
-		flex-direction: column;
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
 	}
 
@@ -245,18 +240,15 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 	.s_faq-wrap {
+		max-width: 1024px;
+		min-width: 769px;
 		width: 100%;
 		padding: 0;
 	}
 
 	.c_faq-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 1024px;
-		min-width: 769px;
 		width: 100%;
+		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
 		gap: var(--space-md);
 	}
 
@@ -289,26 +281,19 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 	.s_faq-wrap {
+		max-width: 1440px;
+		min-width: 1025px;
 		width: 100%;
 		padding: 0;
 	}
 
 	.c_faq-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 1440px;
-		min-width: 1025px;
 		width: 100%;
-		gap: var(--space-md);
+		gap: var(--space-lg);
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 	}
 
 	.c_faq-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		width: 100%;
 		gap: var(--space-md);
 	}
@@ -329,17 +314,14 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
 	.s_faq-wrap {
+		max-width: 2560px;
+		min-width: 1441px;
 		width: 100%;
 		padding: 0;
 	}
 
 	.c_faq-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 2560px;
-		min-width: 1441px;
+		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
 		width: 100%;
 	}
 

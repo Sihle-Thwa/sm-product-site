@@ -80,6 +80,7 @@
 	.c_hero-container {
 		width: 100%;
 		padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+		
 	}
 	._hero-content {
 		display: flex;
