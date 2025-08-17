@@ -11,12 +11,12 @@ export default function FeatureSection() {
             <div className="c_feature-container">
                 {/* Section Intro */}
                 <div className="c_feature-intro">
-                    <h2
+                    <div
                         id="features-heading"
                         className="_features-heading"
                     >
                         Features
-                    </h2>
+                    </div>
                     <div className="_features-subheading">
                         Overflowing with useful features
                     </div>
