@@ -28,20 +28,20 @@
 	--radius-xl: 12px;
 
 	/* Button Padding */
-	--button-padding-2xl: 16px 24px;
-	--button-padding-xl: 14px 20px;
-	--button-padding-lg: 12px 16px;
-	--button-padding-md: 8px 12px;
-	--button-padding-sm: 6px 10px;
-	--button-padding-xs: 4px 8px;
+	--button-padding-2xl: 16px 24px 24px 16px;
+	--button-padding-xl: 14px 20px 20px 14px;
+	--button-padding-lg: 12px 16px 16px 12px;
+	--button-padding-md: 8px 12px 12px 8px;
+	--button-padding-sm: 6px 10px 10px 6px;
+	--button-padding-xs: 4px 8px 8px 4px;
 
 	/* Button Width */
-	--button-width-2xl: 120px;
-	--button-width-xl: 102px;
-	--button-width-lg: 98px;
-	--button-width-md: 94px;
-	--button-width-sm: 90px;
-	--button-width-xs: 80px;
+	--button-width-2xl: 150px;
+	--button-width-xl: 128px;
+	--button-width-lg: 122px;
+	--button-width-md: 102px;
+	--button-width-sm: 98px;
+	--button-width-xs: 94px;
 
 	/* Button Height */
 	--button-height-xl: 40px;
@@ -64,9 +64,10 @@
 
 /* Base Button Class */
 .button {
-	display: inline-block;
+	display: flex;
 	justify-content: center;
-	line-height: normal;
+	align-items: center;
+	overflow: hidden;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -82,47 +83,46 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
 	.button {
-		padding: var(--button-padding-xs);
 		height: var(--button-height-xs);
 		width: var(--button-width-xs);
-		font-size: var(--button-font-size-xs);
+		font-size: 12px;
+		line-height: 22px;
 	}
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
 	.button {
-		padding: var(--button-padding-sm);
 		height: var(--button-height-sm);
 		width: var(--button-width-sm);
-		font-size: var(--button-font-size-sm);
+		font-size: 14px;
+    line-height: 24px;
 	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
 	.button {
-		padding: var(--button-padding-md);
 		height: var(--button-height-md);
 		width: var(--button-width-md);
-		font-size: var(--button-font-size-md);
+		 font-size: 14px;
+    line-height: 24px;
 	}
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 	.button {
-		padding: var(--button-padding-lg);
 		height: var(--button-height-lg);
 		width: var(--button-width-lg);
-		font-size: var(--button-font-size-lg);
+		font-size: 14px;
+    line-height: 24px;
 	}
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
 	.button {
-		padding: var(--button-padding-xl);
 		height: var(--button-height-xl);
 		width: var(--button-width-xl);
-		font-size: var(--button-font-size-xl);
-		display: block;
+		font-size: 16px;
+    line-height: 26px;
 	}
 }
 

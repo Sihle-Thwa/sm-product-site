@@ -30,8 +30,8 @@ export default function TestimonialsSection() {
 
                     <div className="_testimonial-cta">
 
-                        <Button className="button button-accent">Our Customers</Button>
-                        <Button className="button button-primary">Create Account</Button>
+                        <Button className="button button-accent">Join Us</Button>
+                        <Button className="button button-primary">Demo</Button>
                     </div>
                 </div>
 
