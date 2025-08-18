@@ -1,0 +1,88 @@
+@import "../typography.css";
+
+/* Spacing */
+:root {
+	--space-xs: 8px;
+	--space-sm: 16px;
+	--space-md: 24px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 60px;
+}
+
+.c_feature-card-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.c_feature-card-description {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 320px) and (max-width: 425px) {
+	.c_feature-card-title {
+		font-size: 12px;
+		line-height: 22px;
+		font-weight: 600;
+	}
+	.c_feature-card-description {
+		font-size: 12px;
+		line-height: 22px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+	.c_feature-card-title {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 600;
+	}
+	.c_feature-card-description {
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.c_feature-card-title {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 600;
+	}
+	.c_feature-card-description {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.c_feature-card-title {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 600;
+	}
+	.c_feature-card-description {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.c_feature-card-title {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	.c_feature-card-description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
