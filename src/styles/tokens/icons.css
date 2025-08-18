@@ -133,14 +133,6 @@
 	}
 }
 
-/* Responsive Adjustments */
-@media (max-width: 767px) {
-	.icon-lg,
-	.icon-xl {
-		width: var(--icon-size-md);
-		height: var(--icon-size-md);
-	}
-}
 
 /* RTL (Right-to-Left) Support */
 [dir="rtl"] .icon-flip {

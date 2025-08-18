@@ -16,7 +16,7 @@ export default function CTASection() {
                     </p>
                     <div className="c_cta-buttons">
                         <Button className="button button-primary">
-                            Get Started
+                            Join Us
                         </Button>
                     </div>
                 </div>

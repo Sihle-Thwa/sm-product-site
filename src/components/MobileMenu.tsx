@@ -20,7 +20,7 @@ export default function MobileMenu() {
             <Popover open={open} onOpenChange={setOpen}>
                 <PopoverTrigger asChild>
                     <button
-                        className="button button-icon button-accent-outline"
+                        className=" button-menu"
                         aria-label="Toggle mobile menu"
                     >
                         <Menu className="w-5 h-5" />

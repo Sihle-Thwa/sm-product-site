@@ -38,9 +38,9 @@ const FAQSection = () => {
                                 type="button"
                             >
                                 <div className="faq-question">
-                                    <span className="text-lg-semibold lg:text-md-semibold md:text-sm-semibold sm:text-xs-semibold xs:text-xs-semibold">
+                                    <div>
                                         {faq.question}
-                                    </span>
+                                    </div>
                                 </div>
                                 <ChevronDown
                                     className={`faq-chevron w-5 h-5 ${openItem === index ? "open" : ""
@@ -58,7 +58,7 @@ const FAQSection = () => {
                                 aria-labelledby={`faq-trigger-${index}`}
                             >
                                 <div className="faq-answer">
-                                    <p className="text-sm-regular">{faq.answer}</p>
+                                    <div>{faq.answer}</div>
                                 </div>
                             </div>
                         </div>

@@ -77,6 +77,27 @@
 	box-shadow: 0 2px 4px var(--shadow-color);
 }
 
+/* Mobile Menu Button and States */
+
+.button-menu{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 12px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	color: var(--primary);
+}
+
+.button-menu:hover {
+	color: var(--accent);
+}
+
+.button-menu:active {
+	color: var(--accent);
+}
+
+
 /* ===========================
  Responsive Layout System
 =========================== */
@@ -156,6 +177,7 @@
 	background-color: transparent;
 	color: var(--accent-text);
 }
+
 /* Interactive States */
 
 .button:hover {
