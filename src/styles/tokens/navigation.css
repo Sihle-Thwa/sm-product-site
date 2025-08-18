@@ -1,196 +1,63 @@
 @import "../typography.css";
 
 :root {
-	--space-xs: 8px;
-	--space-sm: 16px;
-	--space-md: 24px;
-	--space-lg: 32px;
-	--space-xl: 48px;
-	--space-2xl: 60px;
+	 --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --nav-fg: var(--color-secondary, oklch(0.35 0.03 240));
+  --nav-fg-hover: var(--color-accent, oklch(0.58 0.12 230));
 }
 
-.navMenu {
-	position: sticky;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 50;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	max-height: 60px;
-	min-height: none;
-	height: 100%;
+.nav {
+  display: block;
+  width: 100%;
 }
 
 /* Navigation List */
-.navMenuList {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-lg);
+  align-items: center;
+  justify-content: flex-end; /* Right-aligned to satisfy "nav on far right" */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* Navigation Items */
-.navMenuItem {
-	list-style: none;
+.nav-item {
+  list-style: none;
 }
 
 /* Navigation Links */
-.navMenuLink {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--color-secondary);
-	text-decoration: none;
-	border-radius: var(--radius-sm);
-	transition: color 0.2s ease, background-color 0.2s ease;
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  color: var(--nav-fg);
+  transition: color 150ms ease, background-color 150ms ease;
+  font: inherit; /* respects your typography scale */
 }
 
-.navMenuLink:hover,
-.navMenuLink:focus {
-	color: var(--color-accent);
-	outline: none;
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--nav-fg-hover);
+  outline: none;
 }
 
 /* ===========================
  Responsive Layout System
 =========================== */
 
-@media (min-width: 320px) and (max-width: 425px) {
-	.navMenu {
-		position: sticky;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 50;
-		width: 100%;
-		height: 100%;
-		flex: row;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.navMenuList {
-		display: none;
-	}
+@media (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
 }
-
-@media (min-width: 426px) and (max-width: 768px) {
-	.navMenu {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-	}
-
-	.navMenuList {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: end;
-		gap: var(--space-sm);
-	}
-
-	._navMenuItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: end;
-		width: 100%;
-		padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-sm);
-		gap: var(--space-sm);
-	}
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-	.navMenu {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-	}
-
-	.navMenuList {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: var(--space-md) var(--space-md) var(--space-md) var(--space-md);
-		gap: var(--space-md);
-	}
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-	.navMenu {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-		overflow: hidden;
-		height: 100%;
-	}
-
-	.navMenuList {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
-		gap: var(--space-lg);
-
-	}
-
-	._navMenuItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		padding: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
-		gap: var(--space-lg);
-	}
-}
-@media (min-width: 1441px) and (max-width: 2560px) {
-	.navMenu {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-	}
-
-	.navMenuList {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
-		gap: var(--space-xl);
-	}
-
-	._navMenuItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-xl);
-		gap: var(--space-xl);
-	}
-}
-	

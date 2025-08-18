@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/button";
 
-const navItems = [
+const NAV_ITEMS = [
     { label: "Products", href: "#products" },
     { label: "Features", href: "#features" },
     { label: "Pricing", href: "#pricing" },
@@ -16,59 +15,52 @@ export default function MobileMenu() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="block md:hidden">
+        <div className="mobile-nav">
             <Popover open={open} onOpenChange={setOpen}>
                 <PopoverTrigger asChild>
                     <button
-                        className=" button-menu"
-                        aria-label="Toggle mobile menu"
+                        className="mobile-nav-trigger"
+                        aria-label={open ? "Close mobile menu" : "Open mobile menu"}
+                        aria-expanded={open}
+                        aria-controls="mobilemenu-panel"
                     >
-                        <Menu className="w-5 h-5" />
+                        <Menu className="mobile-nav-triggerIcon" />
                     </button>
                 </PopoverTrigger>
 
-                <PopoverContent
-                    sideOffset={0}
-                    asChild
-                    className="!p-0 !border-0 !shadow-none z-12"
-                >
+                <PopoverContent asChild sideOffset={0} className="mobile-nav-content">
                     <div
-                        className="fixed inset-0 bg-[oklch(0 0 0 / 0.7)] backdrop-blur-sm z-12"
                         role="dialog"
                         aria-modal="true"
+                        id="mobilemenu-panel"
+                        className="mobile-nav-overlay"
                     >
-                        <div className="flex flex-col justify-start items-end h-full w-full">
-                            <div className="w-full max-w-lg bg-background h-full shadow-lg p-[var(--space-lg)] flex flex-col gap-[var(--space-md)]">
-                                {/* Close Button */}
-                                <div className="flex justify-end">
-                                    <Button
-                                        size="icon"
-                                        variant="ghost"
-                                        className="button button-icon"
-                                        aria-label="Close menu"
+                        <div className="mobile-nav-panel">
+                            <div className="mobile-nav-panelHeader">
+                                <button
+                                    className="mobile-nav-close"
+                                    aria-label="Close menu"
+                                    onClick={() => setOpen(false)}
+                                >
+                                    <X className="mobile-nav-close-icon" />
+                                </button>
+                            </div>
+
+                            <nav
+                                className="mobile-nav-list"
+                                aria-label="Mobile fullscreen navigation"
+                            >
+                                {NAV_ITEMS.map((item) => (
+                                    <a
+                                        key={item.label}
+                                        href={item.href}
+                                        className="mobile-nav-link"
                                         onClick={() => setOpen(false)}
                                     >
-                                        <X className="w-5 h-5" />
-                                    </Button>
-                                </div>
-
-                                {/* Nav List */}
-                                <nav
-                                    className="flex flex-col gap-[var(--space-md)]"
-                                    aria-label="Mobile Fullscreen Navigation"
-                                >
-                                    {navItems.map((item) => (
-                                        <a
-                                            key={item.label}
-                                            href={item.href}
-                                            onClick={() => setOpen(false)}
-                                            className="text-lg-medium text-foreground hover:text-accent transition-colors"
-                                        >
-                                            {item.label}
-                                        </a>
-                                    ))}
-                                </nav>
-                            </div>
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </nav>
                         </div>
                     </div>
                 </PopoverContent>
