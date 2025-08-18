@@ -16,12 +16,12 @@ const FAQSection = () => {
             <div className="c_faq-container">
                 {/* Section Header */}
                 <div className="faq-header">
-                    <h2 className="heading-lg-semibold md:heading-md-semibold sm:heading-sm-semibold xs:heading-xs-semibold">
+                    <div className="_faq-heading">
                         Frequently Asked Questions
-                    </h2>
-                    <p className="text-lg-regular md:text-md-regular sm:text-sm-regular xs:text-xs-regular">
+                    </div>
+                    <div className="_faq-description">
                         Everything you need to know about the product and billing.
-                    </p>
+                    </div>
                 </div>
 
                 {/* FAQ List */}
