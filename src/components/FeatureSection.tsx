@@ -7,7 +7,7 @@ import { FeatureCard } from "./FeatureCard";
 
 export default function FeatureSection() {
     return (
-        <section className="s_features-wrap" aria-labelledby="features-heading">
+        <section className="s_features-wrap" aria-labelledby="features-heading" id="features">
             <div className="c_feature-container">
                 {/* Section Intro */}
                 <div className="c_feature-intro">

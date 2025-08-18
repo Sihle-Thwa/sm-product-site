@@ -10,8 +10,9 @@ export default function HeroSection() {
             className="s_hero-wrap"
             aria-label="Hero section"
             data-theme="default"
+            id="home"
         >
-            <div className="c_hero-container">
+            <div className="c_hero-container" id="home">
                 {/* Hero Content */}
                 <div className="_hero-content">
                     <div className="_hero-heading">

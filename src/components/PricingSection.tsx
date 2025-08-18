@@ -4,7 +4,7 @@ import PricingCard from "./PricingCard";
 
 const PricingSection: React.FC = () => {
     return (
-        <section className="s_pricing-wrap">
+        <section className="s_pricing-wrap" id="pricing">
             <div className="c_pricing-container">
                 {/* Section Header */}
                 <div className="c_pricing-header">

@@ -10,7 +10,7 @@ export default function TestimonialsSection() {
     return (
         <section
             className="s_testimonial-wrap"
-            aria-labelledby="testimonials-section"
+            aria-labelledby="testimonials-section" id="testimonials"
         >
             <div className="c_testimonial-container">
                 {/* Heading + CTA */}

@@ -7,7 +7,7 @@ import { metrics } from "@/data/metric";
 
 export default function MetricSection() {
     return (
-        <section className="s_metric-wrap">
+        <section className="s_metric-wrap" id="metrics">
             {/* Section Container */}
             <div className="c_metric-container">
                 {/* Header */}

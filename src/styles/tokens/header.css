@@ -15,10 +15,10 @@
   z-index: 50;
   background: var(--color-background, oklch(1 0 0));
   backdrop-filter: saturate(140%) blur(4px);
+  width: 100%;
 }
 
 .c_header {
-  max-width: 1280px;
   margin-inline: auto;
   padding-inline: var(--space-md, 24px);
 }
@@ -33,13 +33,15 @@
 
 /* Brand / Logo */
 .c_header-brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+   width: 120px;
+   height: 40px;
 }
 
 .c_header-logo {
   height: 40px;
-  width: auto;
+  width: 120px;
 }
 
 /* Desktop Nav wrapper (hidden on mobile) */

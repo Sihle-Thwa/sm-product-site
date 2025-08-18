@@ -12,7 +12,7 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="s_faq-wrap">
+        <section className="s_faq-wrap" id="faq">
             <div className="c_faq-container">
                 {/* Section Header */}
                 <div className="faq-header">

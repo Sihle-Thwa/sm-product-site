@@ -9,10 +9,11 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const NAV_ITEMS = [
-    { label: "Products", href: "#products" },
     { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "Metrics", href: "#metrics" },
 ];
 
 export default function Navigation() {

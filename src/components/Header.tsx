@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Navigation from "./Navigation";
@@ -11,16 +10,18 @@ export default function Header() {
         <header aria-label="Site header" className="s_header">
             <div className="c_header">
                 <div className="c_header-content">
-                    <Link href="/" aria-label="Homepage" className="c_header-brand">
+                    <div className="c_header-brand" id="home"
+                        style={{ position: "relative", objectFit: "contain", }}
+                    >
                         <Image
                             src="/Logo_title.png"
                             alt="SBM Concepts logo"
-                            width={120}
-                            height={40}
                             className="c_header-logo"
-                            priority
+                            loading="lazy"
+                            fill={true}
+
                         />
-                    </Link>
+                    </div>
 
                     <nav aria-label="Primary navigation" className="c_header-nav">
                         <Navigation />
