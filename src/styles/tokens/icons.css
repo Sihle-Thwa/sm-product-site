@@ -1,168 +1,180 @@
 /* Icon Design Tokens */
 :root {
-    /* Base Colors */
-    --primary: oklch(0.3297 0.0579 250.8);
-    --secondary: oklch(0.39 0.0576 251.2);
-    --accent: oklch(0.7874 0.1715 69.12);
-    --iconColor: oklch(98.463% 0.00181 249.248);
-    
-    /* Fill Colors (Lighter shades) */
-    --primary-fill: oklch(0.3297 0.0579 250.8 / 0.8);
-    --secondary-fill: oklch(0.39 0.0576 251.2 / 0.8);
-    --accent-fill: oklch(0.7874 0.1715 69.12 / 0.8);
+	/* Base Colors */
+	--primary: oklch(0.3297 0.0579 250.8);
+	--secondary: oklch(0.39 0.0576 251.2);
+	--accent: oklch(0.7874 0.1715 69.12);
+	--iconColor: oklch(98.463% 0.00181 249.248);
 
-    
-    /* Text/Label Color */
-    --icon-text-color: var(--iconColor);
-    
-    /* Size Tokens */
-    --icon-size-lg: 48px;
-    --icon-size-md: 32px;
-    --icon-size-sm: 24px;
-    
-    /* Stroke Width Tokens */
-    --icon-stroke-lg: 2.8px; /* 700 weight equivalent */
-    --icon-stroke-md: 2px;   /* 500 weight equivalent */
-    --icon-stroke-sm: 2px; /* 300 weight equivalent */
-  }
-  
-  /* Base Icon Class */
+	/* Fill Colors (Lighter shades) */
+	--primary-fill: oklch(0.3297 0.0579 250.8 / 0.8);
+	--secondary-fill: oklch(0.39 0.0576 251.2 / 0.8);
+	--accent-fill: oklch(0.7874 0.1715 69.12 / 0.8);
+
+	/* Text/Label Color */
+	--icon-text-color: var(--iconColor);
+
+	/* Size Tokens */
+	--icon-size-xl: 36px;
+	--icon-size-lg: 32px;
+	--icon-size-md: 28px;
+	--icon-size-sm: 24px;
+	--icon-size-xs: 20px;
+
+	/* Stroke Width Tokens */
+	--icon-stroke-xl: 4px; /* 700 weight equivalent */
+	--icon-stroke-lg: 4px; /* 700 weight equivalent */
+	--icon-stroke-md: 3px; /* 500 weight equivalent */
+	--icon-stroke-sm: 2px; /* 300 weight equivalent */
+}
+
+/* Base Icon Class */
 .icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    stroke: var(--icon-text-color);
-    color: lighten(currentColor, 20%);
-    border-radius: 50%;
-    padding: 1px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  
-  /* Size Variants */
-.icon-lg {
-    width: var(--icon-size-lg);
-    height: var(--icon-size-lg);
-    border: 4px solid currentColor; 
-    stroke-width: var(--icon-stroke-lg);
-  }
-  
-.icon-md {
-    width: var(--icon-size-md);
-    height: var(--icon-size-md);
-    border: 3px solid currentColor; /* Stroke thickness based on size */
-    stroke-width: var(--icon-stroke-md);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	stroke: var(--icon-text-color);
+	color: lighten(currentColor, 20%);
+	border-radius: 50%;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	width: 100%;
+	height: 100%;
+	border: 2px solid currentColor;
+	padding: 2px;
+}
 
-  }
-  
-.icon-sm {
-    width: var(--icon-size-sm);
-    height: var(--icon-size-sm);
-    border: 2px solid currentColor; /* Stroke thickness based on size */
-    stroke-width: var(--icon-stroke-sm);
-
-  }
-
-  
-  /* Color Variants */
+/* Color Variants */
 .icon-primary {
-    color: var(--primary);
-    fill: lighten(currentColor, 20%); /* Example brightness adjustment */
-    stroke: var(--icon-text-color);    /* Icon stroke color */
-    border-color: currentColor;
-    background-color: var(--primary-fill);
-
-  }
+	color: var(--primary);
+	fill: lighten(currentColor, 20%);
+	stroke: var(--icon-text-color);
+	border-color: currentColor;
+	background-color: var(--primary-fill);
+}
 
 .icon-secondary {
-    color: var(--secondary);
-    fill: lighten(currentColor, 20%); /* Example brightness adjustment */
-    stroke: var(--icon-text-color);    /* Icon stroke color */
-    border-color: currentColor;
-    background-color: var(--secondary-fill);
-  }
+	color: var(--secondary);
+	fill: lighten(currentColor, 20%);
+	stroke: var(--icon-text-color);
+	border-color: currentColor;
+	background-color: var(--secondary-fill);
+}
 
 .icon-accent {
-    color: var(--accent);
-    fill: var(--accent-fill); /* Example brightness adjustment */
-    stroke: var(--icon-text-color);    /* Icon stroke color */
-    border-color: currentColor;
-  }
-  
-  .icon-muted {
-    color: transparent;
-    fill: var(--accent-fill); /* Example brightness adjustment */
-    stroke: var(--accent-fill);    /* Icon stroke color */
-    border-color: currentColor;
-    background-color: transparent;
-  }
-/* Interactive States */
-
-.icon-button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: background-color 0.2s ease;
+	color: var(--accent);
+	fill: var(--accent-fill);
+	stroke: var(--icon-text-color);
+	border-color: currentColor;
 }
 
-.icon-button:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
+.icon-muted {
+	color: transparent;
+	fill: var(--accent-fill);
+	stroke: var(--accent-fill);
+	border-color: currentColor;
+	background-color: transparent;
 }
 
-.icon-button:focus-visible {
-  outline: 2px solid var(--icon-primary);
-  outline-offset: 2px;
+/* ===========================
+ Responsive Layout System
+=========================== */
+
+@media (min-width: 320px) and (max-width: 425px) {
+	.icon {
+		width: var(--icon-size-xs);
+		height: var(--icon-size-xs);
+		stroke-width: var(--icon-stroke-sm);
+	}
 }
 
-/* Accessibility Enhancements */
-.icon[aria-hidden="true"] {
-  display: inline-block;
+@media (min-width: 426px) and (max-width: 768px) {
+	.icon {
+		width: var(--icon-size-sm);
+		height: var(--icon-size-sm);
+		stroke-width: var(--icon-stroke-sm);
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.icon {
+		width: var(--icon-size-md);
+		height: var(--icon-size-md);
+		stroke-width: var(--icon-stroke-md);
+		border: 2px solid currentColor;
+		stroke-width: var(--icon-stroke-lg);
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.icon {
+		width: var(--icon-size-lg);
+		height: var(--icon-size-lg);
+		stroke-width: var(--icon-stroke-lg);
+		border: 2px solid currentColor;
+		stroke-width: var(--icon-stroke-lg);
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.icon {
+		width: var(--icon-size-xl);
+		height: var(--icon-size-xl);
+		stroke-width: var(--icon-stroke-xl);
+		border: 2px solid currentColor;
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+	.icon {
+		width: var(--icon-size-xl);
+		height: var(--icon-size-xl);
+		stroke-width: var(--icon-stroke-xl);
+	}
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
-  .icon-lg, .icon-xl {
-    width: var(--icon-size-md);
-    height: var(--icon-size-md);
-  }
+	.icon-lg,
+	.icon-xl {
+		width: var(--icon-size-md);
+		height: var(--icon-size-md);
+	}
 }
 
 /* RTL (Right-to-Left) Support */
 [dir="rtl"] .icon-flip {
-  transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 /* Stacked Icons - for overlaying multiple icons */
 .icon-stack {
-  position: relative;
-  display: inline-flex;
+	position: relative;
+	display: inline-flex;
 }
 .icon-stack .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 /* Badged Icons - for notification counts */
 .icon-badge {
-  position: relative;
+	position: relative;
 }
 
 .icon-badge::after {
-  content: attr(data-badge);
-  position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  min-width: 1.25rem;
-  height: 1.25rem;
-  padding: 0 0.25rem;
-  border-radius: 9999px;
-  background-color: var(--icon-danger);
-  color: white;
-  font-size: 0.75rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	content: attr(data-badge);
+	position: absolute;
+	top: -0.5rem;
+	right: -0.5rem;
+	min-width: 1.25rem;
+	height: 1.25rem;
+	padding: 0 0.25rem;
+	border-radius: 9999px;
+	background-color: var(--icon-danger);
+	color: white;
+	font-size: 0.75rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

@@ -95,7 +95,7 @@
 		height: var(--button-height-sm);
 		width: var(--button-width-sm);
 		font-size: 14px;
-    line-height: 24px;
+		line-height: 24px;
 	}
 }
 
@@ -103,8 +103,8 @@
 	.button {
 		height: var(--button-height-md);
 		width: var(--button-width-md);
-		 font-size: 14px;
-    line-height: 24px;
+		font-size: 14px;
+		line-height: 24px;
 	}
 }
 
@@ -113,7 +113,7 @@
 		height: var(--button-height-lg);
 		width: var(--button-width-lg);
 		font-size: 14px;
-    line-height: 24px;
+		line-height: 24px;
 	}
 }
 
@@ -122,7 +122,7 @@
 		height: var(--button-height-xl);
 		width: var(--button-width-xl);
 		font-size: 16px;
-    line-height: 26px;
+		line-height: 26px;
 	}
 }
 
