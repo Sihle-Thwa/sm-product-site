@@ -13,6 +13,7 @@ export default function Header() {
                     <div className="c_header-brand" id="home"
                         style={{ position: "relative", objectFit: "contain", }}
                     >
+                        <a href="" className="c_header-logo-link" id="home"> 
                         <Image
                             src="/Logo_title.png"
                             alt="SBM Concepts logo"
@@ -20,7 +21,7 @@ export default function Header() {
                             loading="lazy"
                             fill={true}
 
-                        />
+                            /></a>
                     </div>
 
                     <nav aria-label="Primary navigation" className="c_header-nav">

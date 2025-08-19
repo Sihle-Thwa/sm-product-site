@@ -11,20 +11,25 @@ export default function FooterItem({ title, items }: FooterItemProps) {
     return (
         <div className="s_footer-item-wrap">
             <div className="c_footer-item-container">
-                <div className="c_footer-item-header text-sm-bold">{title}</div>
-                <div className="c_footer-item-list">
-                    {items.map((item) => (
-                        <li key={item.label}>
-                            <a
-                                href={item.href}
-                                className="c_footer-item-link"
-                                aria-label={`Navigate to ${item.label}`}
-                            >
-                                {item.label}
-                            </a>
-                        </li>
-                    ))}
+                <div className="c_footer-item-content">
+                    <div className="c_footer-item-header">
+                        {title}
+                    </div>
+                    <div className="c_footer-item-list">
+                        {items.map((item) => (
+                            <li key={item.label}>
+                                <a
+                                    href={item.href}
+                                    className="c_footer-item-link"
+                                    aria-label={`Navigate to ${item.label}`}
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </div>
                 </div>
+
             </div>
         </div>
     );
