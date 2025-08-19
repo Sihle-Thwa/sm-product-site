@@ -15,13 +15,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "U-Organise",
-  description: "A sports management product site built with Next.js",
-  keywords: ["Next.js", "React", "Product Site", "Sample"],
+  description: "A modern, responsive Product Marketing Website for the U-Organise Sports Management Platform",
+  keywords: ["Sports", "Management", "Product Site", "Organise", "Platform"],
   authors: [{ name: "Siphesihle B. Mthethwa", url: "https://yourwebsite.com" }],
   creator: "Siphesihle B. Mthethwa",
   openGraph: {
-    title: "SM Product Site",
-    description: "A sports management product site built with Next.js",
+    title: "U-Organise",
+    description: "A modern, responsive Product Marketing Website for the U-Organise Sports Management Platform",
     url: "https://yourwebsite.com",
     siteName: "U-Organise",
     locale: "en_US",
