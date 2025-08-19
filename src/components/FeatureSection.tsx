@@ -11,15 +11,8 @@ export default function FeatureSection() {
             <div className="c_feature-container">
                 {/* Section Intro */}
                 <div className="c_feature-intro">
-                    <div
-                        id="features-heading"
-                        className="_features-heading"
-                    >
-                        Features
-                    </div>
-                    <div className="_features-subheading">
-                        Overflowing with useful features
-                    </div>
+                    <div id="features-heading" className="_features-heading">Features</div>
+                    <div className="_features-subheading">Overflowing with useful features</div>
                     <div className="_features-subtitle">
                         Sports management has evolved dramatically in the digital age.
                         Organizations that embrace comprehensive platforms like this one
@@ -40,15 +33,16 @@ export default function FeatureSection() {
                         ))}
                     </div>
 
-                    <div className="c_feature-illustration">
-                        <div className="c_feature-image-container">
+                    <div className="c_feature-illustration-container">
+                        <div className="c_feature-image-content">
                             <Image
                                 src="/FeatureSection.png"
                                 alt="Platform feature illustration"
-                                width={440}
-                                height={540}
                                 className="feature-image"
                                 loading="lazy"
+                                fill
+                                sizes="(max-width: 767px) 100vw, 40vw"
+                                priority={false}
                             />
                         </div>
                     </div>
