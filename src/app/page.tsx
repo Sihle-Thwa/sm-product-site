@@ -49,6 +49,7 @@ export default function Home() {
         <SectionDivider />
         <CTASection />
       </main>
+      <SectionDivider />
       <Footer />
     </div>
   );

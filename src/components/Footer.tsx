@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import FooterItem from "./FooterItem";
 import { footerItems } from "../data/footer";
-import SectionDivider from "./SectionDivider";
 
 export default function Footer() {
     return (
@@ -20,9 +19,6 @@ export default function Footer() {
                     ))}
                 </div>
             </div>
-
-            {/* Divider */}
-            <SectionDivider />
 
             {/* Bottom Area */}
             <div className="_footer-bottom-container">
