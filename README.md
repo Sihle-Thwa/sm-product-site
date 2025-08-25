@@ -91,9 +91,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 👨‍💻 Author
 
-**Siphesihle B. Mthethwa**  
-Full-Stack Developer | Web Engineer | IT Educator  
- 
+### Siphesihle B. Mthethwa  
+Full-Stack Developer | Web Engineer | IT and Comp Sci Educator  
+
+- Portfolio: [siphesihle-b-mthethwa.vercel.app](https://siphesihle-b-mthethwa.vercel.app)
 - LinkedIn: [linkedin.com/in/siphesihle-mthethwa](https://linkedin.com/in/siphesihle-mthethwa)  
 - GitHub: [@Sihle-Thwa](https://github.com/Sihle-Thwa)  
 
